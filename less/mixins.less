@@ -1,0 +1,33 @@
+// Mixins in here
+.button(){
+        width: 50%;
+        height: 4rem;
+        padding: 1.25rem;
+        background-color: @button-bg;
+        font-size: 1.8rem;
+        border-radius: 1rem;
+        display: flex;
+        justify-content: center;
+
+        text-decoration: none;
+        color: @button-link;
+
+
+        &:hover {
+            background-color: lighten(@button-bg, 15%);
+            
+        }
+}
+
+
+.flex(@just) {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: @just;
+}
+.border-gen(@border) {
+    border-style: solid;
+    border-color: @border-color;
+    border-width: (@border*.2) (@border*.2) (@border*.5) (@border*.5);
+    border-radius: @border*.5;
+}
