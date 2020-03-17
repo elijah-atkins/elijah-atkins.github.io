@@ -1,0 +1,34 @@
+// Navigation code here nav nav-links logo
+nav {
+    height: 10rem;
+    width: 100%;
+    background-color: @nav-bg;
+    color: @nav-font;
+    margin: 0 auto;
+    padding-top: 1rem;
+    border-bottom: 2px solid @nav-border;
+    .nav-links {
+        width: 100%;
+        .flex(center,column);
+        .logo {
+            margin: 0 auto;
+            font-size: 4rem;
+        }
+    }
+    ul {
+        .flex(center,row);
+
+        list-style: none;
+        padding: 2rem;
+        margin-bottom: 1rem;
+        max-width: 100%;;
+        li {
+            margin-right: 3rem;
+            font-size: 1.6rem;
+            color: @link-color;
+            &:hover {
+                color: lighten(@link-color, 50%);
+            }
+        }
+    }
+}

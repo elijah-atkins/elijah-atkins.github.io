@@ -1,0 +1,38 @@
+// Mixins Here
+.flex(@just,@flow) {
+    display:flex;
+    justify-content: @just;
+    flex-flow: @flow;
+}
+//duration, delay, ease
+.set-ani (@duration, @delay, @ease) {
+    animation-duration: @duration;
+    animation-delay: @delay;
+    animation-timing-function: @ease;
+    animation-fill-mode: both;
+}
+//bg color, font color, height
+.button(@bg-color, @color, @height){
+
+    height: @height;
+    width: 33%;
+    padding: 1rem;
+    color: @color;
+    background-color: @bg-color;
+    font-size: 1.8rem;
+    border-radius: .8rem;
+    .flex(center, row);
+    &:hover{
+        color: lighten(@color, 25%);
+        background-color: lighten(@bg-color, 25%);
+    }
+    @media @tablet {
+        width: 50%;
+    }
+    @media @phone {
+        width: 95%;
+        height: 8rem;
+        padding-top: 3rem;
+    }
+
+}

@@ -141,7 +141,7 @@ h2,
 h3,
 h4,
 h5 {
-  font-family: 'Righteous', cursive;
+  font-family: 'Abril Fatface', cursive;
 }
 h1 {
   font-size: 4rem;
@@ -189,8 +189,8 @@ nav .nav-links {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-nav .nav-links .logo {
-  font-size: 1rem;
+nav .nav-links .logo h1 {
+  font-size: 3.2rem;
 }
 @media only screen and (max-width:600px) {
   nav .nav-links {
@@ -214,7 +214,7 @@ nav .nav-links ul li a {
   color: #253608;
 }
 nav .nav-links ul li a:hover {
-  color: #070a01;
+  color: #628f15;
 }
 .home .about {
   padding-top: 30px;
