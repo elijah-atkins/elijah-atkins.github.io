@@ -3,7 +3,7 @@
 @button-bg: @eastern-blue;
 @main-bg:  @white;
 @nav-color: @white;
-@link-color: @shark;
+@link-color: @darkgreen;
 @navigation-border: @silver;
 @footer-bg: @sandy-beach;
 @button-link: @white;
@@ -15,10 +15,18 @@
 @shark: #212529;
 @eastern-blue: #17A2B8;
 @sandy-beach: #FFEBCD;
+@orange: #ffa34d;
+@red: #f67575;
+@light: #d4f8e8;
+@dark: #1eb2a6;
+@darkgreen: #253608;
+
 
 //escaping variable
 @mobile: ~"only screen and (max-width:600px)";
 @tablet: ~"only screen and (max-width:800px)";
 
-//bacground images
-@grad: radial-gradient(#99cccc,#99cccc,#99cccc,#9cccaa);
+//background images
+//@grad: radial-gradient(#99cccc 65%,#9cccaa 100%);
+
+@grad: radial-gradient(farthest-corner at 0px 40px,@light 10%, @dark 100%);
