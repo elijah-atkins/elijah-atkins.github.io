@@ -171,11 +171,11 @@ img {
 nav {
   height: 8rem;
   padding: 2rem;
-  background-color: #ffffff;
-  background-image: radial-gradient(farthest-corner at 0px 40px, #d4f8e8 10%, #1eb2a6 100%);
+  background-color: #FFFFFF;
+  background-image: radial-gradient(farthest-corner at 0px 40px, #d4d8a8 10%, #738156 100%);
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #c0c0c0;
+  border-bottom: 2px solid #C0C0C0;
 }
 @media only screen and (max-width:600px) {
   nav {
@@ -246,7 +246,7 @@ nav .nav-links ul li a:hover {
 .footer {
   width: 100%;
   border-top: 2px solid silver;
-  background-image: radial-gradient(farthest-corner at 0px 40px, #d4f8e8 10%, #1eb2a6 100%);
+  background-image: radial-gradient(farthest-corner at 0px 40px, #d4d8a8 10%, #738156 100%);
 }
 .footer p {
   text-align: center;
@@ -301,7 +301,7 @@ nav .nav-links ul li a:hover {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px solid #c0c0c0;
+  border-bottom: 2px solid #C0C0C0;
 }
 @media only screen and (max-width:600px) {
   .home .inverse-content {
@@ -329,13 +329,13 @@ nav .nav-links ul li a:hover {
   width: 50%;
   height: 4rem;
   padding: 1.25rem;
-  background-color: #17a2b8;
+  background-color: #17A2B8;
   font-size: 1.8rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .home .content-signmeup .btn:hover {
   background-color: #36cee6;
@@ -350,7 +350,7 @@ nav .nav-links ul li a:hover {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px solid #c0c0c0;
+  border-top: 2px solid #C0C0C0;
   display: flex;
   justify-content: space-around;
 }
