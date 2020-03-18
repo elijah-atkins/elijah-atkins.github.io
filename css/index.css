@@ -134,6 +134,7 @@ html {
 }
 html,
 body {
+  background-color: #9bacb6;
   font-family: 'Ubuntu', sans-serif;
 }
 h1,
@@ -171,11 +172,11 @@ img {
 nav {
   height: 8rem;
   padding: 2rem;
-  background-color: #FFFFFF;
+  background-color: #9bacb6;
   background-image: radial-gradient(farthest-corner at 0px 40px, #d4d8a8 10%, #738156 100%);
   display: flex;
   justify-content: center;
-  border-bottom: 2px solid #C0C0C0;
+  border-bottom: 2px solid #e5dcd2;
 }
 @media only screen and (max-width:600px) {
   nav {
@@ -250,14 +251,20 @@ nav .nav-links ul li a:hover {
 }
 .footer p {
   text-align: center;
-  color: #212529;
+  color: #0f1817;
   font-size: 1.6rem;
   padding: 20px;
+}
+.home .header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 .home .header .intro {
   padding: 1%;
 }
-.home .header .intro h1 {
+.home .header .intro h2 {
+  padding-left: 8rem;
   padding-top: 1%;
   padding-bottom: 1%;
 }
@@ -279,7 +286,7 @@ nav .nav-links ul li a:hover {
   }
 }
 .home .content-section .text-content {
-  width: 48%;
+  width: 60%;
   padding: 1%;
 }
 @media only screen and (max-width:600px) {
@@ -301,7 +308,7 @@ nav .nav-links ul li a:hover {
 }
 .home .inverse-content {
   padding-bottom: 30px;
-  border-bottom: 2px solid #C0C0C0;
+  border-bottom: 2px solid #e5dcd2;
 }
 @media only screen and (max-width:600px) {
   .home .inverse-content {
@@ -329,16 +336,16 @@ nav .nav-links ul li a:hover {
   width: 50%;
   height: 4rem;
   padding: 1.25rem;
-  background-color: #17A2B8;
+  background-color: #738156;
   font-size: 1.8rem;
   border-radius: 1rem;
   display: flex;
   justify-content: center;
   text-decoration: none;
-  color: #FFFFFF;
+  color: #9bacb6;
 }
 .home .content-signmeup .btn:hover {
-  background-color: #36cee6;
+  background-color: #99a87c;
 }
 @media only screen and (max-width:600px) {
   .home .content-signmeup {
@@ -350,7 +357,7 @@ nav .nav-links ul li a:hover {
 }
 .home .content-pick {
   padding-top: 30px;
-  border-top: 2px solid #C0C0C0;
+  border-top: 2px solid #e5dcd2;
   display: flex;
   justify-content: space-around;
 }
