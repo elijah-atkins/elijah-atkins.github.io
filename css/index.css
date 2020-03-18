@@ -218,51 +218,30 @@ nav .nav-links ul li a:hover {
 }
 .home .about {
   padding-top: 30px;
-  border-top: 2px solid #c0c0c0;
 }
-.home .about .photo {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
+.home .about h2 {
+  font-size: 2rem;
 }
-@media only screen and (max-width:600px) {
-  .home .about .photo {
-    flex-direction: column;
-    width: 95%;
-  }
-}
-.home .about .photo .card {
-  width: 30%;
-}
-@media only screen and (max-width:600px) {
-  .home .about .photo .card {
-    width: 90%;
-    margin-left: 10%;
-  }
-}
-.home .about .photo .card h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.2rem;
-}
-.home .about .photo .card h3 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 1.8rem;
-}
-.home .about .photo .card h4 {
-  font-family: 'Roboto', sans-serif;
+.home .about p {
   font-size: 1.6rem;
 }
-.home .about .photo .card .img-content {
-  width: 60%;
-  padding-left: 1%;
+.home .about ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  list-style: none;
 }
-@media only screen and (max-width:600px) {
-  .home .about .photo .card .img-content {
-    width: 80%;
-  }
+.home .about ul li {
+  margin-top: 1rem;
 }
-.home .about .photo .card .img-content img {
-  border-radius: 40%;
+.home .about ul li a {
+  text-decoration: none;
+  font-size: 1.8rem;
+  padding-left: 1rem;
+  color: #253608;
+}
+.home .about ul li a:hover {
+  color: #628f15;
 }
 .footer {
   width: 100%;
@@ -413,4 +392,24 @@ nav .nav-links ul li a:hover {
 }
 .projects ul li a:hover {
   color: #b1e657;
+}
+.home .skills {
+  padding-top: 30px;
+}
+.home .skills h2 {
+  font-size: 2rem;
+}
+.home .skills p {
+  font-size: 1.6rem;
+}
+.home .skills ul {
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-end;
+  list-style: none;
+}
+.home .skills ul li {
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 1.8rem;
 }
