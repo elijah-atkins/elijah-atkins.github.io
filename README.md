@@ -1,4 +1,4 @@
-##Elijah Atkins Portfollio website
+## Elijah Atkins Portfollio website
 Making personal professional website to showcase skills
 in programing and design with a highlight on recent 
 Lambda School work
@@ -11,7 +11,7 @@ Using React, HTML, SCSS, and JavaScript
 [x] Remove un-needed template files
 
 --
-###To DO
+## To DO
 
 [ ] make navbar
 [ ] make header 
@@ -21,5 +21,18 @@ Using React, HTML, SCSS, and JavaScript
 [ ] use react-router-dom to control navbar
 [ ] add profile picture
 [x] footer -year updates
+
+### Navbar
+
+[ ] Make reactive
+[ ] hide logo in mobile
+[ ] Left side for desktop bottom for mobile
+
+### Project page
+
+[ ] create projectData.js to hold array with project info
+[ ] populate page with cards that contain links to github and the deployed projects
+[ ] populate with content
+
 
 
