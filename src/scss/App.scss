@@ -6,102 +6,109 @@ $text-secondary: #ddd;
 $bg-primary: #23232e;
 $bg-secondary: #141418;
 
-$speed: 600ms;
-
+$speed: 600ms ease;
 
 html {
-    font-size: 62.5%;
-    color: $text-secondary;
-    margin: 0;
-    padding: 0;
-    background-image: 
-    radial-gradient(ellipse at 35% 40%, rgba($white, .1), transparent),
-    radial-gradient(ellipse at 60% 50%, rgba($white, .1), transparent),
+  font-size: 62.5%;
+  color: $text-secondary;
+  margin: 0;
+  padding: 0;
+  background-image: radial-gradient(
+      ellipse at 35% 40%,
+      rgba($white, 0.1),
+      transparent
+    ),
+    radial-gradient(ellipse at 60% 50%, rgba($white, 0.1), transparent),
     linear-gradient($bg-color, darken($bg-color, 40%));
-    background-attachment: fixed;
+  background-attachment: fixed;
 
-    
-    body {
-        width: 100%;
-        height: 100%;
-        display: block;
-        &::-webkit-scrollbar {
-            width: .25rem;
-        }
-        &::-webkit-scrollbar-track {
-            background: #1e1e24;
-        }
-        &::-webkit-scrollbar-thumb {
-            background: #22bed3;
-        }
-        .App {
-            width: 100%;
-            height: 100%;
-        }
-        
-        .navbar {
-            position: fixed;
-            width: 8rem;
-            height: 100vh;
-            color: $text-primary;
-            background-color: $bg-primary;
-            transition: $speed;
-            overflow: none;
-            &:hover{
-                width: 20rem;
-                transition: $speed;
-                .link-text{
-                    display: block;
-                }
-
-            }
-            .navbar-nav {
-                list-style: none;
-                padding: 0;
-                margin: 0;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                height: 100%;
-
-            }
-            .nav-item {
-                width: 100%;
-                &:last-child {
-                    margin-top: auto;
-                }
-            }
-            .nav-link {
-                display: flex;
-                align-items: center;
-                height: 8rem;
-                color: $text-primary;
-                text-decoration: none;
-                filter: grayscale(100%) opacity(0.7) rotation(0deg);
-                transition: $speed;
-                &:hover {
-                    filter: grayscale(0%) opacity(1) rotation(30deg);
-                    background: $bg-secondary;
-                    color: $text-secondary
-                }
-            }
-            .link-text {
-                display: none;
-                font-size: 1.6rem;
-                margin-left: 1rem;
-
-            }
-        }
-
-        main {
-            font-size: 1.8rem;
-            margin-left: 8rem;
-        }
-    
-    footer {
-        margin-top: auto;
-        font-size: 1.6rem;
-        color:$white;
+  body {
+    width: 100%;
+    height: 100%;
+    display: block;
+    &::-webkit-scrollbar {
+      width: 0.25rem;
     }
-    } 
+    &::-webkit-scrollbar-track {
+      background: #1e1e24;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #22bed3;
+    }
+    .App {
+      width: 100%;
+      height: 100%;
+    }
+
+    .navbar {
+      position: fixed;
+      width: 8rem;
+      height: 100vh;
+      color: $text-primary;
+      background-color: $bg-primary;
+      transition: $speed;
+      overflow: none;
+      &:hover {
+        width: 20rem;
+        transition: $speed;
+        .link-text {
+          display: block;
+        }
+      }
+      .navbar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+      }
+      .nav-item {
+        width: 100%;
+        &:last-child {
+          margin-top: auto;
+        }
+        .nav-link {
+          display: flex;
+          align-items: center;
+          height: 8rem;
+          color: $text-primary;
+          text-decoration: none;
+          filter: grayscale(100%) opacity(0.7) rotation(0deg);
+          transition: $speed;
+          &:hover {
+            filter: grayscale(0%) opacity(1) rotation(30deg);
+            background: $bg-secondary;
+            color: $text-secondary;
+          }
+          .ea-star-icon {
+            width: 70px;
+            .ea-star {
+              color: #ff7eee;
+            }
+            .ea-shine {
+              color: #df49a6;
+            }
+          }
+          .link-text {
+            display: none;
+            font-size: 1.6rem;
+            margin-left: 1rem;
+          }
+        }
+      }
+    }
+
+    main {
+      font-size: 1.8rem;
+      margin-left: 8rem;
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 1.6rem;
+      color: $white;
+    }
+  }
 }

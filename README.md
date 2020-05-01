@@ -8,6 +8,7 @@ Using React, HTML, SCSS, and JavaScript
 [x] Install a blank React app by running npx create-react-app <app-name> --use-npm.
 [x] Install SCSS by running npm i node-sass
 [x] Install react-router-dom by running npm i react-router-dom
+[s] install svgo for svg optimization $ [sudo] npm i svgo
 [x] Remove un-needed template files
 
 --
