@@ -1,46 +1,68 @@
-# Portfollio Site - Lambda School 
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Setup a personal portfollio website with custom domain
+## Available Scripts
 
-## Task 1: Set Up The Project With Git
-* [x] Create a forked copy of this project.
-* [x] Add your team lead as collaborator on Github.
-* [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
-* [x] Create a new branch: `git checkout -b <firstName-lastName>`.
-* [x] Implement the project on your newly created <firstName-lastName> branch, committing changes regularly.
-* [x] Push commits: `git push origin <firstName-lastName>`.
+In the project directory, you can run:
 
-## Task 2: Create index.html and css/index.css
-* [x] Create index.html 
-* [x] Create css and less folders
+### `npm start`
 
-## Task 3: Set up your preprocessor
-* [x] Verify that you have LESS installed correctly by running lessc -v in your terminal, if you don't 
- get a version message back, reach out to your team lead for help.
-* [x] Open your terminal and navigate to your preprocessing project by using the cd command
-* [x] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [x] Verify your compiler is working correctly by changing the background-color on the html selector to red in your index.less file.
-* [x] Once you see the red screen, you can delete that style and you're ready to start on the next task
+Runs the app in the development mode.<br />
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-## Task 4: Import LESS Files
+The page will reload if you make edits.<br />
+You will also see any lint errors in the console.
 
-* [x] Populate your less folder make sure that it includes the following. 
+### `npm test`
 
-1. `index.less`
-2. `variables.less`
-3. `mixins.less`
-4. `reset.less`
-5. `global.less`
-6. `navigation.less`
-7. `footer.less`
-8. `home-page.less`
+Launches the test runner in the interactive watch mode.<br />
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Task 5: Design a Desktop focused website
-* [x] Using modern design elements make a marketing website including navigation, header, and buttons
-* [x] Navigation: Use the `navigation.less` file for all your navigation styling
-* [x] Main Header: Use the `home-page.less` file for the header styling.
+### `npm run build`
 
-## Task 6: Responsive Mobile view
-* [x] Use escaping to create a variable named `@mobile` that contains this value: `(max-width: 500px)`.  Use the `variables.less` file to house your variables.
-* [x] Make a mobile view that looks good and is easy to use
+Builds the app for production to the `build` folder.<br />
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.<br />
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+
+### Analyzing the Bundle Size
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+
+### Making a Progressive Web App
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+
+### Advanced Configuration
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+
+### Deployment
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+
+### `npm run build` fails to minify
+
+This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
