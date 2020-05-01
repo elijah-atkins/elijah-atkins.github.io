@@ -4,7 +4,9 @@ $white: #b4b4c9;
 $text-primary: #b2c2e2;
 $text-secondary: #ddd;
 $bg-primary: #23232e;
-$bg-secondary: #141418;
+$bg-secondary: #141718;
+$icon-primary: #4fa1c2;
+$icon-secondary: lighten($icon-primary, 20%);
 
 $speed: 600ms ease;
 
@@ -53,7 +55,13 @@ html {
         transition: $speed;
         .link-text {
           display: block;
+          
         }
+      }
+      .link-text {
+        display: none;
+        font-size: 1.6rem;
+        margin-left: 1rem;
       }
       .navbar-nav {
         list-style: none;
@@ -75,26 +83,21 @@ html {
           height: 8rem;
           color: $text-primary;
           text-decoration: none;
-          filter: grayscale(100%) opacity(0.7) rotation(0deg);
+          filter: grayscale(100%) opacity(0.7);
           transition: $speed;
           &:hover {
-            filter: grayscale(0%) opacity(1) rotation(30deg);
+            filter: grayscale(0%) opacity(1);
             background: $bg-secondary;
             color: $text-secondary;
           }
           .ea-star-icon {
             width: 70px;
             .ea-star {
-              color: #ff7eee;
+              color: $icon-primary;
             }
             .ea-shine {
-              color: #df49a6;
+              color: $icon-secondary;
             }
-          }
-          .link-text {
-            display: none;
-            font-size: 1.6rem;
-            margin-left: 1rem;
           }
         }
       }
