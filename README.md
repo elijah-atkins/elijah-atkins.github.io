@@ -6,4 +6,5 @@ Lambda School work
 Using React, HTML, SCSS, and JavaScript
 
 [x] Installing a blank React app by running npx create-react-app <app-name> --use-npm.
+[x] Remove un-needed template files
 
