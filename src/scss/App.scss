@@ -1,11 +1,13 @@
 $bg-color: #282c34;
-$white: #ddd;
+$white: rgb(180, 180, 201);
 
 html {
     font-size: 62.5%;
     width: 100%;
     height: 100%;
-    background-image: radial-gradient(ellipse at 20% 50%, rgba($white, .15), transparent),
+    background-image: 
+    radial-gradient(ellipse at 35% 40%, rgba($white, .1), transparent),
+    radial-gradient(ellipse at 60% 50%, rgba($white, .1), transparent),
     linear-gradient($bg-color, darken($bg-color, 40%));
 
     body {
@@ -17,8 +19,8 @@ html {
         justify-content: flex-end;
     
     footer {
-        font-size: calc(10px + 1vmin);
-        color: white;
+        font-size: 1.6rem;
+        color:$white;
     }
     } 
 }

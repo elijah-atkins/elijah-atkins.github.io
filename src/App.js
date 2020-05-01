@@ -1,4 +1,5 @@
 import React from 'react';
+import { Route, Switch } from 'react-router-dom';
 import './scss/App.scss';
 import Footer from './components/Footer'
 
