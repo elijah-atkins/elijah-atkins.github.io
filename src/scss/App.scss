@@ -1,9 +1,13 @@
+/* Color Variables */
 $bg-color: #282c34;
 $white: #b4b4c9;
 $text-primary: #b2c2e2;
 $text-secondary: #ddd;
 $bg-primary: #23232e;
 $bg-secondary: #141418;
+
+$speed: 600ms;
+
 
 html {
     font-size: 62.5%;
@@ -20,7 +24,7 @@ html {
     body {
         width: 100%;
         height: 100%;
-
+        display: block;
         &::-webkit-scrollbar {
             width: .25rem;
         }
@@ -33,15 +37,24 @@ html {
         .App {
             width: 100%;
             height: 100%;
-
         }
         
         .navbar {
+            position: fixed;
             width: 8rem;
             height: 100vh;
             color: $text-primary;
             background-color: $bg-primary;
+            transition: $speed;
+            overflow: none;
+            &:hover{
+                width: 20rem;
+                transition: $speed;
+                .link-text{
+                    display: block;
+                }
 
+            }
             .navbar-nav {
                 list-style: none;
                 padding: 0;
@@ -54,8 +67,6 @@ html {
             }
             .nav-item {
                 width: 100%;
-
-
                 &:last-child {
                     margin-top: auto;
                 }
@@ -66,10 +77,19 @@ html {
                 height: 8rem;
                 color: $text-primary;
                 text-decoration: none;
+                filter: grayscale(100%) opacity(0.7) rotation(0deg);
+                transition: $speed;
+                &:hover {
+                    filter: grayscale(0%) opacity(1) rotation(30deg);
+                    background: $bg-secondary;
+                    color: $text-secondary
+                }
             }
             .link-text {
                 display: none;
+                font-size: 1.6rem;
                 margin-left: 1rem;
+
             }
         }
 
@@ -79,6 +99,7 @@ html {
         }
     
     footer {
+        margin-top: auto;
         font-size: 1.6rem;
         color:$white;
     }
