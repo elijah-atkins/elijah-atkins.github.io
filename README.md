@@ -17,10 +17,13 @@ Using React, HTML, SCSS, and JavaScript
 [ ] make header 
 [ ] Skills page
 [ ] projexts page -use card navigation
-[ ] style page
+[ ] SCSS style page
 [ ] use react-router-dom to control navbar
 [ ] add profile picture
-[x] footer -year updates
+[ ] add resume 
+[ ] intergrate linkdin
+[ ] intergrate github
+[x] footer -year updates automatically
 
 ### Navbar
 
@@ -33,6 +36,23 @@ Using React, HTML, SCSS, and JavaScript
 [ ] create projectData.js to hold array with project info
 [ ] populate page with cards that contain links to github and the deployed projects
 [ ] populate with content
+[ ] use react-router-dom to update nav url
+
+
+
+
+
+
+
+
+
+
+
+
+
+### stretch
+
+[ ] make projects searcable
 
 
 
