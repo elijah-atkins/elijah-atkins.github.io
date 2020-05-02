@@ -7,111 +7,212 @@ $bg-primary: #23232e;
 $bg-secondary: #141718;
 $icon-primary: #4fa1c2;
 $icon-secondary: lighten($icon-primary, 20%);
+$logo-primary: #bd3b2a;
+$logo-secondary: darken($logo-primary, 20%);
 
 $speed: 600ms ease;
 
+// Mixins
+@mixin phone-view {
+    @media (max-width: 600px) {
+        @content; 
+    }
+}
+
+@mixin mid-view {
+    @media (min-width: 600px) {
+        @content; 
+    }
+}
+
 html {
-  font-size: 62.5%;
-  color: $text-secondary;
-  margin: 0;
-  padding: 0;
-  background-image: radial-gradient(
-      ellipse at 35% 40%,
-      rgba($white, 0.1),
-      transparent
-    ),
-    radial-gradient(ellipse at 60% 50%, rgba($white, 0.1), transparent),
-    linear-gradient($bg-color, darken($bg-color, 40%));
-  background-attachment: fixed;
+    font-size: 62.5%;
+    color: $text-secondary;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(ellipse at 35% 40%,
+            rgba($white, 0.1),
+            transparent),
+        radial-gradient(ellipse at 60% 50%, rgba($white, 0.1), transparent),
+        linear-gradient($bg-color, darken($bg-color, 40%));
+    background-attachment: fixed;
 
-  body {
-    width: 100%;
-    height: 100%;
-    display: block;
-    &::-webkit-scrollbar {
-      width: 0.25rem;
-    }
-    &::-webkit-scrollbar-track {
-      background: #1e1e24;
-    }
-    &::-webkit-scrollbar-thumb {
-      background: #22bed3;
-    }
-    .App {
-      width: 100%;
-      height: 100%;
-    }
-
-    .navbar {
-      position: fixed;
-      width: 8rem;
-      height: 100vh;
-      color: $text-primary;
-      background-color: $bg-primary;
-      transition: $speed;
-      overflow: none;
-      &:hover {
-        width: 20rem;
-        transition: $speed;
-        .link-text {
-          display: block;
-          
-        }
-      }
-      .link-text {
-        display: none;
-        font-size: 1.6rem;
-        margin-left: 1rem;
-      }
-      .navbar-nav {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        height: 100%;
-      }
-      .nav-item {
+    body {
         width: 100%;
-        &:last-child {
-          margin-top: auto;
+        height: 100%;
+        display: block;
+
+        &::-webkit-scrollbar {
+            width: 0.25rem;
         }
-        .nav-link {
-          display: flex;
-          align-items: center;
-          height: 8rem;
-          color: $text-primary;
-          text-decoration: none;
-          filter: grayscale(100%) opacity(0.7);
-          transition: $speed;
-          &:hover {
-            filter: grayscale(0%) opacity(1);
-            background: $bg-secondary;
-            color: $text-secondary;
-          }
-          .ea-star-icon {
-            width: 70px;
-            .ea-star {
-              color: $icon-primary;
-            }
-            .ea-shine {
-              color: $icon-secondary;
-            }
-          }
+
+        &::-webkit-scrollbar-track {
+            background: #1e1e24;
         }
-      }
+
+        &::-webkit-scrollbar-thumb {
+            background: #22bed3;
+        }
+
+        .App {
+            width: 100%;
+            height: 100%;
+        }
+
+        .navbar {
+            position: fixed;
+
+            width: 8rem;
+            height: 100vh;
+            color: $text-primary;
+            background-color: $bg-primary;
+            transition: $speed;
+            overflow: none;
+            @include phone-view() {
+                .ea-icon-logo {
+                    display: none;
+                }
+                .logo {
+                    display: none;
+                }
+            }
+            @include mid-view() {
+                &:hover {
+                    width: 20rem;
+                    transition: $speed;
+    
+                    .link-text {
+                        opacity: 1;
+                        transition: $speed;
+    
+                    }
+    
+                    .ea-icon-logo {
+                        transform: rotate(0deg);
+                        transition: $speed;
+                    }
+    
+                }
+            }
+
+
+
+            .link-text {
+                opacity: 0;
+                transition: $speed;
+                font-size: 1.6rem;
+                margin-left: 1rem;
+            }
+
+            .ea-icon-logo {
+                min-width: 5rem;
+                margin: 0 2rem;
+                transform: rotate(180deg);
+                transition: $speed;
+            }
+
+            .navbar-nav {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                height: 100%;
+
+
+                .nav-item {
+                    width: 100%;
+
+                    &:last-child {
+                        margin-top: auto;
+
+                    }
+
+                    .nav-link {
+                        display: flex;
+                        align-items: center;
+                        height: 8rem;
+                        color: $text-primary;
+                        text-decoration: none;
+                        filter: grayscale(100%) opacity(0.7);
+                        transition: $speed;
+
+                        &:hover {
+                            filter: grayscale(0%) opacity(1);
+                            background: $bg-secondary;
+                            color: $text-secondary;
+                        }
+
+                        .logo {
+                            font-weight: bold;
+                            text-transform: uppercase;
+                            text-align: center;
+                            color: $text-primary;
+                            background: $bg-secondary;
+                            font-size: 2.2rem;
+                            letter-spacing: 0.3ch;
+                            width: 100%;
+                        }
+                        .logo-text {
+                            display: inline;
+                            position: absolute;
+                            left: -999px;
+                        }
+
+
+                        .ea-base-logo {
+                            color: $logo-primary
+                        }
+
+                        .ea-shine-logo {
+                            color: $logo-secondary
+                        }
+
+
+                        .ea-icon {
+                            min-width: 4rem;
+                            margin: 0 2rem;
+
+                            .ea-base {
+                                color: $icon-primary;
+                            }
+
+                            .ea-shine {
+                                color: $icon-secondary;
+                            }
+                        }
+                    }
+                }
+
+                //end nav-item
+            }
+
+            //end navbar-nav
+        }
+
+        //end of navbar
     }
 
     main {
-      font-size: 1.8rem;
-      margin-left: 8rem;
+        font-size: 1.8rem;
+        margin-top: 0;
+        margin-left: 8rem;
+
+        h1 {
+            margin-top: 0;
+        }
     }
 
     footer {
-      margin-top: auto;
-      font-size: 1.6rem;
-      color: $white;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        font-size: 1.6rem;
+        color: $white;
+
+        p {
+            padding-right: 1rem;
+        }
     }
-  }
 }
