@@ -1,0 +1,11 @@
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.6rem;
+    color: $white;
+
+    p {
+        padding-right: 1rem;
+    }
+}

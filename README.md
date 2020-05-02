@@ -15,7 +15,7 @@ Using React, HTML, SCSS, and JavaScript
 ## To DO
 
 [x] make navbar
-[ ] make main page 
+[ ] make main Splash page 
 [ ] Skills page
 [ ] projexts page -use card navigation
 [ ] SCSS style page
@@ -31,9 +31,22 @@ Using React, HTML, SCSS, and JavaScript
 [x] Make reactive
 [x] hide logo in mobile
 [x] Left side for desktop bottom for mobile
-[ ] Split up scss file by component
+
 
 ### Project page
+-- showcase language learned outside Lambda
+    -Javascript
+        -pong
+        -racing-game
+    -Godot
+        -2d dogeball demo
+        -3d demolition derby
+    -arduino
+        -skullexia
+-- showcase lambda sprints
+        https://sprint-challenge-react-rick-and-morty.elijah-atkins.now.sh/
+        https://sprint-challenge-applied-javascript-seven.now.sh/
+        https://sprint-challenge-advanced-css-flax.now.sh/
 
 [ ] create projectData.js to hold array with project info
 [ ] populate page with cards that contain links to github and the deployed projects
@@ -42,20 +55,31 @@ Using React, HTML, SCSS, and JavaScript
 
 ### Skills page
 
+-- showcase specific projects to show abilities
+-- digital and real
+-- Front End Web Development
+    -nasa photo of the day
+    
+-- Graphic Design 
 
+-- Multimedia Production
+    -paintings 
+    -animation
+    -props 
 
+-- Scuptures
 
+### Splash/Main page
 
-
-
-
-
+-- short bio
+-- profile page
+-- spotlight project
 
 
 
 ### stretch
 
 [ ] make projects searcable
-
+[x] Split up scss file by component
 
 
