@@ -8,14 +8,14 @@ Using React, HTML, SCSS, and JavaScript
 [x] Install a blank React app by running npx create-react-app <app-name> --use-npm.
 [x] Install SCSS by running npm i node-sass
 [x] Install react-router-dom by running npm i react-router-dom
-[s] install svgo for svg optimization $ [sudo] npm i svgo
+[x] install svgo for svg optimization $ [sudo] npm i svgo
 [x] Remove un-needed template files
 
 --
 ## To DO
 
-[ ] make navbar
-[ ] make header 
+[x] make navbar
+[ ] make main page 
 [ ] Skills page
 [ ] projexts page -use card navigation
 [ ] SCSS style page
@@ -28,9 +28,10 @@ Using React, HTML, SCSS, and JavaScript
 
 ### Navbar
 
-[ ] Make reactive
-[ ] hide logo in mobile
-[ ] Left side for desktop bottom for mobile
+[x] Make reactive
+[x] hide logo in mobile
+[x] Left side for desktop bottom for mobile
+[ ] Split up scss file by component
 
 ### Project page
 
@@ -39,6 +40,7 @@ Using React, HTML, SCSS, and JavaScript
 [ ] populate with content
 [ ] use react-router-dom to update nav url
 
+### Skills page
 
 
 
