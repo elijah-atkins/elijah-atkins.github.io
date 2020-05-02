@@ -2,7 +2,8 @@ import React from 'react'
 
 const Main = () => {
     return(<main>
-    <h1>CSS is Cool</h1>
+    <h1>Elijah Atkins</h1>
+    
 
     <p>
       I'm baby kale chips affogato ennui lumbersexual, williamsburg paleo quinoa

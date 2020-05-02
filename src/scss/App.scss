@@ -69,12 +69,18 @@ html {
             transition: $speed;
             overflow: none;
             @include phone-view() {
+
+                bottom: 0;
+                width: 100vw;
+                height: 6rem;
+
                 .ea-icon-logo {
                     display: none;
                 }
                 .logo {
                     display: none;
                 }
+
             }
             @include mid-view() {
                 &:hover {
@@ -86,7 +92,13 @@ html {
                         transition: $speed;
     
                     }
-    
+                    .logo-text {
+                        left: 20px;
+                        transition: $speed;
+                    }
+                    .ea-icon-logo {
+                        margin-left: 14rem;
+                    }
                     .ea-icon-logo {
                         transform: rotate(0deg);
                         transition: $speed;
@@ -102,6 +114,22 @@ html {
                 transition: $speed;
                 font-size: 1.6rem;
                 margin-left: 1rem;
+            }
+            .logo-text {
+                display: inline;
+                position: absolute;
+                left: -999px;
+            }
+
+            .logo-text h1{
+                font-weight: bold;
+                text-transform: uppercase;
+                text-align: center;
+                color: $text-primary;
+                background: $bg-secondary;
+                font-size: 2.2rem;
+                letter-spacing: 0.3ch;
+                width: 100%;
             }
 
             .ea-icon-logo {
@@ -144,21 +172,8 @@ html {
                             color: $text-secondary;
                         }
 
-                        .logo {
-                            font-weight: bold;
-                            text-transform: uppercase;
-                            text-align: center;
-                            color: $text-primary;
-                            background: $bg-secondary;
-                            font-size: 2.2rem;
-                            letter-spacing: 0.3ch;
-                            width: 100%;
-                        }
-                        .logo-text {
-                            display: inline;
-                            position: absolute;
-                            left: -999px;
-                        }
+
+
 
 
                         .ea-base-logo {
