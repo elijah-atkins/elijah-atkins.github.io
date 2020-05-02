@@ -44,6 +44,7 @@ html {
 
         &::-webkit-scrollbar {
             width: 0.25rem;
+            height: 0.25rem;
         }
 
         &::-webkit-scrollbar-track {
@@ -65,7 +66,11 @@ html {
             width: 8rem;
             height: 100vh;
             color: $text-primary;
-            background-color: $bg-primary;
+            background-image: radial-gradient(ellipse at 25% 60%,
+            rgba($white, 0.1),
+            transparent),
+        radial-gradient(ellipse at 60% 50%, rgba($white, 0.01), transparent),
+        linear-gradient($bg-primary, darken($bg-primary, 5%));
             transition: $speed;
             overflow: none;
             @include phone-view() {
@@ -108,13 +113,18 @@ html {
                 }
             }
 
-
-
             .link-text {
                 opacity: 0;
                 transition: $speed;
                 font-size: 1.6rem;
                 margin-left: 1rem;
+            }
+            .logo {
+                display: block;
+                background-color: $bg-secondary;
+                @include phone-view(){
+                    display: none;
+                }
             }
             .logo-text {
                 display: inline;
@@ -151,7 +161,7 @@ html {
                 
                 @include phone-view(){
                     flex-direction: row;
-                    justify-content: space-around;
+                    justify-content: space-evenly;
                     
                 }
                 
@@ -178,13 +188,24 @@ html {
 
                         &:hover {
                             filter: grayscale(0%) opacity(1);
-                            background: $bg-secondary;
+                            background: rgba($bg-secondary, .5);
                             color: $text-secondary;
                         }
+                        @include phone-view(){
+                            .link-text {
+                                font-size: 2rem;
+                                opacity: 0;
+                                transition: $speed;
+                            }
+                            &:hover{
 
-
-
-
+                                .link-text{
+                                margin-left: -8rem;
+                                opacity: 1;
+                                transition: $speed;
+                                }
+                            }
+                        }
 
                         .ea-base-logo {
                             color: $logo-primary
@@ -201,7 +222,7 @@ html {
 
                             @include phone-view(){
                                 min-width: 6rem;
-                                margin: 0 2rem;
+                                margin-left: 1rem;
                             }
 
                             .ea-base {

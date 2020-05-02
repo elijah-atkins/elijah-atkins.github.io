@@ -4,8 +4,8 @@ const Navbar = () => {
   return (
     <div className="navbar">
       <ul className="navbar-nav">
-        <li class="nav-item">
-          <a href="#" className="nav-link">
+        <li class="nav-item logo">
+          <a href="#" className="nav-link logo">
             <span class="logo-text logo"><h1>Elijah <br></br>Atkins</h1></span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
