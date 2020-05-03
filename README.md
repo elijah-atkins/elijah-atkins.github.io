@@ -66,6 +66,7 @@ Using React, HTML, SCSS, and JavaScript
     -paintings 
     -animation
     -props 
+    -puppets
 
 -- Scuptures
 
