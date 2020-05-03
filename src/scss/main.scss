@@ -1,7 +1,8 @@
+
 main {
     font-size: 1.8rem;
-    margin-top: 0;
-    margin-left: 8rem;
+    margin: 0 3rem 0 11rem;
+
 
     @include phone-view() {
         margin: 1rem;
