@@ -2,6 +2,7 @@ import React from 'react'
 
 const Main = () => {
     return(<main>
+      <div className="splash">
     <h1>Elijah Atkins</h1>
     
 
@@ -102,6 +103,7 @@ const Main = () => {
       street art normcore, edison bulb farm-to-table pour-over taxidermy
       brooklyn.
     </p>
+    </div>
   </main>)
 }
 
