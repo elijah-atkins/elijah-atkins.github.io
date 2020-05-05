@@ -1,6 +1,8 @@
 const projects = [
     {
         id: "20200402",
+        star: true,
+        sprint: false,
         title: "NASA Astronomy Picture of the Day",
         url: "https://nasa-photo-of-the-day.elijah-atkins.now.sh/",
         git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
@@ -8,6 +10,8 @@ const projects = [
     },
     {
         id: "20200410",
+        star: false,
+        sprint: true,
         title: "Rick and Morty Characters",
         url: "https://sprint-challenge-react-rick-and-morty.now.sh/",
         git: "https://github.com/elijah-atkins/Sprint-Challenge-React-Wars",
