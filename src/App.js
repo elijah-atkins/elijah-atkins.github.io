@@ -1,21 +1,23 @@
 import React from "react";
 import { Route, Switch } from "react-router-dom";
 import "./scss/index.scss";
-
+import "./components/data/projects";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Main from "./components/Main";
 import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
+import projects from "./components/data/projects";
 
 function App() {
+
   return (
     <div className="App">
       <Navbar />
       <Switch>
         <Route path="/projects">
-          <Projects />
+          <Projects projects={projects}/>
         </Route>
         <Route path="/skills">
           <Skills />
