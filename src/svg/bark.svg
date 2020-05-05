@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="100mm" height="100mm" viewBox="0 0 100 100">
+   <defs>
+      <filter id="prefix__a" color-interpolation-filters="sRGB">
+         <feTurbulence seed="10" baseFrequency="0.12 0.02" numOctaves="10" type="fractalNoise"/>
+         <feColorMatrix values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 0.7 0" result="result5"/>
+         <feComposite in2="result5" operator="out" in="SourceGraphic"/>
+         <feMorphology result="result3" radius="1.3" operator="dilate"/>
+         <feTurbulence seed="25" baseFrequency="0.08 0.05" numOctaves="8" result="result91"/>
+         <feDisplacementMap result="result4" scale="5" yChannelSelector="G" xChannelSelector="R" in="result3" in2="result91"/>
+         <feSpecularLighting specularExponent="35" surfaceScale="2" lighting-color="#FFF" result="result1" in="result4">
+            <feDistantLight azimuth="235" elevation="75"/>
+         </feSpecularLighting>
+         <feComposite operator="in" result="result2" in="result1" in2="result4"/>
+         <feComposite k3="1" k2="1" operator="arithmetic" result="result4" in="result4" in2="result2"/>
+         <feBlend mode="multiply" in2="result4"/>
+      </filter>
+   </defs>
+   <path d="M45.319 53.17c4.474-6.978 72.193-8.16 77.92-2.625 5.729 5.535 21.057 72.919 15.341 78.749-5.715 5.83-72.227 9.525-77.92 3.867-5.693-5.657-19.815-73.012-15.341-79.99z" transform="matrix(.83876 0 0 .89971 -27.289 -32.338)" fill="#7e4b25" filter="url(#prefix__a)"/>
+</svg>
