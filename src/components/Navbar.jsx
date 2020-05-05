@@ -1,11 +1,12 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   return (
     <div className="navbar">
       <ul className="navbar-nav">
         <li class="nav-item logo">
-          <a href="#" className="nav-link logo">
+          <Link to="/" className="nav-link logo">
             <span class="logo-text logo"><h1>Elijah <br></br>Atkins</h1></span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -23,10 +24,10 @@ const Navbar = () => {
                 class="ea-shine-logo"
               />
             </svg>
-          </a>
+          </Link>
         </li>
         <li class="nav-item">
-          <a href="#" className="nav-link">
+          <Link to="/projects" className="nav-link">
             <svg
               class="ea-icon"
               viewBox="0 0 21 21"
@@ -62,10 +63,10 @@ const Navbar = () => {
               </g>
             </svg>
             <span class="link-text">Projects</span>
-          </a>
+          </Link>
         </li>
         <li class="nav-item">
-          <a href="#" className="nav-link">
+          <Link to="/skills" className="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 21 21"
@@ -98,10 +99,10 @@ const Navbar = () => {
               />
             </svg>
             <span class="link-text">Skills</span>
-          </a>
+          </Link>
         </li>
         <li class="nav-item">
-          <a href="#" className="nav-link">
+          <Link to="/contact" className="nav-link">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 21 21"
@@ -138,7 +139,7 @@ const Navbar = () => {
             </svg>
 
             <span class="link-text">Contact</span>
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

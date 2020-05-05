@@ -1,0 +1,25 @@
+
+.project-card {
+    padding: 3rem;
+}
+.project-item {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    grid-gap: 1rem;
+}
+.header {
+    margin: 1rem 0 0 8rem;
+    font-size: 5rem;
+}
+.project-img {
+    padding: 2rem;
+    min-width: 8rem;
+    min-height: 8rem;
+    background-image: linear-gradient(rgba(133, 18, 18, 0.288), rgba(0, 77, 150, 0.411));
+    border-radius: 3rem;
+}
+.project a{
+    text-decoration: none;
+    color: $white;
+}
