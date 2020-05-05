@@ -1,7 +1,7 @@
 import React from 'react'
 
 const Main = () => {
-    return(<main>
+    return(<div className="main">
       <div className="splash">
     <h1>Elijah Atkins</h1>
     
@@ -104,7 +104,7 @@ const Main = () => {
       brooklyn.
     </p>
     </div>
-  </main>)
+  </div>)
 }
 
 export default Main;
