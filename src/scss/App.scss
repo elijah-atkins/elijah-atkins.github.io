@@ -1,0 +1,239 @@
+html {
+    font-size: 62.5%;
+    color: $text-secondary;
+    margin: 0;
+    padding: 0;
+    background-image: radial-gradient(ellipse at 35% 40%,
+            rgba($white, 0.1),
+            transparent),
+        radial-gradient(ellipse at 60% 50%, rgba($white, 0.1), transparent),
+        linear-gradient($bg-color, darken($bg-color, 40%));
+    background-attachment: fixed;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    &::-webkit-scrollbar {
+        width: 0.25rem;
+        height: 0.25rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background: #1e1e24;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #22bed3;
+    }
+}
+
+.App {
+    width: 100vw;
+    height: 100vh;
+    @include phone-view() {
+        margin-bottom: 1rem;
+
+    }
+}
+
+.navbar {
+    position: fixed;
+
+    width: 8rem;
+    height: 100vh;
+    color: $text-primary;
+    background-image: radial-gradient(ellipse at 25% 60%,
+            rgba($white, 0.1),
+            transparent),
+        radial-gradient(ellipse at 60% 50%, rgba($white, 0.01), transparent),
+        linear-gradient($bg-primary, darken($bg-primary, 5%));
+    transition: $speed;
+    overflow: none;
+
+    @include phone-view() {
+
+        bottom: 0;
+        width: 100vw;
+        height: 8rem;
+
+        .navbar-nav {
+            flex-direction: row;
+        }
+
+        .ea-icon-logo {
+            display: none;
+        }
+
+
+    }
+
+    @include mid-view() {
+        &:hover {
+            width: 20rem;
+            transition: $speed;
+
+            .link-text {
+                opacity: 1;
+                transition: $speed;
+
+            }
+
+            .logo-text {
+                left: 20px;
+                transition: $speed;
+            }
+
+            .ea-icon-logo {
+                margin-left: 14rem;
+            }
+
+            .ea-icon-logo {
+                transform: rotate(0deg);
+                transition: $speed;
+            }
+
+        }
+    }
+
+    .link-text {
+        opacity: 0;
+        transition: $speed;
+        font-size: 1.6rem;
+        margin-left: 1rem;
+    }
+
+    .logo {
+        display: block;
+        background-color: $bg-secondary;
+
+        @include phone-view() {
+            display: none;
+        }
+    }
+
+    .logo-text {
+        display: inline;
+        position: absolute;
+        left: -999px;
+    }
+
+    .logo-text h1 {
+        font-weight: bold;
+        text-transform: uppercase;
+        text-align: center;
+        color: $text-primary;
+        background: $bg-secondary;
+        font-size: 2.2rem;
+        letter-spacing: 0.3ch;
+        width: 100%;
+    }
+
+    .ea-icon-logo {
+        min-width: 5rem;
+        margin: 0 1.2rem;
+        transform: rotate(180deg);
+        transition: $speed;
+    }
+
+    .navbar-nav {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+
+        @include phone-view() {
+            flex-direction: row;
+            justify-content: space-evenly;
+
+        }
+
+
+
+        .nav-item {
+            width: 100%;
+
+            @include phone-view() {
+                width: 8rem;
+            }
+
+            &:last-child {
+                margin-top: auto;
+
+            }
+
+            .nav-link {
+                display: flex;
+                align-items: center;
+                height: 8rem;
+                color: $text-primary;
+                text-decoration: none;
+                filter: grayscale(100%) opacity(0.7);
+                transition: $speed;
+
+                &:hover {
+                    filter: grayscale(0%) opacity(1);
+                    background: rgba($bg-secondary, .5);
+                    color: $text-secondary;
+                }
+
+                @include phone-view() {
+                    .link-text {
+                        font-size: 2rem;
+                        opacity: 0;
+                        transition: $speed;
+                    }
+
+                    &:hover {
+
+                        .link-text {
+                            margin-left: -8rem;
+                            opacity: 1;
+                            transition: $speed;
+                        }
+                    }
+                }
+
+                .ea-base-logo {
+                    color: $logo-primary
+                }
+
+                .ea-shine-logo {
+                    color: $logo-secondary
+                }
+
+
+                .ea-icon {
+                    min-width: 4rem;
+                    margin: 0 2rem;
+
+                    @include phone-view() {
+                        min-width: 6rem;
+                        margin-left: 1rem;
+                    }
+
+                    .ea-base {
+                        color: $icon-primary;
+                    }
+
+                    .ea-shine {
+                        color: $icon-secondary;
+                    }
+                }
+            }
+        }
+
+        //end nav-item
+    }
+
+    //end navbar-nav
+}
+
+//end of navbar
+
+
