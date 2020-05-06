@@ -7,7 +7,7 @@ const ProjectCard = ({ project }) => {
   return (
     <div className="project-card">
       <div className="project-item">
-        <div className="project-img" style={{backgroundImage:`url(${project.img})`,backgroundSize:420, backgroundPositionX:-50,backgroundPositionY:-50}}>
+        <div className="project-img" style={{backgroundImage:`url(${project.img})`,backgroundSize:600, backgroundPositionX:-50,backgroundPositionY:-50}}>
           
         </div>
         <ul className="project">

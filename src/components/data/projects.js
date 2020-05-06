@@ -1,7 +1,7 @@
 const projects = [
     {
         id: "20200412",
-        img: "../img/nasa",
+        img: "https://elijah-atkins.github.io/img/nasa.png",
         star: true,
         sprint: false,
         title: "NASA Astronomy Picture of the Day",
@@ -11,7 +11,7 @@ const projects = [
     },
     {
         id: "20200316",
-        img: "http://elijahatkins.com//old-site/images/p-ball.png",
+        img: "https://elijah-atkins.github.io/img/paddle-ball.png",
         star: false,
         sprint: false, 
         title: "Paddle Ball",
@@ -21,7 +21,7 @@ const projects = [
     },
     {
     id: "20200317",
-    img: "",
+    img: "https://elijah-atkins.github.io/img/racing-game.png",
     star: false,
     sprint: false, 
     title: "Racing Game Demo",
@@ -31,7 +31,7 @@ const projects = [
 },
     {
         id: "20200415",
-        img: "",
+        img: "https://elijah-atkins.github.io/img/rick-and-morty.png",
         star: false,
         sprint: true,
         title: "Rick and Morty Characters",
