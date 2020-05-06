@@ -1,11 +1,13 @@
 import React from "react";
+import nasa from "../img/nasa.png"
+
 
 const ProjectCard = ({ project }) => {
-
+    console.log(project.img)
   return (
     <div className="project-card">
       <div className="project-item">
-        <div className="project-img">
+        <div className="project-img" style={{backgroundImage:`url(${project.img})`,backgroundSize:420, backgroundPositionX:-50,backgroundPositionY:-50}}>
           
         </div>
         <ul className="project">
