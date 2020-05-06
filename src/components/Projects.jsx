@@ -7,9 +7,11 @@ const Projects = ({ projects }) => {
     <div className="main">
       <div className="projects">
         <div className="header"><h1>Projects</h1></div>
+        <div className="project-grid">
         {projects.map(project => {
             return <ProjectCard project={project} key={project.id}/>
         })}
+        </div>
       </div>
     </div>
   );

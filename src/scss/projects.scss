@@ -6,6 +6,7 @@
     border-image: url(../svg/project-border-bg.svg) 15% stretch;
 }
 .project-item {
+
     background-color: #abc;
     display: grid;
     grid-template-columns: 2fr 4fr;
@@ -15,7 +16,7 @@
         grid-template-rows: 2fr 1fr;
     }
     h1 {
-        padding: 0 0 1xrem;
+        padding: 0 0 1rem;
         color: $black;
     }
     p {
@@ -24,7 +25,7 @@
 }
 .header {
 
-    margin: 1rem 0 0 8rem;
+    margin: 1rem 0 0 3rem;
     font-size: 5rem;
 }
 .project-img {

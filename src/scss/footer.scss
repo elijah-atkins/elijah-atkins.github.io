@@ -5,8 +5,11 @@ footer {
     justify-content: flex-end;
     font-size: 1.6rem;
     color: $white;
-
+    @include phone-view(){
+        justify-content: space-around;
+        padding-bottom: 10rem;
+    }
     p {
-        padding-right: 1rem;
+        padding-right: 3rem;
     }
 }
