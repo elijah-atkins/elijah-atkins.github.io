@@ -1,14 +1,29 @@
 
 .project-card {
-    padding: 3rem;
+
+    margin: 3rem;
+    border: 1.6rem solid transparent;
+    border-image: url(../svg/project-border-bg.svg) 15% stretch;
 }
 .project-item {
-    width: 100%;
+    background-color: #abc;
     display: grid;
     grid-template-columns: 2fr 4fr;
     grid-gap: 1rem;
+    @include phone-view(){
+        grid-template-columns: 1fr;
+        grid-template-rows: 2fr 1fr;
+    }
+    h1 {
+        padding: 0 0 1xrem;
+        color: $black;
+    }
+    p {
+        color: $black;
+    }
 }
 .header {
+
     margin: 1rem 0 0 8rem;
     font-size: 5rem;
 }
@@ -16,10 +31,13 @@
     padding: 2rem;
     min-width: 8rem;
     min-height: 8rem;
-    background-image: linear-gradient(rgba(133, 18, 18, 0.288), rgba(0, 77, 150, 0.411));
+    background-image: linear-gradient(rgba(133, 18, 18, 0.5), rgba(0, 77, 150, 0.5));
     border-radius: 3rem;
+    @include phone-view(){
+        height: 16rem;
+    }
 }
 .project a{
     text-decoration: none;
-    color: $white;
+    color: lighten($black, 20%);
 }
