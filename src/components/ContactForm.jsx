@@ -35,10 +35,9 @@ const ContactForm = () => {
 
     useEffect(() => {
         formSchema.isValid(message).then(valid => {
-            console.log("valid?", valid);
             setIsButtonDisabled(!valid);
         });
-    }, [message]);
+    }, [message, formSchema]);
 
     const handleSubmit = (e) => {
         e.preventDefault();

@@ -3,7 +3,7 @@ import web from '../svg/globe-solid.svg';
 import git from '../svg/github-brands.svg';
 
 const ProjectCard = ({ project }) => {
-    console.log(project.img)
+   // console.log(project.img)
   return (
     <div className="project-card">
       <div className="project-item">
