@@ -9,12 +9,12 @@
 .project-item {
 
     background-color: #abc;
-    display: grid;
-    grid-template-columns: 2fr 4fr;
-    grid-gap: 1rem;
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+    padding: .5rem;
     @include phone-view(){
-        grid-template-columns: 1fr;
-        grid-template-rows: 2fr 1fr;
+        flex-direction: column;
     }
     h1 {
         padding: 0 0 1rem;
@@ -28,9 +28,12 @@
 
     margin: 1rem 0 0 3rem;
     font-size: 5rem;
+    color: $white;
 }
 .project-img {
+    background-color: #abc;
     padding: 2rem;
+    margin: 1rem;
     min-width: 8rem;
     min-height: 8rem;
     background-position-x:-40px;
@@ -42,9 +45,9 @@
 
     &:hover{
         transition: 3s;
-        background-position-x:-60px;
+        background-position-x:-10px;
         background-position-y:-60px;
-        background-size: 550px;
+        background-size: 480px;
     }
 
     @include phone-view(){
@@ -53,7 +56,34 @@
 
     }
 }
-.project a{
+.project-icons {
+    height: 5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    @include phone-view(){
+        justify-content: space-between;
+    }
+    img {
+        width: 4rem;
+        padding-right: 0rem;
+
+    }
+}
+.project {
+    margin: 1rem;
+
+a{
     text-decoration: none;
     color: lighten($black, 20%);
+}
+p{
+    padding-top: 1rem;
+    max-width: 60rem;
+    line-height: 2.3rem;
+    @include phone-view(){
+        width: 30rem;
+    }
+}
 }

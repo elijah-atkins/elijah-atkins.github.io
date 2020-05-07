@@ -1,4 +1,6 @@
 import React from "react";
+import web from '../svg/globe-solid.svg';
+import git from '../svg/github-brands.svg';
 
 const ProjectCard = ({ project }) => {
     console.log(project.img)
@@ -12,12 +14,15 @@ const ProjectCard = ({ project }) => {
         <li>
         <h1 className="title">{project.title}</h1>
         </li>
+
         <li>
-        <a href={project.url}>Deployed site</a>
+        <div className='project-icons'>
+        <a href={project.url}><img src={web} alt="Deployed Site"></img></a>
+
+        <a href={project.git}><img src={git} alt="Github Source"></img></a>
+        </div>
         </li>
-        <li>
-        <a href={project.git}>Github Source</a>
-        </li>
+
         <li>
         <p>{project.description}</p>
         </li>

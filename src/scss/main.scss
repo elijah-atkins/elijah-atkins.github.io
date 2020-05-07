@@ -16,6 +16,7 @@
         flex-direction: row-reverse;
         align-items: center;
         justify-content: space-around;
+        font-family: $josefin-sans;
         width: 100%;
         margin: 2rem;
         padding: 5rem;
@@ -25,7 +26,8 @@
         border-radius: 5rem;
         min-width: 60vw;
         box-shadow: 7px 10px 23px -6px rgba(0,0,0,0.75);
-        @include phone-view{
+        @include mid-width{
+            justify-content: flex-start;
             flex-direction: column-reverse;
         }
         .logo-text {
@@ -39,22 +41,48 @@
 
         }
         h1 {
-            padding: 3.2rem;
+            padding: 4rem 0 0 3rem;
             font-size: 3.8rem;
+
             color: #abc;
         }
         h2 {
+            padding-left: 2rem;
             padding-top: 2rem;
             color: #234;
         }
-        .profile {
+        .profile-picture{
             margin: 3rem;
-            border-radius: 3rem;
-            border: 10px #ddd solid;
+            border: 2rem solid transparent;
+            border-image: url(../svg/border-profile.svg) 15% stretch;
+        }
+        .profile {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-end;
+            .profile-pic{
+                transition: 10s;
+                filter: grayscale(100%);
+                &:hover {
+                    transition: 3s;
+                    filter: grayscale(30%);
+                }
             min-width: 18rem;
-            height: 20rem;
+            height: 22rem;
+            @include mid-width() {
+
+                height: 25rem;
+
+            }
+            }
+
             background-image: radial-gradient(ellipse at top, rgba($black, .45), transparent),
             linear-gradient(transparent, rgba($black, .4));
+            &:hover {
+
+                background-image: radial-gradient(ellipse at top, rgba(lighten(purple, 10%), .6), transparent),
+                linear-gradient(transparent, rgba(lighten($black, 10%), .5));
+            }
         }
     }
 }

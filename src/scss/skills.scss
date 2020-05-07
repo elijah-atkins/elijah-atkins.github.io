@@ -1,0 +1,18 @@
+.skills {
+    padding: 1rem 1rem 0 3rem;
+    width: 85vw;
+    h1 {
+    font-size: 5rem;
+    color: $white;
+    }
+    .skill-container {
+        border: 3rem solid #abc;
+
+        border-image: url(../svg/border-light.svg) 25% stretch;
+    }
+    .skill-content {
+        color: $black;
+        padding: 1rem;
+        background-color: #abc;
+    }
+}
