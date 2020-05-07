@@ -41,8 +41,25 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        console.log("message submitted", message);
-        setMessage(blankForm);
+        console.log(JSON.stringify(message))
+        fetch('http://localhost:3002/send',{
+            method: "POST",
+            body: JSON.stringify(message),
+            headers: {
+              'Accept': 'application/json',
+              'Content-Type': 'application/json'
+            },
+          }).then(
+            (response) => (response.json())
+           ).then((response)=>{
+          if (response.status === 'success'){
+            alert("Message Sent."); 
+            setMessage(blankForm);
+          }else if(response.status === 'fail'){
+            alert("Message failed to send.")
+          }
+        })
+        
     };
 
     const inputChange = (e) => {

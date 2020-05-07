@@ -49,7 +49,7 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
     "Content-Type: text/html; charset=iso-8859-1\r\n";
 
     $to = 'elijahorama@gmail.com';
-    $subject = 'Contacting you';
+    $subject = 'ElijahAtkins.com contact form';
     
     if (mail($to, $subject, $emailBody, $headers)) {
       $sent = true;	
@@ -74,3 +74,19 @@ if ($_SERVER['REQUEST_METHOD'] === "POST") {
   "message": "Your data was successfully submitted"
 }
   <?php endif; ?>
+
+  <?php
+  $email_subject = "Submission was successful";
+  $email_message = "Form details\n\n";
+  $email_message .= "Name: ".$name."\n\n";
+  $email_message .= "Email: ".$email."\n\n";
+  $email_message .= "Message: ".$message."\n\n";
+
+  // create email headers
+
+  $headers = 'From: '.$to."\r\n".
+  'Reply-To: '.$to."\r\n" .
+  "MIME-Version: 1.0\r\n" .
+  "Content-Type: text/plain; charset=iso-8859-1\r\n";
+
+  mail($email, $email_subject, $email_message, $headers);
