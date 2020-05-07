@@ -15,15 +15,15 @@ Using React, HTML, SCSS, and JavaScript
 ## To DO
 
 [x] make navbar
-[ ] make main Splash page 
+[x] make main Splash page 
 [ ] Skills page
-[ ] projexts page -use card navigation
-[ ] SCSS style page
-[ ] use react-router-dom to control navbar
-[ ] add profile picture
+[x] projexts page -use card navigation
+[x] SCSS style page
+[x] use react-router-dom to control navbar
+[x] add profile picture
 [ ] add resume 
 [ ] intergrate linkdin
-[ ] intergrate github
+[x] intergrate github
 [x] footer -year updates automatically
 
 ### Navbar
