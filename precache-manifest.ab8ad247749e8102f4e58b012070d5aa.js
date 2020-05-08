@@ -1,31 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "655b57ebd6fcb5f9501283ff2d13ad0e",
+    "revision": "bd492378a0f95e63d319caec3e368aec",
     "url": "/index.html"
   },
   {
-    "revision": "e2b86971d3ed3bbd88d9",
-    "url": "/static/css/main.f3ade949.chunk.css"
+    "revision": "5e5113ffbcc62f869934",
+    "url": "/static/css/main.24630060.chunk.css"
   },
   {
-    "revision": "3f187b797612409edb4a",
-    "url": "/static/js/2.41a3874c.chunk.js"
+    "revision": "4a79086d051e8a626964",
+    "url": "/static/js/2.c84c84c2.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.41a3874c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.c84c84c2.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e2b86971d3ed3bbd88d9",
-    "url": "/static/js/main.8f96e9bc.chunk.js"
+    "revision": "5e5113ffbcc62f869934",
+    "url": "/static/js/main.c12436f3.chunk.js"
   },
   {
     "revision": "c83fbc31de594828f83a",
     "url": "/static/js/runtime-main.5307c677.js"
-  },
-  {
-    "revision": "aea1072f475a28507e70b27a660f5e67",
-    "url": "/static/media/border-inner.aea1072f.svg"
   },
   {
     "revision": "f46a75cebb1d174e1ff4fbf9da42dd48",
@@ -48,11 +44,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/globe-solid.5577a3e1.svg"
   },
   {
+    "revision": "fb0d969ed1c37fb0c6b0e14d517dd003",
+    "url": "/static/media/instagram-brands.fb0d969e.svg"
+  },
+  {
+    "revision": "f6dec0c844e64fb9ff07b607e673ff6b",
+    "url": "/static/media/linkedin-brands.f6dec0c8.svg"
+  },
+  {
     "revision": "c5e791e9e7d83afe3e4ffdf08a438105",
     "url": "/static/media/logo-backing.c5e791e9.svg"
   },
   {
     "revision": "8451745246e29b1ceee17f6341fd0b00",
     "url": "/static/media/project-border-bg.84517452.svg"
+  },
+  {
+    "revision": "2550b2c0a10a810c2df7786d67453d60",
+    "url": "/static/media/twitter-brands.2550b2c0.svg"
   }
 ]);
