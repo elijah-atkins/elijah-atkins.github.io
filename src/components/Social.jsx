@@ -11,16 +11,16 @@ const Social = () => {
             <h2>Follow me on Social Media</h2>
             <ul>
                 <li>
-                    <img src={git} alt="github"></img>
+                    <a href="https://github.com/elijah-atkins/"><img src={git} alt="github"></img></a>
                 </li>
                 <li>
-                <img src={linkd} alt="linkedin"></img>
+                 <a href="https://www.linkedin.com/in/elijah-atkins-8436741a6/"><img src={linkd} alt="linkedin"></img></a>
                 </li>
                 <li>
-                <img src={twit} alt="twitter"></img>
+                <a href="https://twitter.com/elijahatkins"><img src={twit} alt="twitter"></img></a>
                 </li>
                 <li>
-                <img src={insta} alt="instagram"></img>
+                <a href="https://www.instagram.com/elijahatkins/"><img src={insta} alt="instagram"></img></a>
                 </li>
             </ul>
             </div>

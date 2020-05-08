@@ -2,33 +2,54 @@
 .main {
     font-size: 1.8rem;
     margin-top: 0;
-    margin-left: 8rem;
+
+
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
 
     @include phone-view() {
-        margin: 1rem;
+   
+        
+    }
+    .logo-header{
+        margin: 0 auto;
 
     }
+
+    .splash-border{
+        border: 1rem solid transparent;
+        margin-top: 2rem;
+        margin-left: 8rem;
+        width: 80%;
+        border-image: url(../svg/border-light.svg) 5% stretch;
+        box-shadow: 7px 10px 23px -6px rgba(0,0,0,0.75);
+        @include phone-view(){
+            width: 85%;
+            margin: 0;
+        }
+    }
     .splash {
-        display: flex;
-        flex-direction: row-reverse;
+        display: grid;
+
+
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2fr;
         align-items: center;
-        justify-content: space-around;
-        font-family: $josefin-sans;
-        width: 100%;
-        margin: 2rem;
-        padding: 5rem;
-        border: 2rem solid transparent;
-        border-image: url(../svg/border-light.svg) 15% stretch;
         background-color: #abc;
+        font-family: $josefin-sans;
+
+
+        padding: 5rem;
+
+
 
         min-width: 60vw;
-        box-shadow: 7px 10px 23px -6px rgba(0,0,0,0.75);
+
         @include mid-width{
-            justify-content: flex-start;
-            flex-direction: column-reverse;
+            grid-template-columns: 2fr;
+            grid-template-rows: 1fr 2fr;
+            justify-content: center;
         }
         .logo-text {
             z-index: 0;
@@ -37,6 +58,10 @@
             height: 10rem;
             background-image: url(../svg/logo-backing.svg);
             background-size: cover;
+            @include phone-view() {
+                width: 34rem;
+                height: 12rem;
+            }
 
 
         }
@@ -45,11 +70,18 @@
             font-size: 3.8rem;
 
             color: #abc;
+            @include phone-view(){
+                padding: 4.5rem 0 0 4rem;
+                font-size: 4.5rem;
+            }
         }
         h2 {
             padding-left: 2rem;
             padding-top: 2rem;
             color: #234;
+            @include phone-view() {
+                padding-left: 5rem;
+            }
         }
         .profile-picture{
             margin: 3rem;
@@ -61,7 +93,7 @@
             justify-content: space-around;
             align-items: flex-end;
             .profile-pic{
-                transition: 10s;
+                transition: 5s;
                 filter: grayscale(100%);
                 &:hover {
                     transition: 3s;

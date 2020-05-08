@@ -3,6 +3,7 @@ import elijah from '../img/elijah-atkins.png'
 
 const Main = () => {
     return(<div className="main">
+    <div className="splash-border">
       <div className="splash">
       <div className="logo-header">
       <div className="logo-text"><h1>Elijah Atkins</h1></div>
@@ -15,7 +16,7 @@ const Main = () => {
 </div>
     
     </div>
-  </div>)
+  </div></div>)
 }
 
 export default Main;

@@ -1,9 +1,9 @@
 
 .project-card {
     margin: 1rem;
-    border: 2rem solid transparent;
-    border-image: url(../svg/project-border-bg.svg) 35% stretch;
-    box-shadow: 3px 4px 12px 6px $black;
+    border: .8rem solid transparent;
+    border-image: url(../svg/project-border-bg.svg) 5% stretch;
+
 
 }
 .header {
@@ -49,8 +49,8 @@
     background-position-y:-80px;
     background-size: 800px;
     transition: 3s;
-    border: 1rem solid transparent;
-    border-image: url(../svg/border-inner.svg) 25% stretch;
+    border: 2rem solid transparent;
+    border-radius: 12px 7% 1rem 8%;
 
     &:hover{
         transition: 3s;
