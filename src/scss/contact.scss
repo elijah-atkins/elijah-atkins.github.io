@@ -1,4 +1,9 @@
 .contact {
+    h1{
+        font-size: 3rem;
+        margin: 0 0 2rem;
+    }
+    height: 100%;
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -7,6 +12,11 @@
     }
     .error {
         color: $red;
+        padding: 1.2rem 0 1.2rem 0;
+    }
+    label {
+        font-size: 2.5rem;
+
     }
     .social {
         background-color: #abc;
@@ -27,3 +37,37 @@
         }
     }
 }
+
+.form-control {
+    display: block;
+    width: 95%;
+    height: calc(1.5em + .75rem + 2px);
+    margin: 1rem 0;
+    padding: .375rem .75rem;
+    font-size: 2rem;
+    font-weight: 400;
+    line-height: 2;
+    color: #495057;
+    background-color: #eee;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+    .form-control-tall {
+        display: block;
+        width: 95%;
+        margin: 1rem 0;
+        height: calc(5em + 2rem + 2px);
+        padding: .375rem .75rem;
+        font-size: 2rem;
+        font-weight: 400;
+        line-height: 2;
+        color: #495057;
+        background-color: #eee;
+        background-clip: padding-box;
+        border: 1px solid #ced4da;
+        border-radius: .25rem;
+        transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    }
+

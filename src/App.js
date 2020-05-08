@@ -9,6 +9,7 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import projects from "./components/data/projects";
+import About from "./components/About";
 
 function App() {
 
@@ -24,6 +25,9 @@ function App() {
         </Route>
         <Route path="/contact">
           <Contact />
+        </Route>
+        <Route path="/about">
+          <About />
         </Route>
         <Route path="/">
           <Main />

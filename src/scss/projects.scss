@@ -1,10 +1,19 @@
 
 .project-card {
-
-    margin: 3rem;
-    border: 1.6rem solid transparent;
-    border-image: url(../svg/project-border-bg.svg) 15% stretch;
+    margin: 1rem;
+    border: 2rem solid transparent;
+    border-image: url(../svg/project-border-bg.svg) 35% stretch;
     box-shadow: 3px 4px 12px 6px $black;
+
+}
+.header {
+    font-size: 5rem;
+    color: $white;
+    padding: 1rem 0 2rem 0rem;
+    
+    @include phone-view(){
+        padding: 1rem 0 2rem 1rem;
+    }
 }
 .project-item {
 

@@ -12,9 +12,9 @@ const ContactForm = () => {
     const [isButtonDisabled, setIsButtonDisabled] = useState(true);
 
     const formSchema = yup.object().shape({
-        name: yup.string().required("Name is a required field"),
-        email: yup.string().email("must be a valid email address").required(),
-        message: yup.string().required("Please enter a message"),
+        name: yup.string().required("name is a required field"),
+        email: yup.string().email("must be a valid email address").required("email is a required field"),
+        message: yup.string().required("please enter a message"),
     });
 
     // inline validation, validating one key/value pair
@@ -73,7 +73,7 @@ const ContactForm = () => {
 return (
     <div className="project-card">
         <div className="social">
-            <h1>Contact</h1>
+            <h1>Contact ---Under Construction--</h1>
             <form
                 id="contact-form"
                 onSubmit={handleSubmit.bind(this)}
@@ -111,7 +111,7 @@ return (
                         name="message"
                         onChange={inputChange}
                         value={message.message}
-                        className="form-control"
+                        className="form-control-tall"
                         rows="5"
                     ></textarea>
                     {errors.message.length > 0 ? <p className="error">{errors.message}</p> : null}

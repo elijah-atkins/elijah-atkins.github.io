@@ -1,11 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const year = new Date().getFullYear();
 
 const Footer = () => {
     return (
     <footer className="footer">
-        <p>Copyright Elijah Atkins {year}</p>
+        <p>Copyright <Link to="/about">Elijah Atkins</Link> {year}</p>
     </footer>
     )
 }

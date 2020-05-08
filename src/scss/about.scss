@@ -1,0 +1,29 @@
+.about-card {
+    margin-left: 12rem;
+    width: 75vw;
+    border: 2rem solid transparent;
+    border-image: url(../svg/border-profile.svg) 15% stretch;
+    @include phone-view(){
+        margin-left: 5vw;
+        margin-top: 2rem;
+        width: 82vw;
+    }
+    h2 {
+        font-size: 3rem;
+    }
+}
+.about-content {
+    padding: 1.6rem;
+    font-size: 2rem;
+    line-height: 1.8; 
+    background-color: #abc;
+    color: $black;
+    a {
+        text-decoration: none;
+        color: lighten($color: $black, $amount: 10);
+        &:hover {
+            color: lighten($color: $black, $amount: 40);
+        }
+
+    }
+}

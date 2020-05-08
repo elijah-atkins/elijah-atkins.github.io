@@ -1,18 +1,78 @@
 .skills {
-    padding: 1rem 1rem 0 3rem;
-    width: 85vw;
-    h1 {
-    font-size: 5rem;
-    color: $white;
-    }
-    .skill-container {
-        border: 3rem solid #abc;
+    margin: 1rem;
 
-        border-image: url(../svg/border-light.svg) 25% stretch;
+
+    .ea-bio {
+        grid-area: ea-bio;
+    }
+    .web-dev {
+        grid-area: web-dev;
+    }
+    .code {
+        grid-area: code;
+    }
+    .design {
+        grid-area: design;
+    }
+    .mo-graph {
+        grid-area: mo-graph;
+    }
+    .ani {
+        grid-area: ani;
+    }
+    .paint {
+        grid-area: paint;
+    }
+    .puppet {
+        grid-area: puppet;
+    }
+    .skills-grid {
+        display: grid;
+        display: grid;
+        grid-template-columns: 3fr 3fr 3fr 3fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+          "ea-bio ea-bio ea-bio ea-bio"
+          "web-dev web-dev web-dev code"
+          "design mo-graph mo-graph mo-graph"
+          "ani ani paint puppet";
+        column-gap: 2rem;
+        row-gap: 2rem;
+        @include phone-view(){
+            grid-template-columns: 6fr 6fr;
+            grid-template-rows: auto;
+            grid-template-areas: 
+              "ea-bio ea-bio"
+              "code code"
+              "web-dev design"
+              "web-dev mo-graph"
+              "puppet ani "
+              "paint ani";
+            column-gap: 1.6rem;
+            row-gap: 1.6rem;
+        }
+        
+
+    }
+        .skill-container {
+
+
+        border: 2rem solid transparent;
+        border-image: url(../svg/border-light.svg) 22% stretch;
+        background-color: #abc;
+        border-radius: 25%;
+        box-shadow: 3px 4px 12px 6px $black;
+
+
+
+
     }
     .skill-content {
         color: $black;
-        padding: 1rem;
+        height: 100%;
         background-color: #abc;
+
+
     }
+
 }

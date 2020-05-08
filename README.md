@@ -34,7 +34,7 @@ Using React, HTML, SCSS, and JavaScript
 
 [x] Make reactive
 [x] hide logo in mobile
-[x] Left side for desktop bottom for mobile
+[x] Left sidebar for desktop bottom for mobile
 
 
 ### Project page

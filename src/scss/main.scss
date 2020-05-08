@@ -23,7 +23,7 @@
         border: 2rem solid transparent;
         border-image: url(../svg/border-light.svg) 15% stretch;
         background-color: #abc;
-        border-radius: 5rem;
+
         min-width: 60vw;
         box-shadow: 7px 10px 23px -6px rgba(0,0,0,0.75);
         @include mid-width{
