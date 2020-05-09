@@ -42,7 +42,7 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         console.log(JSON.stringify(message))
-        fetch('http://localhost:3002/send',{
+        fetch('http://elijahatkins.com:3002/send',{
             method: "POST",
             body: JSON.stringify(message),
             headers: {

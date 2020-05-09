@@ -19,7 +19,7 @@ Using React, HTML, SCSS, and JavaScript
 
 [x] make navbar
 [x] make main Splash page 
-[ ] Skills page
+[x] Skills page
 [ ] Contact page
 [x] projexts page -use card navigation
 [x] SCSS style page
@@ -83,13 +83,13 @@ Using React, HTML, SCSS, and JavaScript
 ### Contact Page
 
 [x] Social media links compoent
-[ ] Connect personal social media to website
+[x] Connect personal social media to website
 -- contact form that will submit email to me
 [x] install yup to validate and axios to post
 [x] create contact form component
 [x] validate input with yum and post error messages on screen
-[ ] style email form
-[ ] make backend php server to send email
+[x] style email form
+[ ] find way to make form send email
 
 ### stretch
 
