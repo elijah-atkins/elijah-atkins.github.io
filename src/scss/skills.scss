@@ -1,6 +1,6 @@
 .skills {
     margin: 1rem;
-    margin-left: 10rem;
+
     @include phone-view(){
         margin-left: 1rem;
     }
@@ -42,19 +42,22 @@
           "ani ani paint puppet";
         column-gap: 2rem;
         row-gap: 2rem;
+
         @include phone-view(){
-            grid-template-columns: 6fr 6fr;
+            grid-template-columns: 8fr 4fr;
             grid-template-rows: auto;
             grid-template-areas: 
               "ea-bio ea-bio"
               "web-dev web-dev"
-              "mo-graph code"
-              "mo-graph design"
-              "puppet ani "
-              "paint ani";
+              "mo-graph mo-graph"
+              "design design"
+              "ani ani"
+              "puppet code "
+              "paint code";
             column-gap: 1.6rem;
             row-gap: 1.6rem;
         }
+
         
 
     }

@@ -6,14 +6,21 @@
 
 
 }
-.header {
+.p-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 5rem;
     color: $white;
     padding: 1rem 0 2rem 0rem;
     
     @include phone-view(){
         padding: 1rem 0 2rem 1rem;
+
     }
+
+
+
 }
 .project-item {
 
@@ -45,8 +52,8 @@
     margin: 1rem;
     min-width: 8rem;
     min-height: 8rem;
-    background-position-x:-40px;
-    background-position-y:-80px;
+    background-position-x:-20px;
+    background-position-y:-35px;
     background-size: 800px;
     transition: 3s;
     border: 2rem solid transparent;
@@ -54,8 +61,8 @@
 
     &:hover{
         transition: 3s;
-        background-position-x:-10px;
-        background-position-y:-60px;
+        background-position-x:-20px;
+        background-position-y:-120px;
         background-size: 480px;
     }
 
