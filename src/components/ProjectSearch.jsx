@@ -2,9 +2,12 @@ import React, { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
 
+
 const ProjectSearch = ({ projects }) => {
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
+
+    
 
     useEffect(() => {
         // map transforms [].length => a new type of data at the same length
@@ -12,7 +15,7 @@ const ProjectSearch = ({ projects }) => {
         // filter reads an expression and then returns an [] with values where expression was true
         // reduce
         const newResults = projects.filter(project => {
-          return project.title.toLowerCase().includes(searchTerm.toLowerCase()) || project.description.toLowerCase().includes(searchTerm.toLowerCase());
+          return project.title.toLowerCase().includes(searchTerm.toLowerCase().trim()) || project.description.toLowerCase().includes(searchTerm.toLowerCase().trim());
         });
     
         setSearchResults(newResults);
@@ -25,7 +28,7 @@ const ProjectSearch = ({ projects }) => {
 
     return (
         <div className="project-search">
-        <div className="searchBox">
+        <div className={searchResults.length === 0 ? "searchBox search-error" : "searchBox"}>
             <input 
             id="search"
             className="searchInput" 
@@ -35,6 +38,7 @@ const ProjectSearch = ({ projects }) => {
             value={searchTerm}
             onChange={handleChange}
             />
+
             <button className="searchButton">
                 <i className="material-icons">
                     search

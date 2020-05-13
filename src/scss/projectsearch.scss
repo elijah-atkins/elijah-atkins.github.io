@@ -15,7 +15,9 @@
     width: 240px;
     padding: 0 6px;
 }
-
+.search-error {
+    animation: shake 500ms;
+}
 .searchBox:hover > .searchButton {
   background: $white;
   color : $search-bg;
