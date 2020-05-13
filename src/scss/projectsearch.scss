@@ -1,11 +1,13 @@
 
 .searchBox {
-
+    position: absolute;
+    top: 4%;
+    right: 4%;
     transform:  translate(0%,0%);
     background: $search-bg;
     height: 4rem;
-    border-radius: 40px;
-    padding: 10px;
+
+    border-radius: 45px;
 
 }
 

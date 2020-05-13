@@ -1,16 +1,40 @@
-import React from 'react'
+import React, { useState } from 'react';
+import ProjectCard from './ProjectCard';
 
 
-const ProjectSearch = () => {
+const ProjectSearch = ({ projects }) => {
+    const [searchTerm, setSearchTerm] = useState("");
+    const [searchResults, setSearchResults] = useState([]);
+
+
+    const handleChange = e => {
+        setSearchTerm(e.target.value);
+      };
+
     return (
+        <div className="project-search">
         <div className="searchBox">
-            <input className="searchInput"type="text" name="" placeholder="Search" />
-            <button className="searchButton" href="#">
-            <i class="material-icons">
+            <input 
+            id="search"
+            className="searchInput" 
+            type="text" 
+            name="search" 
+            placeholder="Search" 
+            value={searchTerm}
+            onChange={handleChange}
+            />
+            <button className="searchButton">
+                <i className="material-icons">
                     search
                 </i>
 
             </button>
+        </div>
+        <div className="project-grid">
+        {projects.map(project => {
+            return (<ProjectCard project={project} key={project.id}/>)
+        })}
+        </div>
         </div>
     )
 }
