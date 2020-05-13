@@ -1,10 +1,22 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import ProjectCard from './ProjectCard';
 
 
 const ProjectSearch = ({ projects }) => {
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
+
+    useEffect(() => {
+        // map transforms [].length => a new type of data at the same length
+        // find reads an expression and then returns the first value that that expression is true
+        // filter reads an expression and then returns an [] with values where expression was true
+        // reduce
+        const newResults = projects.filter(project => {
+          return project.title.toLowerCase().includes(searchTerm.toLowerCase()) || project.description.toLowerCase().includes(searchTerm.toLowerCase());
+        });
+    
+        setSearchResults(newResults);
+      }, [searchTerm]);
 
 
     const handleChange = e => {
@@ -31,9 +43,9 @@ const ProjectSearch = ({ projects }) => {
             </button>
         </div>
         <div className="project-grid">
-        {projects.map(project => {
+        {searchResults.length === 0 ? <div className="project-card"><div className="project-item"><h1>No Content found. Please try searching for something else!</h1></div></div> : searchResults.map(project => {
             return (<ProjectCard project={project} key={project.id}/>)
-        })}
+        }) }
         </div>
         </div>
     )
