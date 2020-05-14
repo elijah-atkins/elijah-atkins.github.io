@@ -1,14 +1,14 @@
 import React from "react";
-import Social from './Social';
-import ContactForm from './ContactForm';
+import Social from "./Social";
+import ContactForm from "./ContactForm";
 
 const Contact = () => {
   return (
     <div className="main">
       <div className="contact">
+        <Social />
         <ContactForm />
-      <Social />
-            </div>
+      </div>
     </div>
   );
 };

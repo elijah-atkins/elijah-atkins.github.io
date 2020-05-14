@@ -48,7 +48,7 @@ const ProjectSearch = ({ projects }) => {
             </button>
         </div>
         <div className="project-grid">
-        {searchResults.length === 0 ? <div className="project-card"><div className="project-item"><h1>No Content found. Please try searching for something else!</h1></div></div> : searchResults.map(project => {
+        {searchResults.length === 0 ? <div className="project-card"><div className="project-item"><h1>No Content found</h1> <p> Please try searching for something else!</p></div></div> : searchResults.map(project => {
             return (<ProjectCard project={project} key={project.id}/>)
         }) }
         </div>

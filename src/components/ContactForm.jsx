@@ -73,7 +73,8 @@ const ContactForm = () => {
 return (
     <div className="project-card">
         <div className="social">
-            <h1>Contact ---Under Construction--</h1>
+            <h1>Contact</h1>
+
             <form
                 id="contact-form"
                 onSubmit={handleSubmit.bind(this)}
@@ -116,9 +117,10 @@ return (
                     ></textarea>
                     {errors.message.length > 0 ? <p className="error">{errors.message}</p> : null}
                 </div>
+                <div className="contact-button">
                 <button type="submit" className="btn btn-primary" disabled={isButtonDisabled}>
                     Submit
-          </button>
+          </button></div>
             </form>
         </div>
     </div>
