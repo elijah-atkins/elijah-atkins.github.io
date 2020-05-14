@@ -2,7 +2,7 @@
 .searchBox {
     position: absolute;
     top: 3rem;
-    right: 10vw;
+    right: 3vw;
     background: $search-bg;
     height: 4rem;
     border-radius: 45px;
@@ -46,6 +46,10 @@
     line-height: 40px;
     width: 0px;
 
+}
+.search-svg {
+    position: absolute;
+    transform: scale(.25);
 }
 
 @media screen and (max-width: 620px) {

@@ -1,7 +1,7 @@
 
 .main {
     font-size: 1.8rem;
-    margin-top: 0;
+
     margin-left: 8rem;
 
     display: flex;
@@ -10,7 +10,7 @@
 
     @include phone-view() {
    
-        margin: 0;
+        margin: 2rem 0 0 0;
     }
     .logo-header{
         margin: 0 auto;
@@ -18,14 +18,14 @@
     }
 
     .splash-border{
-        border: 1rem solid transparent;
-        margin-top: 2rem;
+        border: 2rem solid transparent;
 
-        width: 80%;
-        border-image: url(../svg/border-light.svg) 5% stretch;
+
+        width: 75vw;
+        border-image: url(../svg/border-light.svg) 8% stretch;
         box-shadow: 7px 10px 23px -6px rgba(0,0,0,0.75);
         @include phone-view(){
-            width: 85%;
+            width: 85vw;
             margin: 0;
         }
     }
@@ -34,7 +34,7 @@
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 2fr;
         align-items: center;
-        background-color: #abc;
+        background-color: $blue;
         font-family: $josefin-sans;
         padding: 4rem;
 
@@ -65,7 +65,7 @@
             padding: 4rem 0 0 3rem;
             font-size: 3.8rem;
 
-            color: #abc;
+            color: $blue;
             @include phone-view(){
                 padding: 4.5rem 0 0 4rem;
                 font-size: 4.5rem;

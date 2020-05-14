@@ -4,7 +4,7 @@ const projects = [
         img: "https://elijah-atkins.github.io/img/github.png",
         tag: ['github', 'usercard', 'star', 'api', 'react', 'app', 'lambdaschool'],
         title: "Github Usercard",
-        url: "https://react-github-user-card-n0miksp1f.now.sh/",
+        url: "https://react-github-user-card.elijah-atkins.now.sh/",
         git: "https://github.com/elijah-atkins/React-Github-User-Card",
         description: "Single page web application made with React pulling data from Github api, with a searchbar to search for users and a list of followers/following for each user"
     },
