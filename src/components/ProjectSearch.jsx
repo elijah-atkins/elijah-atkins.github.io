@@ -15,11 +15,12 @@ const ProjectSearch = ({ projects }) => {
         // filter reads an expression and then returns an [] with values where expression was true
         // reduce
         const newResults = projects.filter(project => {
-          return project.title.toLowerCase().includes(searchTerm.toLowerCase().trim()) || project.description.toLowerCase().includes(searchTerm.toLowerCase().trim());
+          return project.tag.toString().toLowerCase().includes(searchTerm.toLowerCase().trim().split(' ')) || project.description.toLowerCase().includes(searchTerm.toLowerCase().trim());
+
         });
     
         setSearchResults(newResults);
-      }, [searchTerm]);
+      }, [searchTerm, projects]);
 
 
     const handleChange = e => {
