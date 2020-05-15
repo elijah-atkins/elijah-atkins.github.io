@@ -4,7 +4,7 @@ const Skills = () => {
   return (
     <div className="main">
       <div className="skills">
-      <div className="header"><h1>Skills</h1></div>
+      <div className="p-header"><h1>Skills</h1></div>
         <div className="skills-grid">
           <div className="skill-container ea-bio">
             <div className="skill-content">

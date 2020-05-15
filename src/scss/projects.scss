@@ -4,6 +4,7 @@
     border: .8rem solid transparent;
 
     border-image: url(../svg/project-border-bg.svg) 5% stretch;
+    
 
 
 }
@@ -28,7 +29,7 @@
     background-color: $blue;
     display: flex;
     align-items: stretch;
-    flex-direction: column;
+    flex-direction: row;
     padding: .5rem;
     @include phone-view(){
         flex-direction: column;
@@ -88,7 +89,12 @@
 
 a{
     text-decoration: none;
-    color: lighten($black, 20%);
+    color: $black, 20%;
+
+    &:hover {
+        filter: hue-rotate(20deg) brightness(300%);
+    }
+
 }
 p{
     padding-top: 1rem;

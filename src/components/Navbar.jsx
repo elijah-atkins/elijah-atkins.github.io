@@ -1,50 +1,35 @@
 import React from "react";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from "react-router-dom";
+import Logo from './svg/Logo'
 
 const Navbar = () => {
+  const location = useLocation();
+
   return (
     <div className="navbar">
       <ul className="navbar-nav">
         <li className="nav-item logo">
           <Link to="/" className="nav-link logo">
-            <span className="logo-text logo"><h1>Elijah <br></br>Atkins</h1></span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 21.167 21.167"
-              className="ea-icon-logo"
-            >
-              <path
-                d="M1.282.9c-.847.35 4.446 9.192 4.416 9.928-.03.736-5.618 9.51-4.786 9.879.832.368 7.233-5.727 7.938-6.229.752-.536 2.937-2.708 2.951-3.444.014-.735-1.662-2.753-2.453-3.573C8.775 6.866 2.13.549 1.282.9z"
-                fill="currentColor"
-                className="ea-base-logo"
-              />
-              <path
-                d="M10.243 20.835c-.809-.364 4.245-9.515 4.216-10.276-.028-.762-5.925-9.215-5.131-9.596.794-.382 7.468 5.298 8.141 5.818.719.554 2.805 2.803 2.818 3.564.013.761-1.587 2.85-2.342 3.699-.548.616-6.893 7.154-7.702 6.79z"
-                fill="currentColor"
-                className="ea-shine-logo"
-              />
-            </svg>
+            <span className="logo-text logo">
+              <h1>
+                Elijah <br></br>Atkins
+              </h1>
+            </span>
+
+          <Logo />
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="/projects" className="nav-link">
+          <Link to="/projects" className="nav-link" active="true">
             <svg
-              className="ea-icon"
+              className={
+                location.pathname === "/projects"
+                  ? "ea-icon ea-active"
+                  : "ea-icon"
+              }
               viewBox="0 0 21 21"
               xmlns="http://www.w3.org/2000/svg"
             >
-              <defs>
-                <filter
-                  id="prefix__a"
-                  x="-.897"
-                  y="-.903"
-                  width="2.8"
-                  height="2.8"
-                  colorInterpolationFilters="sRGB"
-                >
-                  <feGaussianBlur stdDeviation="2.077" />
-                </filter>
-              </defs>
               <g transform="translate(0 -275.83)" strokeWidth=".265">
                 <path
                   fill="currentColor"
@@ -70,7 +55,11 @@ const Navbar = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 21 21"
-              className="ea-icon"
+              className={
+                location.pathname === "/skills"
+                  ? "ea-icon ea-active"
+                  : "ea-icon"
+              }
             >
               <defs>
                 <filter
@@ -106,7 +95,11 @@ const Navbar = () => {
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 21 21"
-              className="ea-icon"
+              className={
+                location.pathname === "/contact"
+                  ? "ea-icon ea-active"
+                  : "ea-icon"
+              }
             >
               <defs>
                 <filter

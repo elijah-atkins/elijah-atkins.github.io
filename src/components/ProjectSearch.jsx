@@ -6,10 +6,6 @@ const ProjectSearch = ({ projects }) => {
   const [searchResults, setSearchResults] = useState([]);
 
   useEffect(() => {
-    // map transforms [].length => a new type of data at the same length
-    // find reads an expression and then returns the first value that that expression is true
-    // filter reads an expression and then returns an [] with values where expression was true
-    // reduce
     const newResults = projects.filter((project) => {
       return (
         project.tag

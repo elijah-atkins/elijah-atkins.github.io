@@ -20,11 +20,15 @@
 
         .navbar-nav {
             flex-direction: row;
+
         }
+
 
         .ea-icon-logo {
             display: none;
+
         }
+
 
 
     }
@@ -47,12 +51,15 @@
 
             .ea-icon-logo {
                 margin-left: 14rem;
+                filter: grayscale(0%) opacity(1);
+                
             }
 
             .ea-icon-logo {
                 transform: rotate(180deg);
                 transition: $speed;
             }
+
 
         }
     }
