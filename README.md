@@ -10,6 +10,7 @@ Using React, HTML, SCSS, and JavaScript
 [x] Install react-router-dom by running npm i react-router-dom
 [x] install svgo for svg optimization $ [sudo] npm i svgo
     -using vscode minifier plugin instead
+    -making React SVG component
 [x] install npm i -S yup to check formating on contact form
 [x] install axios to handle posting email
 [x] Remove un-needed template files
@@ -20,13 +21,14 @@ Using React, HTML, SCSS, and JavaScript
 [x] make navbar
 [x] make main Splash page 
 [x] Skills page
-[ ] Contact page
+[x] Contact page
 [x] projexts page -use card navigation
 [x] SCSS style page
 [x] use react-router-dom to control navbar
 [x] add profile picture
 [ ] add resume 
-[ ] intergrate linkdin
+[ ] Attend to linkdin account.
+[x] intergrate linkdin, added link
 [x] intergrate github
 [x] footer -year updates automatically
 
@@ -40,17 +42,20 @@ Using React, HTML, SCSS, and JavaScript
 ### Project page
 -- showcase language learned outside Lambda
     -Javascript
-        -pong
-        -racing-game
+        [x] pong
+        [x] racing-game
     -Godot
-        -2d dogeball demon
-        -3d demolition derby
+        [ ] 2d dogeball demo
+        [ ] 3d demolition derby
     -arduino
-        -skullexia
+        [ ] skullexia
+    -React 
+        [ ] keeper app clone
+        [ ] checklist app
 -- showcase lambda sprints
-        https://sprint-challenge-react-rick-and-morty.elijah-atkins.now.sh/
-        https://sprint-challenge-applied-javascript-seven.now.sh/
-        https://sprint-challenge-advanced-css-flax.now.sh/
+        [x] React and Morty
+        [x] Advanced CSS
+
 
 [x] create projects.js to hold array with project info
 [x] populate page with cards that contain links to github and the deployed projects
@@ -89,11 +94,11 @@ Using React, HTML, SCSS, and JavaScript
 [x] create contact form component
 [x] validate input with yum and post error messages on screen
 [x] style email form
-[ ] find way to make form send email
+[x] find way to make form send email
 
 ### stretch
 
-[ ] make projects searcable
+[x] make projects searcable
 [x] Split up scss file by component
 
 
