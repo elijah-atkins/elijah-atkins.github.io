@@ -5,7 +5,7 @@
   width: 8rem;
   height: 100vh;
   color: $text-primary;
-  background-image: radial-gradient(
+  background-image: radial-gradient( 
       ellipse at 25% 60%,
       rgba($white, 0.1),
       transparent
@@ -172,7 +172,7 @@
       width: 100%;
 
       @include phone-view() {
-        width: 8rem;
+        width: 10rem;
       }
 
       &:last-child {

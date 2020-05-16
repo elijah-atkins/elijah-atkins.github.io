@@ -1,6 +1,6 @@
 import React from "react";
 import elijah from "../img/elijah-atkins.png";
-import LogoBacking from "./svg/LogoBacking";
+
 
 const Main = () => {
   return (

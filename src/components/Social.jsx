@@ -8,7 +8,7 @@ const Social = () => {
     return(
         <div className="project-card">
             <div className="social">
-            <h2>Follow me on Social Media</h2>
+            <h1>Follow me on Social Media</h1>
             <ul>
                 <li>
                     <a href="https://github.com/elijah-atkins/"><img src={git} alt="github"></img></a>

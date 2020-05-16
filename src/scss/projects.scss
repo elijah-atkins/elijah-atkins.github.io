@@ -1,109 +1,103 @@
 
-.project-card {
-    margin: 1rem;
-    border: .8rem solid transparent;
-
-    border-image: url(../svg/project-border-bg.svg) 5% stretch;
-    
-
-
-}
-.p-header {
+  .p-header {
     font-family: $josefin-sans;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    margin-left: 12rem;
+    justify-content: flex-start;
     font-size: 5rem;
     color: $white;
     padding: 1rem 0 2rem 0rem;
-    
-    @include phone-view(){
-        padding: 1rem 0 2rem 1rem;
 
+    @include phone-view() {
+      padding: 1rem 0 2rem 1rem;
+      margin-left: 2rem;
     }
 
-
-
 }
-.project-item {
+  .project-card {
+    margin: 1rem;
+    border: 0.8rem solid transparent;
+
+    border-image: url(../svg/project-border-bg.svg) 5% stretch;
+  }
+
+  .project-item {
     font-family: $lato;
     background-color: $blue;
     display: flex;
     align-items: stretch;
     flex-direction: row;
-    padding: .5rem;
-    @include phone-view(){
-        flex-direction: column;
+    padding: 0.5rem;
+    @include phone-view() {
+      flex-direction: column;
     }
     h1 {
-        font-size: 2.2rem;
-        padding: 0 0 1rem;
-        color: $black;
+      font-size: 2.2rem;
+      padding: 0 0 1rem;
+      color: $black;
     }
     p {
-        color: $black;
+      color: $black;
     }
-}
+  }
 
-.project-img {
+  .project-img {
     background-color: $blue;
     padding: 2rem;
     margin: 1rem;
     min-width: 8rem;
     min-height: 8rem;
-    background-position-x:-20px;
-    background-position-y:-35px;
+    background-position-x: -20px;
+    background-position-y: -35px;
     background-size: 800px;
     transition: 3s;
     border: 2rem solid transparent;
     border-radius: 12px 7% 1rem 8%;
 
-    &:hover{
-        transition: 3s;
-        background-position-x:-20px;
-        background-position-y:-120px;
-        background-size: 480px;
+    &:hover {
+      transition: 3s;
+      background-position-x: -20px;
+      background-position-y: -120px;
+      background-size: 480px;
     }
 
-    @include phone-view(){
-        height: 16rem;
-
-
+    @include phone-view() {
+      height: 16rem;
     }
-}
-.project-icons {
+  }
+  .project-icons {
     height: 5rem;
 
     display: flex;
     align-items: center;
     justify-content: space-around;
-    @include phone-view(){
-        justify-content: space-between;
+    @include phone-view() {
+      justify-content: space-between;
     }
     img {
-        width: 4rem;
-        padding-right: 0rem;
-
+      width: 4rem;
+      padding-right: 0rem;
     }
-}
-.project {
+  }
+  .project {
     margin: 1rem;
 
-a{
-    text-decoration: none;
-    color: $black, 20%;
+    a {
+      text-decoration: none;
+      color: $black, 20%;
 
-    &:hover {
+      &:hover {
         filter: hue-rotate(20deg) brightness(300%);
+      }
     }
-
-}
-p{
-    padding-top: 1rem;
-    max-width: 60rem;
-    line-height: 2.3rem;
-    @include phone-view(){
+    p {
+      padding-top: 1rem;
+      max-width: 60rem;
+      line-height: 2.3rem;
+      @include phone-view() {
         width: 30rem;
+      }
     }
-}
-}
+  }
+
