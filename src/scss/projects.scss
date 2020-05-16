@@ -26,7 +26,7 @@
 
 }
 .project-item {
-
+    font-family: $lato;
     background-color: $blue;
     display: flex;
     align-items: stretch;
@@ -36,6 +36,7 @@
         flex-direction: column;
     }
     h1 {
+        font-size: 2.2rem;
         padding: 0 0 1rem;
         color: $black;
     }

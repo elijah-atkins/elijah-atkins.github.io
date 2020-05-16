@@ -20,7 +20,7 @@ const projects = [
     {
         id: "5",
         img: "https://elijah-atkins.github.io/img/rick-and-morty.png",
-        tag: ['react', 'api', 'sprint', 'app', 'lambdaschool', 'Rick', 'and', 'Morty', 'Characters'],
+        tag: ['react', 'api','lambda', 'sprint', 'app', 'lambdaschool', 'Rick', 'and', 'Morty', 'Characters'],
         title: "Rick and Morty Characters",
         url: "https://sprint-challenge-react-rick-and-morty.now.sh/",
         git: "https://github.com/elijah-atkins/Sprint-Challenge-React-Wars",
