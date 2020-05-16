@@ -82,7 +82,7 @@ const ContactForm = () => {
   return (
     <div className="project-card">
       <div className="social">
-        <h1>Contact</h1>
+        <h1>Contact Elijah</h1>
 
         <form
           id="contact-form"
