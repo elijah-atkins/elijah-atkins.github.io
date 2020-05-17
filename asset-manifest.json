@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b146310d.chunk.css",
+    "main.js": "/static/js/main.3e187efb.chunk.js",
+    "main.js.map": "/static/js/main.3e187efb.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.5307c677.js",
+    "runtime-main.js.map": "/static/js/runtime-main.5307c677.js.map",
+    "static/js/2.c78b92b5.chunk.js": "/static/js/2.c78b92b5.chunk.js",
+    "static/js/2.c78b92b5.chunk.js.map": "/static/js/2.c78b92b5.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.a25641332117713679460b4d2cf823ae.js": "/precache-manifest.a25641332117713679460b4d2cf823ae.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b146310d.chunk.css.map": "/static/css/main.b146310d.chunk.css.map",
+    "static/js/2.c78b92b5.chunk.js.LICENSE.txt": "/static/js/2.c78b92b5.chunk.js.LICENSE.txt",
+    "static/media/index.scss": "/static/media/project-border-bg.84517452.svg",
+    "static/media/elijah-atkins.png": "/static/media/elijah-atkins.4facb4e4.png",
+    "static/media/github-brands.svg": "/static/media/github-brands.1e6a812d.svg",
+    "static/media/globe-solid.svg": "/static/media/globe-solid.5577a3e1.svg",
+    "static/media/instagram-brands.svg": "/static/media/instagram-brands.fb0d969e.svg",
+    "static/media/linkedin-brands.svg": "/static/media/linkedin-brands.f6dec0c8.svg",
+    "static/media/twitter-brands.svg": "/static/media/twitter-brands.2550b2c0.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5307c677.js",
+    "static/js/2.c78b92b5.chunk.js",
+    "static/css/main.b146310d.chunk.css",
+    "static/js/main.3e187efb.chunk.js"
+  ]
+}
