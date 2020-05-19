@@ -13,7 +13,7 @@ const ProjectCard = ({ project }) => {
           ></div>
           <ul className="project">
             <li>
-              <h1 className="title">{project.title}</h1>
+              <a className="p-link" href={project.url}><h1>{project.title}</h1></a>
             </li>
 
             <li>

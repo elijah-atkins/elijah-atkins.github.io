@@ -6,7 +6,7 @@ import linkd from '../svg/linkedin-brands.svg'
 
 const Social = () => {
     return(
-        <div className="project-card">
+        <div className="project-border">
             <div className="social">
             <h1>Follow me on Social Media</h1>
             <ul>
