@@ -20,7 +20,7 @@ const projects = [
         git: "https://github.com/elijah-atkins/dark-mode",
         description: "Implemented a dark mode feature to existing code. Built using React, with a custom hook to use browsers local storage to remember state.",
         bullet: ['Built onto existing Crypto App',
-        'Browser remembers dark mode setting ']
+        'Browser remembers dark mode setting']
     },
     {
         id: "7",
@@ -98,7 +98,7 @@ const projects = [
         title: "Advanced CSS Lambda Sprint Challenge",
         url: "https://sprint-challenge-advanced-css-flax.now.sh/",
         git: "https://github.com/elijah-atkins/Sprint-Challenge--Advanced-CSS",
-        description: " Starting from non styled html add CSS to style document to expected output. Built using HTML5 and LESS compiler",
+        description: " Starting from non styled html add CSS to style document to expected output. Built using HTML5 and LESS compiler.",
         bullet: ['Sprint challenges are completed under 3 hours',
         'CSS driven animations']
     },
