@@ -37,7 +37,7 @@ const projects = [
         id: "5",
         img: "https://elijah-atkins.github.io/img/rick-and-morty.png",
         tag: ['react', 'api','lambda', 'sprint', 'app', 'lambdaschool', 'Rick', 'and', 'Morty', 'Characters'],
-        title: "Rick and Morty Characters",
+        title: "React and Morty",
         url: "https://sprint-challenge-react-rick-and-morty.now.sh/",
         git: "https://github.com/elijah-atkins/Sprint-Challenge-React-Wars",
         description: "Lambda School Sprint Challenge pulling data from the  Rick and Morty API  to show  a List of Rick and Morty characters. Built using React, SCSS, and axios.",
