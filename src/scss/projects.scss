@@ -1,103 +1,137 @@
+.project-grid {
+  width: 100%;
+  display: grid;
 
-  .p-header {
-    font-family: $josefin-sans;
-    display: flex;
-    flex-direction: row;
-    margin-left: 12rem;
-    justify-content: flex-start;
-    font-size: 5rem;
-    color: $white;
-    padding: 1rem 0 2rem 0rem;
+  grid-template-columns: repeat(4, 1fr);
 
-    @include phone-view() {
-      padding: 1rem 0 2rem 1rem;
-      margin-left: 2rem;
-    }
+  @include big-width(){
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-}
-  .project-card {
+  @include mid-width(){
+    width: 90vw;
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+
+
+  }
+  .project-border {
     margin: 1rem;
     border: 0.8rem solid transparent;
-
     border-image: url(../svg/project-border-bg.svg) 5% stretch;
+    box-shadow: 10px 10px 15px 0px rgba($black, 1);
   }
 
-  .project-item {
-    font-family: $lato;
-    background-color: $blue;
-    display: flex;
-    align-items: stretch;
-    flex-direction: row;
-    padding: 0.5rem;
-    @include phone-view() {
-      flex-direction: column;
-    }
-    h1 {
-      font-size: 2.2rem;
-      padding: 0 0 1rem;
-      color: $black;
-    }
-    p {
-      color: $black;
-    }
+.p-header {
+  font-family: $josefin-sans;
+  display: flex;
+  flex-direction: row;
+  margin-left: 12rem;
+  justify-content: flex-start;
+  font-size: 5rem;
+  color: $white;
+  padding: 1rem 0 2rem 0rem;
+
+  @include phone-view() {
+    padding: 1rem 0 2rem 1rem;
+    margin-left: 2rem;
   }
 
-  .project-img {
-    background-color: $blue;
-    padding: 2rem;
-    margin: 1rem;
-    min-width: 8rem;
-    min-height: 8rem;
-    background-position-x: -20px;
-    background-position-y: -35px;
-    background-size: 800px;
+}
+
+
+
+.project-item {
+  font-family: $lato;
+  background-color: $blue;
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  padding: 0.5rem;
+
+  @include phone-view() {
+    flex-direction: column;
+  }
+
+  h1 {
+    font-size: 2.2rem;
+    padding: 0 0 1rem;
+    color: $black;
+  }
+
+  p {
+    color: $black;
+  }
+}
+
+.project-img {
+  background-color: $blue;
+  padding: 2rem;
+  margin: 1rem;
+  min-width: 8rem;
+  min-height: 8rem;
+  background-position-x: -20px;
+  background-position-y: -35px;
+  background-size: 800px;
+  transition: 3s;
+  border: 2rem solid transparent;
+  border-radius: 12px 7% 1rem 8%;
+
+  &:hover {
     transition: 3s;
-    border: 2rem solid transparent;
-    border-radius: 12px 7% 1rem 8%;
+    background-position-x: -20px;
+    background-position-y: -120px;
+    background-size: 480px;
+  }
+
+  @include phone-view() {
+    height: 16rem;
+  }
+}
+
+.project-icons {
+  height: 5rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include phone-view() {
+    justify-content: space-between;
+  }
+
+  img {
+    width: 4rem;
+    padding-right: 0rem;
+  }
+}
+
+.project {
+  margin: 1rem;
+
+  a {
+    text-decoration: none;
+    color: $black, 20%;
 
     &:hover {
-      transition: 3s;
-      background-position-x: -20px;
-      background-position-y: -120px;
-      background-size: 480px;
+      filter: hue-rotate(20deg) brightness(300%);
     }
+  }
+
+  p {
+    padding-top: 1rem;
+    max-width: 60rem;
+    line-height: 2.3rem;
 
     @include phone-view() {
-      height: 16rem;
-    }
-  }
-  .project-icons {
-    height: 5rem;
-
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    @include phone-view() {
-      justify-content: space-between;
-    }
-    img {
-      width: 4rem;
-      padding-right: 0rem;
-    }
-  }
-  .project {
-    margin: 1rem;
-
-    a {
-      text-decoration: none;
-      color: $black, 20%;
-
-      &:hover {
-        filter: hue-rotate(20deg) brightness(300%);
-      }
-    }
-    p {
-      padding-top: 1rem;
-      max-width: 60rem;
-      line-height: 2.3rem;
-      @include phone-view() {
-        width: 30rem;
-      }
+      width: 30rem;
     }
   }
 
+  ul.bullet-item {
+    margin-left: 2rem;
+    list-style-type: disc;
+    color: $black;
+  }
+}

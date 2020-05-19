@@ -6,7 +6,10 @@ const projects = [
         title: "NASA Astronomy Picture of the Day",
         url: "https://nasa-photo-of-the-day.elijah-atkins.now.sh/",
         git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
-        description: "Single page web application made with React pulling data from NASA apod api with post as far back as 1995, using react-router-dom and react-calander"
+        description: "Explore the NASA apod api with beautiful astronomy images with post as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calander.",
+        bullet: ['Single Page Web Application',
+        'Calendar driven navigation',
+        'Implements useHistory and useParams from react-router-dom']
     },
     {
         id: '8',
@@ -15,7 +18,9 @@ const projects = [
         title: "Dark Mode",
         url: "https://dark-mode.elijah-atkins.now.sh/",
         git: "https://github.com/elijah-atkins/dark-mode",
-        description: "Implemented a dark mode feature to existing code. Used the browsers local storage to remember the setting."
+        description: "Implemented a dark mode feature to existing code. Built using React, with a custom hook to use browsers local storage to remember state.",
+        bullet: ['Built onto existing Crypto App',
+        'Browser remembers dark mode setting ']
     },
     {
         id: "7",
@@ -24,7 +29,9 @@ const projects = [
         title: "Github Usercard",
         url: "https://react-github-user-card.elijah-atkins.now.sh/",
         git: "https://github.com/elijah-atkins/React-Github-User-Card",
-        description: "Single page web application made with React pulling data from Github api, with a searchbar to search for users and a list of followers/following for each user"
+        description: "Shows a profile card for Github users with a list of followers/following. Built using React, SCSS, and axios.",
+        bullet: ['Pulling data from Github api',
+        'Search bar to search for users']
     },
     {
         id: "5",
@@ -33,7 +40,10 @@ const projects = [
         title: "Rick and Morty Characters",
         url: "https://sprint-challenge-react-rick-and-morty.now.sh/",
         git: "https://github.com/elijah-atkins/Sprint-Challenge-React-Wars",
-        description: "Lambda School Sprint Challange List of Rick and Morty characters from the Rick and Morty API made in React. All Work done for Sprint challenge in under 3 hours. using axios"
+        description: "Lambda School Sprint Challenge pulling data from the  Rick and Morty API  to show  a List of Rick and Morty characters. Built using React, SCSS, and axios.",
+        bullet: ['Sprint challenges are completed under 3 hours',
+        'Custom Styled cards',
+        'Moving the mouse over the character image will reveal if they’re dead']
     },
     {
         id: '9',
@@ -42,7 +52,9 @@ const projects = [
         title: 'Team Builder',
         url: 'https://team-builder.elijah-atkins.now.sh',
         git: 'https://github.com/elijah-atkins/team-builder',
-        description: 'Single Page React app, made from default React boilerplate, Basic funtionality app will accept and display data'
+        description: 'Team Builder app uses forms to input data that will generate cards with data onto page. Built using Create React App and SCSS.',
+        bullet: ['Made from default react boilerplate',
+        'App will accept and display data']
     },
     {
         id: "1",
@@ -51,7 +63,10 @@ const projects = [
         title: "React ToDo",
         url: "https://react-todo.elijah-atkins.now.sh/",
         git: "https://github.com/elijah-atkins/React-Todo",
-        description: "ToDo list a simple CRUD (create, read, update, delete) app made in react. Allows users to make custom list, use of long click to edit elements, and abiltiy to select multiple items for removal"
+        description: "ToDo lists a simple app made to explore CRUD (create, read, update, delete). Built using React, SCSS and javaScript.",
+        bullet: ['Allows user to make custom list',
+        'Long click to edit',
+        'Select and tag multiple items for removal']
     },
     {
         id: "4",
@@ -60,7 +75,9 @@ const projects = [
         title: "Paddle Ball",
         url: "https://elijah-atkins.github.io/Paddle-Ball-Game/paddle-ball.html",
         git: "https://github.com/elijah-atkins/Paddle-Ball-Game",
-        description: "Programing exercise making Brick breaker style game made in javascript using canvas. "
+        description: "Programming exercise making Brick breaker style game. Built using javaScript, HTML5 canvas and CSS.",
+        bullet: ['Array used to manage brick placement',
+        'Made from scratch with tutorial aid']
     },
     {
         id: "3",
@@ -69,16 +86,21 @@ const projects = [
         title: "Racing Game Demo",
         url: "https://elijah-atkins.github.io/Paddle-Ball-Game/racing-game.html",
         git: "https://github.com/elijah-atkins/Paddle-Ball-Game/blob/master/js/racing-game.js",
-        description: "Simple racing game demo made from building upon Paddle ball game made in javascript"
+        description: "Simple racing game demo made from building upon Paddle ball game. Built using javaScript, HTML5 canvas and CSS.",
+        bullet: ['Built from expanding existing code',
+        'Made with tutorial aid',
+        'Built all sprites in game']
     },
     {
         id: "2",
         img: "https://elijah-atkins.github.io/img/space-walkers.png",
         tag: ['javascript', 'html5', 'css', 'sprint', 'lambdaschool', 'Advanced', 'CSS', 'Lambda', 'Sprint', 'Challange'],
-        title: "Advanced CSS Lambda Sprint Challange",
+        title: "Advanced CSS Lambda Sprint Challenge",
         url: "https://sprint-challenge-advanced-css-flax.now.sh/",
         git: "https://github.com/elijah-atkins/Sprint-Challenge--Advanced-CSS",
-        description: "Exercise in CSS layout done using LESS compiler. All work done for sprint challange compleated in under 3 hours"
+        description: " Starting from non styled html add CSS to style document to expected output. Built using HTML5 and LESS compiler",
+        bullet: ['Sprint challenges are completed under 3 hours',
+        'CSS driven animations']
     },
 
 ]
