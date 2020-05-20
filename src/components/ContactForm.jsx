@@ -80,7 +80,7 @@ const ContactForm = () => {
   };
 
   return (
-    <div className="project-card">
+    <div className="project-border">
       <div className="social">
         <h1>Contact Elijah</h1>
 

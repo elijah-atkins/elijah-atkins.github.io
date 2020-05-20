@@ -9,7 +9,7 @@ html {
       transparent
     ),
     radial-gradient(ellipse at 60% 50%, rgba($white, 0.1), transparent),
-    linear-gradient($bg-color, darken($bg-color, 40%));
+    linear-gradient($bg-color, darken($bg-color, 10%));
   background-attachment: fixed;
 }
 
