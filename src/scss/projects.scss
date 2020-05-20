@@ -14,8 +14,6 @@
   }
 
 
-  
-
   }
   .project-border {
     margin: 1rem;
@@ -41,7 +39,25 @@
 
 }
 
+.project-list {
 
+    font-family: $lato;
+    background-color: $blue;
+    display: flex;
+    align-items: stretch;
+    color: $black;
+    padding: 0.5rem;
+
+    ul.bullet-item {
+
+      margin: 0 0 2rem 4rem;
+      list-style-type: disc;
+      color: $black;
+      @include phone-view(){
+        width: 80%;
+      };
+    }
+}
 
 .project-item {
   font-family: $lato;
@@ -53,6 +69,7 @@
 
   @include phone-view() {
     flex-direction: column;
+
   }
 
   h1 {
@@ -64,6 +81,7 @@
   p {
     color: $black;
   }
+
 }
 
 .project-img {
@@ -112,7 +130,7 @@
 
 .project {
   margin: 1rem;
-
+  
   a {
     text-decoration: none;
     color: $black, 20%;
@@ -128,13 +146,9 @@
     line-height: 2.3rem;
 
     @include phone-view() {
-      width: 30rem;
+      width: 100%;
     }
   }
 
-  ul.bullet-item {
-    margin-left: 2rem;
-    list-style-type: disc;
-    color: $black;
-  }
+
 }

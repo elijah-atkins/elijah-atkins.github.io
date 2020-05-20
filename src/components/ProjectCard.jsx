@@ -7,6 +7,7 @@ const ProjectCard = ({ project }) => {
     <div className="project-card">
       <div className="project-border">
         <div className="project-item">
+
           <div
             className="project-img"
             style={{ backgroundImage: `url(${project.img})` }}
@@ -31,21 +32,24 @@ const ProjectCard = ({ project }) => {
             <li>
               <p>{project.description}</p>
             </li>
-            <li>
-              {project.bullet.map((bulletPoint, key) => {
+
+          </ul>
+          </div>
+          <div className="project-list">
+          <ul className="bullet-item">
+          {project.bullet.map((bulletPoint, key) => {
                 return (
-                  <ul className="bullet-item" key={key}>
-                    <li>
+                    <li key={key}>
                       <p>{bulletPoint}</p>
                     </li>
-                  </ul>
                 );
               })}
-            </li>
-          </ul>
+              </ul>
+              </div>
         </div>
+        
       </div>
-    </div>
+
   );
 };
 
