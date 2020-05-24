@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100mm" height="100mm" viewBox="0 0 100 100">
-   <defs>
-      <filter id="prefix__a" color-interpolation-filters="sRGB">
-         <feGaussianBlur stdDeviation="9 9" result="blur"/>
-      </filter>
-   </defs>
-   <path d="M81.953 95.765c-4.888 3.721-55.969 4.439-60.99.9-5.02-3.537-21.732-51.404-19.5-57.6 1.846-5.868 42.895-37.416 48.9-37.5 6.094-.145 47.214 28.7 49.288 34.5 2.0 4.786-12.516 55.684-17 59.406z" fill="gray"/>
-   <path  fill="#fff" filter="url(#prefix__a)"/>
-</svg>
