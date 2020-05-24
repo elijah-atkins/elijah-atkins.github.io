@@ -1,3 +1,7 @@
 {
+<<<<<<< HEAD
     "svg.preview.background": "transparent"
+=======
+    "git.ignoreLimitWarning": true
+>>>>>>> 5308914f6ca777f7b9f7e142b4b2dd237bd86ac5
 }
