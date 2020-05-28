@@ -1,4 +1,16 @@
 const projects = [
+        {
+        id: "10",
+        img: "https://elijah-atkins.github.io/img/weather.png",
+        tag: ['api', 'react', 'redux', 'weather', 'app', 'star', 'lambdaschool'],
+        title: "React Redux Weather App",
+        url: "https://react-redux-app.elijah-atkins.now.sh/",
+        git: "https://github.com/elijah-atkins/React-Redux-App",
+        description: "Custom built weather app with custom weather icons and weather animations. Built using React, axios, redux, thunk, and SCSS.",
+        bullet: ['Single Page Web React Application made with react-redux',
+        'Fetching weather data from MetaWeather api',
+        'Custom built weather icons with animations'] 
+    },
     {
         id: "6",
         img: "https://elijah-atkins.github.io/img/nasa.png",
@@ -6,7 +18,7 @@ const projects = [
         title: "NASA Astronomy Picture of the Day",
         url: "https://nasa-photo-of-the-day.elijah-atkins.now.sh/",
         git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
-        description: "Explore the NASA apod api with beautiful astronomy images with post as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calander.",
+        description: "Explore the NASA apod api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calander.",
         bullet: ['Single Page Web Application',
         'Calendar driven navigation',
         'Implements useHistory and useParams from react-router-dom']
