@@ -38,9 +38,6 @@ const ProjectSearch = ({ projects }) => {
         />
 
         <button className="searchButton">
-          {/* <i className="material-icons">
-                    search
-                </i> */}
           <svg
             className="search-svg"
             xmlns="http://www.w3.org/2000/svg"
