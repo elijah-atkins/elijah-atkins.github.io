@@ -5,12 +5,10 @@ const ProjectSearch = ({ projects }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
 
-
   useEffect(() => {
     const newResults = projects.filter((project) => {
       const str = Object.values(project).join(" ").toLowerCase();
-
-      return (str.match(searchTerm.toLowerCase()));
+      return str.match(searchTerm.toLowerCase());
     });
 
     setSearchResults(newResults);
