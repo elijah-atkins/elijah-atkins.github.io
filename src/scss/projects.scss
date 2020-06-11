@@ -4,23 +4,24 @@
 
   grid-template-columns: repeat(3, 1fr);
 
-  @include big-width(){
+  @include big-width() {
     grid-template-columns: repeat(2, 1fr);
   }
 
-  @include mid-width(){
+  @include mid-width() {
     width: 90vw;
     grid-template-columns: repeat(1, 1fr);
   }
 
 
-  }
-  .project-border {
-    margin: 1rem;
-    border: 0.8rem solid transparent;
-    border-image: url(../svg/project-border-bg.svg) 5% stretch;
-    box-shadow: 10px 10px 15px 0px rgba($black, 1);
-  }
+}
+
+.project-border {
+  margin: 1rem;
+  border: 0.8rem solid transparent;
+  border-image: url(../svg/project-border-bg.svg) 5% stretch;
+  box-shadow: 10px 10px 15px 0px rgba($black, 1);
+}
 
 .p-header {
   font-family: $josefin-sans;
@@ -41,22 +42,25 @@
 
 .project-list {
 
-    font-family: $lato;
-    background-color: $blue;
-    display: flex;
-    align-items: stretch;
+  font-family: $lato;
+  background-color: $blue;
+  display: flex;
+  align-items: stretch;
+  color: $black;
+  padding: 0.5rem;
+
+  ul.bullet-item {
+
+    margin: 0 0 2rem 4rem;
+    list-style-type: disc;
     color: $black;
-    padding: 0.5rem;
 
-    ul.bullet-item {
-
-      margin: 0 0 2rem 4rem;
-      list-style-type: disc;
-      color: $black;
-      @include phone-view(){
-        width: 80%;
-      };
+    @include phone-view() {
+      width: 80%;
     }
+
+    ;
+  }
 }
 
 .project-item {
@@ -101,12 +105,10 @@
 
   @include phone-view() {
     max-width: 50rem;
-  background-size: 800px;
-      background-position-x: -20px;
-  background-position-y: -35px;
-
+    background-size: 800px;
+    background-position-x: -20px;
+    background-position-y: -35px;
     height: 25rem;
-
   }
 }
 
@@ -123,14 +125,13 @@
 
   img {
     width: 4rem;
-
     padding-right: 0rem;
   }
 }
 
 .project {
   margin: 1rem;
-  
+
   a {
     text-decoration: none;
     color: $black, 20%;
