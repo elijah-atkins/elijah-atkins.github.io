@@ -1,4 +1,16 @@
 const projects = [
+            {
+        id: "11",
+        img: "https://elijah-atkins.github.io/img/react-tv.png",
+        tag: ['api', 'react', 'redux', 'tv', 'app', 'star', 'lambdaschool'],
+        title: "React Television Favorites",
+        url: "https://react-redux-app.elijah-atkins.now.sh/",
+        git: "https://github.com/elijah-atkins/React-Redux-App",
+        description: "Built off of existing code to expanded app functionality, added show selection function and styles Built using React, axios, react-dropdown",
+        bullet: ['Page tested with react testing library',
+        'Click show title to expose show selection dropdown',
+        'Explore tv favorites with episode synopsis for every season']
+    },
         {
         id: "10",
         img: "https://elijah-atkins.github.io/img/weather.png",
