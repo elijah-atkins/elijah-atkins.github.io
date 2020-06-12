@@ -23,7 +23,7 @@
 
         width: 75vw;
         border-image: url(../svg/border-light.svg) 8% stretch;
-        box-shadow: 7px 10px 23px -6px rgba(0,0,0,0.75);
+        filter: drop-shadow(10px 15px 3px rgba($black, .7));
         @include phone-view(){
             width: 85vw;
             margin: 0;
