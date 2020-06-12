@@ -9,7 +9,6 @@ const Projects = ({ projects }) => {
         <div className="p-header">
         <h1>Projects</h1></div>
         <ProjectSearch projects={projects} />
-
       </div>
     </div>
   );
