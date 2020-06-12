@@ -17,7 +17,11 @@ const ProjectSearch = ({ projects }) => {
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
   };
-
+  if (searchResults.length === 0 && searchTerm === ''){
+    return (
+      <div className="loading"><h1>Loading...</h1></div>
+    )
+  }
   return (
     <div className="project-search">
       <div
@@ -56,11 +60,11 @@ const ProjectSearch = ({ projects }) => {
         </button>
       </div>
       <div className="project-grid">
+        
         {searchResults.length === 0 ? (
           <div className="project-card">
             <div className="project-item">
-              <h1>No Content found</h1>{" "}
-              <p> Please try searching for something else!</p>
+              <h1>No Content found</h1>
             </div>
           </div>
         ) : (

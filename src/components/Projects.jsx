@@ -3,7 +3,6 @@ import React from "react";
 import ProjectSearch from './ProjectSearch';
 
 const Projects = ({ projects }) => {
-
   return (
     <div className="main">
       <div className="projects">
