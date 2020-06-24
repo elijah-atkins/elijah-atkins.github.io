@@ -1,3 +1,3 @@
 # elijah-atkins.github.io
 Portfollio site
-![GitHub Logo](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
+![Image of Yaktocat](https://octodex.github.com/images/yaktocat.png | width=100)
