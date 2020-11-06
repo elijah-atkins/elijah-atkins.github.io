@@ -17,6 +17,7 @@ class App extends React.Component {
     gallery: false,
     about: false,
     contact: false,
+    success: false,
   };
   //function to toggle nav menu
   clear = (async) => {
@@ -56,7 +57,7 @@ class App extends React.Component {
         />
         <About toggle={this.toggle} about={this.state.about} />
         <Gallery projects={projects} toggle={this.toggle} gallery={this.state.gallery} />
-        <Contact toggle={this.toggle} contact={this.state.contact} />
+        <Contact toggle={this.toggle} contact={this.state.contact} success={this.state.success}/>
         <Social toggle={this.toggle} social={this.state.social} />
         <Splash />
         <Footer toggle={this.toggle} social={this.state.social} />
