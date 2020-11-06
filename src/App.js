@@ -56,7 +56,7 @@ class App extends React.Component {
         />
         <About toggle={this.toggle} about={this.state.about} />
         <Gallery projects={projects} toggle={this.toggle} gallery={this.state.gallery} />
-        <Contact toggle={this.toggle} contact={this.state.contact}/>
+        <Contact toggle={this.toggle} contact={this.state.contact} />
         <Social toggle={this.toggle} social={this.state.social} />
         <Splash />
         <Footer toggle={this.toggle} social={this.state.social} />

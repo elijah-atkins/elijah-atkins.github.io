@@ -112,7 +112,7 @@ Using React, HTML, SCSS, and JavaScript
 -[x] validate input with yum and post error messages on screen
 -[x] style email form
 -[x] find way to make form send email(used emailjs)
--[ ] add something to verify message was successfully sent on contact form
+-[x] add something to verify message was successfully sent on contact form
 
 ### stretch
 
