@@ -1,70 +1,104 @@
-# Getting Started with Create React App
+## Elijah Atkins Portfollio website
+Making personal professional website to showcase skills
+in programing and design with a highlight on recent 
+Lambda School work
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Using React, HTML, SCSS, and JavaScript
 
-## Available Scripts
+[x] Install a blank React app by running npx create-react-app <app-name> --use-npm.
+[x] Install SCSS by running npm i node-sass
+[x] Install react-router-dom by running npm i react-router-dom
+[x] install svgo for svg optimization $ [sudo] npm i svgo
+    -using vscode minifier plugin instead
+    -making React SVG component
+[x] install npm i -S yup to check formating on contact form
+[x] install axios to handle posting email
+[x] Remove un-needed template files
 
-In the project directory, you can run:
+--
+## To DO
 
-### `npm start`
+[x] make navbar
+[x] make main Splash page 
+[x] Skills page
+[x] Contact page
+[x] projexts page -use card navigation
+[x] SCSS style page
+[x] use react-router-dom to control navbar
+[x] add profile picture
+[ ] add resume 
+[ ] Attend to linkdin account.
+[x] intergrate linkdin, added link
+[x] intergrate github
+[x] footer -year updates automatically
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Navbar
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+[x] Make reactive
+[x] hide logo in mobile
+[x] Left sidebar for desktop bottom for mobile
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Project page
+-- showcase language learned outside Lambda
+    -Javascript
+        [x] pong
+        [x] racing-game
+    -Godot
+        [ ] 2d dogeball demo
+        [ ] 3d demolition derby
+    -arduino
+        [ ] skullexia
+    -React 
+        [ ] keeper app clone
+        [ ] checklist app
+-- showcase lambda sprints
+        [x] React and Morty
+        [x] Advanced CSS
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[x] create projects.js to hold array with project info
+[x] populate page with cards that contain links to github and the deployed projects
+[x] populate with content
+[x] use react-router-dom to update nav url
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Skills page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+-- showcase specific projects to show abilities
+-- digital and real
+-- Front End Web Development
+    -nasa photo of the day
+    
+-- Graphic Design 
 
-### `npm run eject`
+-- Multimedia Production
+    -paintings 
+    -animation
+    -props 
+    -puppets
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+-- Sculptures
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Splash/Main page
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+-- short bio
+-- profile page
+-- spotlight project
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Contact Page
 
-## Learn More
+[x] Social media links compoent
+[x] Connect personal social media to website
+-- contact form that will submit email to me
+[x] install yup to validate and axios to post
+[x] create contact form component
+[x] validate input with yum and post error messages on screen
+[x] style email form
+[x] find way to make form send email
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### stretch
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+[x] make projects searcable
+[x] Split up scss file by component
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
