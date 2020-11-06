@@ -46,18 +46,17 @@ Using React, HTML, SCSS, and JavaScript
 ### Project page
 -- showcase language learned outside Lambda
     -Javascript
-        [x] pong
+        [x] breakout
         [x] racing-game
-    -Godot
+    -Godot games
         [ ] 2d dogeball demo
         [ ] 3d demolition derby
         [ ] 3d lazy river
-    -arduino
+    -arduino projects
         [ ] skullexia
     -React 
-         [ ] Star Wars app  
+         [x] Star Wars app  
          [x] Game of life 
-        [x] checklist app
     -blender
         [ ] find way to show off 3d models
     -animation
