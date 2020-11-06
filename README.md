@@ -35,9 +35,8 @@ Using React, HTML, SCSS, and JavaScript
 ### Navbar
 
 [x] Make reactive
-[x] hide logo in mobile
-[x] Left sidebar for desktop bottom for mobile
-
+[x] Add animation to interactions with navbar
+[x] Animate page transitions
 
 ### Project page
 -- showcase language learned outside Lambda
@@ -74,6 +73,7 @@ Using React, HTML, SCSS, and JavaScript
 -- digital and real
 -- Front End Web Development
     -nasa photo of the day
+    -conways game of life
     
 -- Graphic Design 
 
