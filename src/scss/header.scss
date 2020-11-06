@@ -1,0 +1,58 @@
+:root {
+  /* overflow: hidden; //hide overflow once media querries are set */
+  overflow: hidden;
+  min-width: 340px;
+  min-height: 380px;
+  background-color: $background;
+  background-attachment: fixed;
+  background-image: $bg-img;
+}
+.App {
+  text-align: center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  display: flex;
+  font-family: $fancy-sans;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: $white;
+}
+
+.App-link {
+  color: $link;
+}
+.intro {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  right: 0%;
+  text-align: left;
+  z-index: 0;
+  padding: 1rem;
+  text-shadow: 4px 4px 3px $black;
+  h1 {
+    font-size: calc(10px + 5vmin);
+    padding-bottom: 0.5rem;
+  }
+  p {
+    font-size: calc(10px + 3vmin);
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
