@@ -46,18 +46,17 @@ Using React, HTML, SCSS, and JavaScript
 ### Project page
 -- showcase language learned outside Lambda
     -Javascript
-        [x] pong
+        [x] breakout
         [x] racing-game
-    -Godot
+    -Godot games
         [ ] 2d dogeball demo
         [ ] 3d demolition derby
         [ ] 3d lazy river
-    -arduino
+    -arduino projects
         [ ] skullexia
     -React 
-         [ ] Star Wars app  
+         [x] Star Wars app  
          [x] Game of life 
-        [x] checklist app
     -blender
         [ ] find way to show off 3d models
     -animation
@@ -113,6 +112,7 @@ Using React, HTML, SCSS, and JavaScript
 -[x] validate input with yum and post error messages on screen
 -[x] style email form
 -[x] find way to make form send email(used emailjs)
+-[x] add something to verify message was successfully sent on contact form
 
 ### stretch
 

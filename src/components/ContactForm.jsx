@@ -1,16 +1,15 @@
 import React, { useState, useEffect } from "react";
+import Success from './Success';
 import * as yup from "yup"; // DOCS: https://github.com/jquense/yup
 import * as emailjs from "emailjs-com";
 
-const ContactForm = () => {
-
-
-
+const ContactForm = ({success, toggle}) => {
 
   const blankForm = {
     from_name: "",
     to_name: "",
     message: "",
+    text: "", 
   };
   const [message, setMessage] = useState(blankForm);
   const [errors, setErrors] = useState(blankForm);
@@ -32,6 +31,7 @@ const ContactForm = () => {
       .validate(e.target.value) // value in input
       .then((valid) => {
         // if passing validation, clear any error
+
         setErrors({ ...errors, [e.target.name]: "" });
       })
       .catch((err) => {
@@ -47,30 +47,36 @@ const ContactForm = () => {
       setIsButtonDisabled(!valid);
     });
   }, [message, formSchema]);
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs.sendForm("service_ycx9lgh","template_ilu9njj", e.target, "user_c9uxDicllYWHWOLF8AXuP")
       .then((result) => {
           console.log(result.text);
+          setMessage(blankForm);
+
       }, (error) => {
+        
+         setErrors({...errors, text: error.text})
           console.log(error.text);
-      });
+      }).then(toggle("success"));
 
 
+      
 
-    setMessage(blankForm);
   };
 
   const inputChange = (e) => {
     e.persist();
+
     const newMessage = { ...message, [e.target.name]: e.target.value };
     validateChange(e); // for each change in input, do inline validation
     setMessage(newMessage); // update state with new data
   };
 
   return (
+    <>
     <div className="project-border">
       <div className="contact-item">
 
@@ -133,8 +139,12 @@ const ContactForm = () => {
             </button>
           </div>
         </form>
+        {success ? <Success toggle={toggle} error={errors.text} /> : null}
+        </div>
       </div>
-    </div>
+
+    </>
+    
   );
 };
 
