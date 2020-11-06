@@ -1,0 +1,81 @@
+
+.gallery-wrap {
+  .close-panel {
+    background-color: $bg-dark;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 0.5rem;
+    width: 2rem;
+    border-radius: 0 15px 15px 0;
+    color: $contrast;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: $fancy-sans;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .close-panel-button {
+      margin: 0 auto;
+      user-select: none;
+    }
+  }
+  position: absolute;
+  background-color: $background;
+  top: 5vh;
+  bottom: 5vh;
+  right: 10vw;
+  left: 5vw;
+  z-index: 9;
+  color: $white;
+  font-family: $sans;
+  border-radius: 25px;
+  border: solid $bg-dark 10px;
+  @include nav-break {
+    right: 7rem;
+  
+  }
+  &.on {
+    transform: translate(0, 0);
+    transition: transform 0.3s ease-out;
+  }
+  &.off {
+    transform: translate(calc(200vw - 25px), 0);
+    transition: transform 0.3s ease-in;
+    z-index: 8;
+  }
+
+
+  .gallery-content {
+    margin-right: 14vw;
+    height: calc(90vh - 2rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    @include nav-break {
+      margin-right: 7.8rem;
+    
+    }
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: $background;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $contrast;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $link;
+      border-radius: 10px;
+    }
+  }
+}

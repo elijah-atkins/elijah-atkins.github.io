@@ -1,0 +1,32 @@
+/* Color Variables */
+/* icon colors */
+$background: #192e59;
+$contrast: #ffe871;
+$dark-contrast: adjust-color($color: $contrast, $hue: -90deg, $lightness: -48%);
+/* ---------- */
+$red: #932;
+$bg-dark: adjust-color($background, $lightness: -9%);
+$blue: #abc;
+$white: #dfdfd2;
+$black: #112;
+$footer: #012;
+$link: #61dafb;
+$search-bg: rgb(0, 162, 255);
+
+$bg-img: radial-gradient(
+    ellipse at right 5%,
+    $background,
+    transparent 65%
+  ),
+  radial-gradient(circle at bottom left, $background 10%, transparent 52%),
+  linear-gradient($background,
+    adjust-color($background, $hue: 120deg, $lightness: 10%)
+  );
+
+
+$speed: 600ms ease;
+
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap);
+$sans: 'Open Sans', sans-serif;
+$fancy-sans: 'Lato', sans-serif;

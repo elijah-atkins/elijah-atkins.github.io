@@ -1,0 +1,174 @@
+.nav-tint {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 8;
+  background-image: radial-gradient(closest-side at 50%, $bg-dark, transparent), linear-gradient($background, $bg-dark 85%);
+  opacity: 0.8;
+  &.on {
+
+    transform: translate(0, 0);
+    transition: transform 0.5s ease-out;
+  }
+  &.off {
+
+    transform: translate(calc(-200vw - 6px), 0);
+    transition:  transform 0.5s ease-in;
+  }
+}
+
+.nav {
+  position: absolute;
+  background-color: $contrast;
+  height: clamp(600px, calc(90vh + 3rem), 1500px);
+  width: 25vw;
+  max-width: 15rem;
+  z-index: 10;
+  top: 0;
+  right: 0;
+  border-radius: 0 0 0 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  box-shadow: -5px 5px 10px $black;
+  font-family: $fancy-sans;
+
+  @include short-view {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+  .nav-wrap {
+    cursor: pointer;
+    width: 20vw;
+    max-width: 13rem;
+
+    .nav-icon {
+      position: relative;
+      padding: 1.2rem;
+      top: 3.7rem;
+      right: 0;
+      left: 0;
+      z-index: 5;
+      opacity: 0;
+      height: 3rem;
+
+      transition: opacity 3s ease-in-out;
+      background-image: radial-gradient(
+        adjust-color($contrast, $lightness: -25%, $saturation: 10%) 10%,
+        transparent 65%
+      );
+      @include short-view {
+        top: 2.5rem;
+        height: 2rem;
+      }
+    }
+    .icon-svg {
+      top: -2rem;
+    }
+    .icon {
+      color: $dark-contrast;
+      font-size: calc(10px + 3vmin);
+      user-select: none;
+      position: relative;
+      z-index: 3;
+      top: -2rem;
+    }    
+    &.active {
+      color: $dark-contrast;
+      .icon {
+        color: $background;
+      }
+      .icon-svg {
+        svg {
+
+          fill: $background;
+        }
+      }
+    }
+    &:hover {
+      color: $dark-contrast;
+      .icon {
+        color: $background;
+      }
+      .nav-icon {
+        opacity: 1;
+        transition: opacity 0.5s ease-in-out;
+      }
+      .icon-svg {
+        svg {
+          fill: $background;
+        }
+      }
+    }
+  }
+  .close-menu {
+    background-color: $dark-contrast;
+    height: 3rem;
+    position: absolute;
+    bottom: -3px;
+    border-top: solid $background 6px;
+    border-radius: 0 0 0 2rem;
+    cursor: pointer;
+    width: 100%;
+    @include short-view {
+      opacity: 0;
+      cursor: initial;
+    }
+    &:hover {
+      background-color: adjust-color($color: $dark-contrast, $lightness: -5%);
+      .settings-icon {
+        fill: adjust-color(
+          $color: $contrast,
+          $saturation: -40%,
+          $lightness: -2%
+        );
+      }
+    }
+  }
+}
+.open {
+  transition: transform 0.3s ease-out;
+  transform: translate(0, -2vh);
+}
+.icon-svg {
+  position: relative;
+  top: -3.5rem;
+  z-index: 5;
+  @include short-view {
+    top: -1rem;
+  }
+  svg {
+    fill: $dark-contrast;
+
+    height: calc(50px + 5vmin);
+
+    @include short-view {
+      height: calc(50px + 3vmin);
+    }
+  }
+}
+.close {
+  transition: transform 0.3s ease-in;
+  transform: translate(0, -90vh);
+  @include short-view {
+    transition: transform 0.3s ease-out;
+    transform: translate(0, -2vh);
+  }
+}
+.open-rot {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(0deg);
+}
+.close-rot {
+  transition: transform 0.5s ease-in-out;
+  transform: rotate(180deg) translate(0, -5px);
+}
+.settings-icon {
+  fill: $contrast;
+  padding-top: 5px;
+  height: 2.5rem;
+}

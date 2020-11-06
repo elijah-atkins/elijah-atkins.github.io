@@ -1,0 +1,145 @@
+.about-wrap {
+  .close-panel {
+    background-color: $bg-dark;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    padding-left: 0.5rem;
+    width: 2rem;
+    border-radius: 0 15px 15px 0;
+    color: $contrast;
+    font-size: 2.5rem;
+    font-weight: 900;
+    font-family: $fancy-sans;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    .close-panel-button {
+      margin: 0 auto;
+      user-select: none;
+    }
+    
+  }
+  position: absolute;
+  background-color: $background;
+  top: 5vh;
+  bottom: 5vh;
+  right: 10vw;
+  left: 5vw;
+  z-index: 9;
+  color: $white;
+  font-family: $sans;
+  font-size: calc(8px + 2vh);
+  border-radius: 25px;
+  border: solid $bg-dark 10px;
+  padding: 1rem;
+  a{
+    color: $link;
+    text-decoration: none;
+    &:hover {
+
+      color: $contrast;
+    }
+  }
+  &.on {
+    transform: translate(0, 0);
+    transition: transform 0.3s ease-out;
+  }
+  &.off {
+    transform: translate(calc(200vw - 25px), 0);
+    transition: transform 0.3s ease-in;
+    z-index: 8;
+  }
+  @include nav-break {
+    right: 7rem;
+  
+  }
+  .about-content {
+    .about-header {
+      text-align: left;
+      font-family: $fancy-sans;
+      text-decoration: underline;
+      font-size: calc(10px + 2vw);
+      padding-bottom: 1vh;
+    }
+    .about-intro {
+      padding: 0.5vw;
+    text-align: left;
+      font-size: calc(8px + 1.5vw);
+      padding-bottom: 1vh;
+    }
+    .about-web {
+      text-align: justify;
+      font-size: calc(8px + 1.5vw);
+      padding-bottom: 1vh;
+      h3 {
+        font-family: $fancy-sans;
+        text-decoration: underline;
+        font-size: calc(10px + 2vw);
+        padding-bottom: 1vh;
+      }
+    }
+    .about-recent {
+      text-align: left;
+      font-size: calc(8px + 1.5vw);
+      padding-bottom: 1vh;
+      h2 {
+        text-align: left;
+        font-family: $fancy-sans;
+        text-decoration: underline;
+        font-size: calc(10px + 2vw);
+        padding-bottom: 1vh;
+      }
+    }
+    .about-motion {
+      text-align: justify;
+      font-size: calc(8px + 1.5vw);
+      padding-bottom: 1vh;
+      h2 {
+        text-align: left;
+        font-family: $fancy-sans;
+        text-decoration: underline;
+        font-size: calc(10px + 2vw);
+        padding-bottom: 1vh;
+      }
+    }
+    .about-about {
+      text-align: left;
+      font-size: calc(8px + 1.5vw);
+
+      font-family: $fancy-sans;
+    }
+    margin-right: 13vw;
+    padding-right: 1vw;
+    height: calc(90vh - 3rem);
+    overflow-y: auto;
+    overflow-x: hidden;
+    line-height: 1.25;
+    @include nav-break {
+      margin-right: 7rem;
+    
+    }
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: $background;
+    }
+
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $contrast;
+      border-radius: 10px;
+    }
+
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $link;
+      border-radius: 10px;
+    }
+  }
+}
