@@ -16,6 +16,11 @@ Using React, HTML, SCSS, and JavaScript
 [x] Remove un-needed template files
 
 --
+
+## Design Goals
+ 
+ To make a modern single page app style portfolio website. With a focus on accessibility and readablity and ease of use. 
+ 
 ## To DO
 
 [x] make navbar
