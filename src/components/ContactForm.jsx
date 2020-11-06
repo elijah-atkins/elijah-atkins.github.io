@@ -47,21 +47,24 @@ const ContactForm = ({success, toggle}) => {
       setIsButtonDisabled(!valid);
     });
   }, [message, formSchema]);
-
+  
   const handleSubmit = (e) => {
     e.preventDefault();
 
     emailjs.sendForm("service_ycx9lgh","template_ilu9njj", e.target,/* "user_c9uxDicllYWHWOLF8AXuP"*/)
       .then((result) => {
           console.log(result.text);
+          setMessage(blankForm);
+
       }, (error) => {
+        
          setErrors({...errors, text: error.text})
           console.log(error.text);
-      });
+      }).then(toggle("success"));
 
 
+      
 
-    setMessage(blankForm);
   };
 
   const inputChange = (e) => {
