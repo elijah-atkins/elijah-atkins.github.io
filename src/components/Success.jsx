@@ -1,17 +1,24 @@
 import React from "react";
 
-const Success = ({ toggle }) => {
+const Success = ({ toggle, error }) => {
   return (
-      <div className="success-wrap">
-          <div className="success-text">
-              <p>Thank you</p>
-             <p>Message successfully sent!</p> 
+    <div className="success-wrap">
+      {error ? (
+              <div className="contact-error">
+`error: ${error}`
+              </div>
+      ) : (
+        <div className="success-text">
+          <p>Thank you</p>
+          <p>Message successfully sent!</p>
+        </div>
+      )}
 
-          </div>
-          <div className="success-close">
-              <button onClick={toggle("success")}>OK</button>
-          </div>
+      <div className="success-close">
+        <button onClick={toggle("success")}>OK</button>
       </div>
-  )};
+    </div>
+  );
+};
 
-  export default Success;
+export default Success;

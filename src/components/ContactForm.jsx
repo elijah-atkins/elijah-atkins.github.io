@@ -51,7 +51,7 @@ const ContactForm = ({success, toggle}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_ycx9lgh","template_ilu9njj", e.target,/* "user_c9uxDicllYWHWOLF8AXuP"*/)
+    emailjs.sendForm("service_ycx9lgh","template_ilu9njj", e.target, "user_c9uxDicllYWHWOLF8AXuP")
       .then((result) => {
           console.log(result.text);
           setMessage(blankForm);
@@ -139,12 +139,10 @@ const ContactForm = ({success, toggle}) => {
             </button>
           </div>
         </form>
-        {success ? <Success toggle={toggle} /> : null}
+        {success ? <Success toggle={toggle} error={errors.text} /> : null}
         </div>
       </div>
-      <div className="contact-error">
-        {errors.text ? `error: ${errors.text}` : null}
-      </div>
+
     </>
     
   );
