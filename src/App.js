@@ -17,7 +17,7 @@ class App extends React.Component {
     gallery: false,
     about: false,
     contact: false,
-    success: true,
+    success: false,
   };
   //function to toggle nav menu
   clear = (async) => {
