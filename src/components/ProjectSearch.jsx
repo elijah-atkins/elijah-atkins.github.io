@@ -5,15 +5,11 @@ const ProjectSearch = ({ projects }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   //use expand to set hover attribute to force searchbar to stay open when in use
-  const [expand, setExpand] = useState(true);
+
 
   useEffect(() => {
     const searchWords = searchTerm.toLowerCase().split(" ");
-
     //split search term up into an array of words
-    if (searchTerm.length > 0) {
-    setExpand(false)
-    }
     //load newResults with an array of projects to display
     //using filter-expects if boolean condition is met item will be added to new array
     const newResults = projects.filter((project) => {
@@ -47,7 +43,7 @@ const ProjectSearch = ({ projects }) => {
       >
         <input
           id="search"
-          className="searchInput"
+          className={`searchInput ${(searchTerm.length > 0) ? "expand" : null}`}
           type="text"
           name="search"
           placeholder="Search"
