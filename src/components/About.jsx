@@ -53,7 +53,7 @@ const About = (props) => {
           <p>
             elijahatkins.com is a single page{" "}
             <a href="https://reactjs.org/">React App </a>
-            Designed and coded by Elijah Atkins.<br></br> Using the following resources:
+           <br></br> Designed and coded by Elijah Atkins.<br></br> Using the following resources:
           </p>
           <ul>
             <li>
