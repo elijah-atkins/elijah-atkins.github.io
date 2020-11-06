@@ -9,7 +9,7 @@ const Success = ({ toggle }) => {
 
           </div>
           <div className="success-close">
-              <button onClick={toggle(false)}>OK</button>
+              <button onClick={toggle("success")}>OK</button>
           </div>
       </div>
   )};
