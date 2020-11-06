@@ -10,8 +10,23 @@ import Img9 from "../img/team-builder.png";
 import Img10 from "../img/weather.png";
 import Img11 from "../img/react-tv.png";
 import Img12 from "../img/game-of-life.png";
+import Img13 from "../img/star-wars.png";
 
 const projects = [
+  {
+    id: "13",
+    img: Img13,
+    title: "Star Wars API frontend",
+    url: "https://starwars-info.vercel.app/",
+    git: "https://github.com/elijah-atkins/starwars-api",
+    description:
+      "Built from React Boilerplate. Front end visualization of The Star Wars API at http://swapi.dev",
+    bullet: [
+      "Made usign React Query",
+      "Modern responsive design",
+      "Fun facts from around the Star Wars universe",
+    ],
+  },
   {
     id: "11",
     img: Img11,

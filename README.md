@@ -12,10 +12,15 @@ Using React, HTML, SCSS, and JavaScript
     -using vscode minifier plugin instead
     -making React SVG component
 [x] install npm i -S yup to check formating on contact form
-[x] install axios to handle posting email
+[x] install emailjs to handle posting email
 [x] Remove un-needed template files
 
 --
+
+## Design Goals
+ 
+ To make a modern single page app style portfolio website. With a focus on accessibility and readablity and ease of use. 
+ 
 ## To DO
 
 [x] make navbar
@@ -35,9 +40,8 @@ Using React, HTML, SCSS, and JavaScript
 ### Navbar
 
 [x] Make reactive
-[x] hide logo in mobile
-[x] Left sidebar for desktop bottom for mobile
-
+[x] Add animation to interactions with navbar
+[x] Animate page transitions
 
 ### Project page
 -- showcase language learned outside Lambda
@@ -47,11 +51,17 @@ Using React, HTML, SCSS, and JavaScript
     -Godot
         [ ] 2d dogeball demo
         [ ] 3d demolition derby
+        [ ] 3d lazy river
     -arduino
         [ ] skullexia
     -React 
-        [ ] keeper app clone
-        [ ] checklist app
+         [ ] Star Wars app  
+         [x] Game of life 
+        [x] checklist app
+    -blender
+        [ ] find way to show off 3d models
+    -animation
+        [ ] showcase rigs?
 -- showcase lambda sprints
         [x] React and Morty
         [x] Advanced CSS
@@ -68,6 +78,7 @@ Using React, HTML, SCSS, and JavaScript
 -- digital and real
 -- Front End Web Development
     -nasa photo of the day
+    -conways game of life
     
 -- Graphic Design 
 
@@ -77,28 +88,37 @@ Using React, HTML, SCSS, and JavaScript
     -props 
     -puppets
 
--- Sculptures
+-- Sculptures/3D modeling
 
 ### Splash/Main page
 
+-- spotlight project
+
+### About page
+
 -- short bio
 -- profile page
--- spotlight project
+
+### Gallery
+
+-- searchable gallery of recent projects
 
 ### Contact Page
 
-[x] Social media links compoent
-[x] Connect personal social media to website
+-[x] Social media links component
+-[x] Connect personal social media to website
 -- contact form that will submit email to me
-[x] install yup to validate and axios to post
-[x] create contact form component
-[x] validate input with yum and post error messages on screen
-[x] style email form
-[x] find way to make form send email
+-[x] install yup to validate and axios to post
+-[x] create contact form component
+-[x] validate input with yum and post error messages on screen
+-[x] style email form
+-[x] find way to make form send email(used emailjs)
 
 ### stretch
 
-[x] make projects searcable
-[x] Split up scss file by component
+-[x] make projects searcable
+-[x] improved search
+-[x] Split up scss file by component
+-[ ] Create more custom svg files for card elements and borders
 
 

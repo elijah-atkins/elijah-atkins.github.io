@@ -3,7 +3,7 @@
   height: 100vh;
   width: 100vw;
   z-index: 8;
-  background-image: radial-gradient(closest-side at 50%, $bg-dark, transparent), linear-gradient($background, $bg-dark 85%);
+  background-image: radial-gradient(closest-side at 5%, $bg-dark, transparent 75%), linear-gradient(90deg, $background, transparent);
   opacity: 0.8;
   &.on {
 
