@@ -3,8 +3,8 @@
     margin: 1.5rem;
     margin-right: 5rem;
     text-align: left;
-    font-size: calc(10px + 1.4vw);
     line-height: 1.5;
+    font-size: calc(12px + 2vw);
   }
   .close-panel {
     background-color: $bg-dark;
@@ -33,7 +33,7 @@
     z-index: 8;
     width: calc(56vw + 5rem);
     font-family: $sans;
-    font-size: 1.4rem;
+
     @include nav-break {
       width: calc(100vw - 23rem);
     
@@ -42,6 +42,7 @@
 
   .contact-item {
     font-family: $sans;
+    font-weight: bold;
     background-color: $blue;
     width: calc(56vw + 1rem);
     text-align: left;
@@ -57,6 +58,7 @@
       font-size: 1.2rem;
       label {
         margin-left: 2rem;
+        font-size: calc(20px + 1vw);
       }
     }
     .contact-button {
@@ -77,6 +79,7 @@
       color: $red;
       margin-left: 0.9rem;
       padding: 0.9rem;
+      font-size: calc(18px + 1vw);
     }
     .form-control {
       font-family: $sans;
@@ -86,7 +89,7 @@
 
       margin: 1rem 0 0 1rem;
       font-size: 1.5rem;
-      font-weight: 400;
+      font-weight: bold;
       line-height: 2;
       color: $black;
       background-color: $white;
@@ -108,7 +111,7 @@
       font-family: $sans;
 
       font-size: 1.5rem;
-      font-weight: 400;
+      font-weight: bold;
       line-height: 1.1;
       color: $black;
       background-color: $white;

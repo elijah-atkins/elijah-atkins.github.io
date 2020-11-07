@@ -66,13 +66,15 @@
     .about-intro {
       padding: 0.5vw;
     text-align: left;
-      font-size: calc(8px + 1.5vw);
+      font-size: calc(8px + 3vw);
       padding-bottom: 1vh;
+      line-height: 1;
     }
     .about-web {
       text-align: justify;
-      font-size: calc(8px + 1.5vw);
+      font-size: calc(8px + 3vw);
       padding-bottom: 1vh;
+      line-height: 1;
       h3 {
         font-family: $fancy-sans;
         text-decoration: underline;
@@ -82,8 +84,9 @@
     }
     .about-recent {
       text-align: left;
-      font-size: calc(8px + 1.5vw);
+      font-size: calc(8px + 3vw);
       padding-bottom: 1vh;
+      line-height: 1;
       h2 {
         text-align: left;
         font-family: $fancy-sans;
@@ -94,8 +97,9 @@
     }
     .about-motion {
       text-align: justify;
-      font-size: calc(8px + 1.5vw);
+      font-size: calc(8px + 3vw);
       padding-bottom: 1vh;
+      line-height: 1;
       h2 {
         text-align: left;
         font-family: $fancy-sans;

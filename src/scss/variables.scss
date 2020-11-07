@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'SchoolYard';
+  src: url(../fonts//schoolyard.ttf) format('truetype');
+}
+
+
 /* Color Variables */
 /* icon colors */
 $background: #192e59;
@@ -29,5 +35,12 @@ $speed: 600ms ease;
 
 @import url(https://fonts.googleapis.com/css2?family=Open+Sans&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap);
-$sans: 'Open Sans', sans-serif;
+//@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap');$sans: 'Open Sans', sans-serif;
+//$fancy-sans: 'Lato', sans-serif;
+//@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+//$sans: 'Patrick Hand', cursive;
+
+
 $fancy-sans: 'Lato', sans-serif;
+$sans: 'SchoolYard', sans-serif;
+$nav-sans: 'SchoolYard', Fallback, sans-serif;

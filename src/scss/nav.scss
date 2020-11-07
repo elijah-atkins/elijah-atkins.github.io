@@ -32,7 +32,8 @@
   align-items: center;
   flex-direction: row;
   box-shadow: -5px 5px 10px $black;
-  font-family: $fancy-sans;
+  font-family: $nav-sans;
+  font-weight: bolder;
 
   @include short-view {
     height: 100%;
@@ -71,7 +72,7 @@
     }
     .icon {
       color: $dark-contrast;
-      font-size: calc(10px + 3vmin);
+      font-size: calc(20px + 3vmin);
       user-select: none;
       position: relative;
       z-index: 3;

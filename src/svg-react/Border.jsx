@@ -16,3 +16,4 @@ const Border = () => {
     </svg>
   );
 };
+export default Border
