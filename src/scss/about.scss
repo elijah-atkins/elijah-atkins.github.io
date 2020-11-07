@@ -58,9 +58,9 @@
   .about-content {
     .about-header {
       text-align: left;
-      font-family: $fancy-sans;
-      text-decoration: underline;
-      font-size: calc(10px + 2vw);
+      font-family: $sans;
+      text-decoration: underline dotted;
+      font-size: calc(10px + 4vw);
       padding-bottom: 1vh;
     }
     .about-intro {
@@ -76,9 +76,10 @@
       padding-bottom: 1vh;
       line-height: 1;
       h3 {
-        font-family: $fancy-sans;
-        text-decoration: underline;
-        font-size: calc(10px + 2vw);
+        text-align: left;
+        font-family: $sans;
+        text-decoration: underline dotted;
+        font-size: calc(10px + 4vw);
         padding-bottom: 1vh;
       }
     }
@@ -89,9 +90,9 @@
       line-height: 1;
       h2 {
         text-align: left;
-        font-family: $fancy-sans;
-        text-decoration: underline;
-        font-size: calc(10px + 2vw);
+        font-family: $sans;
+        text-decoration: underline dotted;
+        font-size: calc(10px + 4vw);
         padding-bottom: 1vh;
       }
     }
@@ -102,15 +103,15 @@
       line-height: 1;
       h2 {
         text-align: left;
-        font-family: $fancy-sans;
-        text-decoration: underline;
-        font-size: calc(10px + 2vw);
+        font-family: $sans;
+        text-decoration: underline dotted;
+        font-size: calc(10px + 4vw);
         padding-bottom: 1vh;
       }
     }
     .about-about {
       text-align: left;
-      font-size: calc(8px + 1.5vw);
+      font-size: calc(8px + 1vw);
 
       font-family: $fancy-sans;
     }
