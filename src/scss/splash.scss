@@ -1,13 +1,11 @@
 .splash-wrap {
-  background-color: $background;
-  border: solid 10px $black;
   margin: 1rem;
   font-size: calc(15px + 2vmin);
   position: relative;
-  height: 100vh;
-
-  width: calc(100vw - 20rem);
-  min-width: 69vw;
+  border: 1rem solid transparent;
+  border-image: url(../svg/border-dark.svg) 10% stretch;
+  width: calc(100vw - 16rem);
+  min-width: 80vw;
   min-height: 30vh;
   max-height: calc(100vh - 16rem);
   z-index: 1;
@@ -17,115 +15,129 @@
   justify-content: flex-start;
   align-items: flex-end;
   border-radius: 25px;
-  .splash-header {
-    color: $white;
-    font-size: calc(20px + 2vmin);
-    font-family: $fancy-sans;
-    padding-right: 8vw;
-    text-decoration: underline;
-    user-select: none;
-  }
-  .splash-body {
-    color: $black;
-    display: grid;
-    font-family: $sans;
-    background-color: adjust-color(
-      $color: $background,
-      $lightness: 65%,
-      $saturation: -15%
-    );
-    align-self: start;
-    margin: 1rem;
-    width: calc(100vw - 22rem);
-    min-width: 63vw;
-    height: 100%;
-    column-gap: normal;
-    grid-template-areas:
-      "title"
-      "img"
-      "desciption"
-      "bullet";
-    @include phone-view {
-      grid-template-areas:
-        "title title title title"
-        "img bullet bullet bullet"
-        "desciption desciption desciption desciption";
-    }
-    overflow-y: scroll;
-    overflow-x: hidden;
-    /* width */
-    &::-webkit-scrollbar {
-      width: 10px;
-    }
+  .splash-bg {
 
-    /* Track */
-    &::-webkit-scrollbar-track {
-      background: $background;
-    }
-
-    /* Handle */
-    &::-webkit-scrollbar-thumb {
-      background: $contrast;
-      border-radius: 10px;
-    }
-
-    /* Handle on hover */
-    &::-webkit-scrollbar-thumb:hover {
-      background: $link;
-      border-radius: 10px;
-    }
-    @include phone-view {
-    }
-    .splash-title {
-      display: flex;
-      justify-content: space-between;
-      grid-area: title;
+    width: calc(100vw - 16rem);
+    min-width: 80vw;
+    background-color: $background;
+    .splash-header {
+      color: $white;
+      font-size: calc(20px + 2vmin);
       font-family: $fancy-sans;
-      margin: 0.5rem;
-      svg {
-        width: calc(14px + 2vmin);
-        padding-right: 1vw;
-      }
-      h1{
-        text-align: left;
-        font-size: calc(13px + 2vmin);
-      }
-
+      padding-right: 8vw;
+      text-decoration: underline;
+      text-align: right;
+      user-select: none;
     }
-    .splash-img {
-      grid-area: img;
-      text-align: left;
+    .splash-border {
+      min-height: 20vh;
+      width: calc(100vw - 21.5rem);
+      min-width: 62.5vw;
+      margin: 1rem auto;
+      border: 1rem solid transparent;
+      border-image: url(../svg/border-light.svg) 5% stretch;
+      .splash-body {
+        color: $black;
+        display: grid;
+        font-family: $sans;
 
-      img {
-        margin: 1rem;
-        min-width: 10rem;
-        width: calc(25px + 50vw);
+        background-color: $bg-light;
+
+        max-height: calc(100vh - 22rem);
+
+        align-self: start;
+
+        width: calc(100vw - 22rem);
+        min-width: 65vw;
+
+        column-gap: normal;
+        grid-template-areas:
+          "title"
+          "img"
+          "desciption"
+          "bullet";
         @include phone-view {
-          left: 0;
-          max-width: calc(75px + 15vw);
+          grid-template-areas:
+            "title title title title"
+            "img bullet bullet bullet"
+            "desciption desciption desciption desciption";
         }
-      }
-    }
-    .splash-description {
-      grid-area: desciption;
-      text-align: left;
-      margin: 1rem;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        /* width */
+        &::-webkit-scrollbar {
+          width: 10px;
+        }
 
-      font-size: calc(16px + 1vmin);
-    }
-    .splash-bullet {
-      grid-area: bullet;
-      font-size: calc(13px + 1vmin);
-      text-align: left;
-      width: 50vw;
-      margin: 1rem 1em 1rem 2rem;
-      @include phone-view {
-        width: 30vw;
-      }
+        /* Track */
+        &::-webkit-scrollbar-track {
+          background: $background;
+        }
 
-      li {
-        margin: 0.5rem;
-        list-style-type: square;
+        /* Handle */
+        &::-webkit-scrollbar-thumb {
+          background: $contrast;
+          border-radius: 10px;
+        }
+
+        /* Handle on hover */
+        &::-webkit-scrollbar-thumb:hover {
+          background: $link;
+          border-radius: 10px;
+        }
+        @include phone-view {
+        }
+        .splash-title {
+          display: flex;
+          justify-content: space-between;
+          grid-area: title;
+          font-family: $fancy-sans;
+          margin: 0.5rem;
+          svg {
+            width: calc(14px + 2vmin);
+            padding-right: 1vw;
+          }
+          h1 {
+            text-align: left;
+            font-size: calc(13px + 2vmin);
+          }
+        }
+        .splash-img {
+          grid-area: img;
+          text-align: left;
+
+          img {
+            margin: 1rem;
+            min-width: 10rem;
+            width: calc(25px + 50vw);
+            @include phone-view {
+              left: 0;
+              max-width: calc(75px + 15vw);
+            }
+          }
+        }
+        .splash-description {
+          grid-area: desciption;
+          text-align: left;
+          margin: 1rem;
+
+          font-size: calc(16px + 1vmin);
+        }
+        .splash-bullet {
+          grid-area: bullet;
+          font-size: calc(13px + 1vmin);
+          text-align: left;
+          width: 50vw;
+          margin: 1rem 1em 1rem 2rem;
+          @include phone-view {
+            width: 30vw;
+          }
+
+          li {
+            margin: 0.5rem;
+            list-style-type: square;
+          }
+        }
       }
     }
   }

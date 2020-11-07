@@ -12,6 +12,7 @@
   margin: 1rem;
   border: 1rem solid transparent;
   border-image: url(../svg/project-border-bg.svg) 5% stretch;
+  
 }
 
 .p-header {
@@ -90,6 +91,8 @@
   box-shadow: inset -4px -3px 10px $background;
   background-position-x: 0px;
   background-position-y: 0px;
+  border: 1rem solid transparent;
+  border-image: url(../svg/border-inner.svg) 5% stretch;
   @include phone-view() {
     transition: 600ms;
 

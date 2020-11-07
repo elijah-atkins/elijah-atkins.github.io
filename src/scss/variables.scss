@@ -5,7 +5,8 @@ $contrast: #ffe871;
 $dark-contrast: adjust-color($color: $contrast, $hue: -90deg, $lightness: -48%);
 /* ---------- */
 $red: #932;
-$bg-dark: adjust-color($background, $lightness: -9%);
+$bg-dark: #0F1B35;
+$bg-light: #D1DAEC;
 $blue: #abc;
 $white: #dfdfd2;
 $black: #112;

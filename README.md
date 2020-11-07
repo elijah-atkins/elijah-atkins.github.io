@@ -43,7 +43,8 @@ Using React, HTML, SCSS, and JavaScript
 [x] Add animation to interactions with navbar
 [x] Animate page transitions
 
-### Project page
+### Gallery page
+-- Project cards highlighting recent projects
 -- showcase language learned outside Lambda
     -Javascript
         [x] breakout
@@ -71,7 +72,7 @@ Using React, HTML, SCSS, and JavaScript
 [x] populate with content
 [x] use react-router-dom to update nav url
 
-### Skills page
+### About page
 
 -- showcase specific projects to show abilities
 -- digital and real
@@ -98,10 +99,6 @@ Using React, HTML, SCSS, and JavaScript
 -[x] spotlight project
 --Conway's Game of Life
 
-### About page
-
--[x] short bio
--[x] profile page
 
 ### Gallery
 
