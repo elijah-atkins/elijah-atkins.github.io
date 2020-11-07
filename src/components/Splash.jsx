@@ -37,7 +37,7 @@ const Splash = () => {
         <div className="splash-bullet">
           <ul>
             <li>Create an initial configuration and observe how it evolves.</li>
-            <li>Beautiful visulization of classic cellular automaton</li>
+            <li>Beautiful visualization of classic cellular automaton</li>
             <li>Responsive game board will resize with window!</li>
           </ul>
         </div>
