@@ -1,4 +1,4 @@
-## Elijah Atkins Portfollio website
+## Elijah Atkins Portfolio website
 Making personal professional website to showcase skills
 in programing and design with a highlight on recent 
 Lambda School work
@@ -11,7 +11,7 @@ Using React, HTML, SCSS, and JavaScript
 [x] install svgo for svg optimization $ [sudo] npm i svgo
     -using vscode minifier plugin instead
     -making React SVG component
-[x] install npm i -S yup to check formating on contact form
+[x] install npm i -S yup to check formatting on contact form
 [x] install emailjs to handle posting email
 [x] Remove un-needed template files
 
@@ -19,7 +19,7 @@ Using React, HTML, SCSS, and JavaScript
 
 ## Design Goals
  
- To make a modern single page app style portfolio website. With a focus on accessibility and readablity and ease of use. 
+ To make a modern single page app style portfolio website. With a focus on accessibility and readability and ease of use. 
  
 ## To DO
 
@@ -27,14 +27,14 @@ Using React, HTML, SCSS, and JavaScript
 [x] make main Splash page 
 [x] Skills page
 [x] Contact page
-[x] projexts page -use card navigation
+[x] projects page -use card navigation
 [x] SCSS style page
 [x] use react-router-dom to control navbar
 [x] add profile picture
 [ ] add resume 
 [ ] Attend to linkdin account.
-[x] intergrate linkdin, added link
-[x] intergrate github
+[x] integrate linkdin, added link
+[x] integrate github
 [x] footer -year updates automatically
 
 ### Navbar
@@ -49,7 +49,7 @@ Using React, HTML, SCSS, and JavaScript
         [x] breakout
         [x] racing-game
     -Godot games
-        [ ] 2d dogeball demo
+        [ ] 2d doge ball demo
         [ ] 3d demolition derby
         [ ] 3d lazy river
     -arduino projects
@@ -79,10 +79,11 @@ Using React, HTML, SCSS, and JavaScript
     -nasa photo of the day
 
 -- Lambda School Build Weeks
-    -conways game of life
+    -conway's game of life
     -MedCabinet
     
 -- Graphic Design 
+    -2d animation
 
 -- Multimedia Production
     -paintings 
@@ -94,16 +95,19 @@ Using React, HTML, SCSS, and JavaScript
 
 ### Splash/Main page
 
--- spotlight project
+-[x] spotlight project
+--Conway's Game of Life
 
 ### About page
 
--- short bio
--- profile page
+-[x] short bio
+-[x] profile page
 
 ### Gallery
 
--- searchable gallery of recent projects
+-[x] searchable gallery of recent projects
+-[x] dynamically displays cards highlighting projects
+-[x] search bar minimizes if not in use and stays open to show search words
 
 ### Contact Page
 
@@ -119,8 +123,8 @@ Using React, HTML, SCSS, and JavaScript
 
 ### stretch
 
--[x] make projects searcable
--[x] improved search
+-[x] make projects searchable
+-[x] improved search results
 -[x] Split up scss file by component
 -[ ] Create more custom svg files for card elements and borders
 
