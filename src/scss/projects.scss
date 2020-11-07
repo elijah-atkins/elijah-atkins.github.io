@@ -40,7 +40,6 @@
   text-align: left;
 
   ul.bullet-item {
-
     margin: 0 0 2rem 1.5rem;
     list-style-type: disc;
     color: $black;
@@ -85,12 +84,10 @@
   margin: auto;
   width: calc(10rem + 4vw);
   height: calc(6rem + 4vw);
-
-
   background-size: 100%;
   transition: 300ms;
   border-radius: 12px;
-  box-shadow: 3px 5px 5px $background;
+  box-shadow: inset -4px -3px 10px $background;
   background-position-x: 0px;
   background-position-y: 0px;
   @include phone-view() {
@@ -100,9 +97,6 @@
     height:calc(10rem + 8vw);;
     background-size: 500px;
     background-position-x: -150px;
-
-
-
 
   }
 }

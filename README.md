@@ -77,7 +77,10 @@ Using React, HTML, SCSS, and JavaScript
 -- digital and real
 -- Front End Web Development
     -nasa photo of the day
+
+-- Lambda School Build Weeks
     -conways game of life
+    -MedCabinet
     
 -- Graphic Design 
 

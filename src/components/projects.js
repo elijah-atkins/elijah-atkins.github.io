@@ -11,8 +11,37 @@ import Img10 from "../img/weather.png";
 import Img11 from "../img/react-tv.png";
 import Img12 from "../img/game-of-life.png";
 import Img13 from "../img/star-wars.png";
+import Img14 from "../img/med-cabinet.png";
 
 const projects = [
+  {
+    id: "6",
+    img: Img6,
+    title: "NASA Astronomy Picture of the Day",
+    url: "https://nasa-photo-of-the-day.elijah-atkins.now.sh/",
+    git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
+    description:
+      "Explore the NASA apod api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calendar.",
+    bullet: [
+      "Single Page Web Application",
+      "Calendar driven navigation",
+      "Implements useHistory and useParams from react-router-dom",
+    ],
+  },
+  {
+    id: "14",
+    img: Img14,
+    title: "Med Cabinet",
+    url: "https://med-cabinet8.netlify.app/",
+    git: "https://github.com/buildweek-medcabinet-8/front/tree/elijah-atkins",
+    description:
+      "Lambda School Build Week created with a team of peers working together to created a fully functional app utilizing Front End, Back End and Data Science specialist. Med Cabinet uses Natural Language Processing to take user entered preferences and connects users with a list of strains they might enjoy. Elijah contributed code to handle user login and registration and connecting the backend with the frontend",
+    bullet: [
+      "User Registration and Login to remember recommendations",
+      "Recommendations from Natural language Processing algorithms",
+      "Lambda School Build Week",
+    ],
+  },
   {
     id: "13",
     img: Img13,
@@ -20,11 +49,25 @@ const projects = [
     url: "https://starwars-info.vercel.app/",
     git: "https://github.com/elijah-atkins/starwars-api",
     description:
-      "Built from React Boilerplate. Front end visualization of The Star Wars API at http://swapi.dev",
+      "Front end visualization of The Star Wars API at http://swapi.dev Built from React Boilerplate. Utilizing React Query to cache data in browsers and ease up bandwidth use",
     bullet: [
-      "Made usign React Query",
+      "Made using React Query",
       "Modern responsive design",
       "Fun facts from around the Star Wars universe",
+    ],
+  },
+  {
+    id: "12",
+    img: Img12,
+    title: "Conway's Game of Life",
+    url: "https://game-of-life-ea.netlify.app/",
+    git: "https://github.com/elijah-atkins/game-of-life",
+    description:
+      "Lambda School Build Week all work done by Elijah over the course of a week. This app was made with mobile users in mind. Featuring a scalable cell size which allows users to zoom in to place live cells. Built using React and JavaScript. Game board and Cells are generated with CSS styling",
+    bullet: [
+      "Create an initial configuration and observe how it evolves.",
+      "Beautiful visualization of classic cellular automaton",
+      "Responsive game board will resize with window!",
     ],
   },
   {
@@ -55,34 +98,7 @@ const projects = [
       "Custom built weather icons with animations",
     ],
   },
-  {
-    id: "6",
-    img: Img6,
-    title: "NASA Astronomy Picture of the Day",
-    url: "https://nasa-photo-of-the-day.elijah-atkins.now.sh/",
-    git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
-    description:
-      "Explore the NASA apod api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calander.",
-    bullet: [
-      "Single Page Web Application",
-      "Calendar driven navigation",
-      "Implements useHistory and useParams from react-router-dom",
-    ],
-  },
-  {
-    id: "12",
-    img: Img12,
-    title: "Conway's Game of Life",
-    url: "https://game-of-life-ea.netlify.app/",
-    git: "https://github.com/elijah-atkins/game-of-life",
-    description:
-      "This app was made with mobile users in mind. Featuring a scaleable cell size which allows users to zoom in to place live cells. Built using React and JavaScript. Game board and Cells are generated with CSS styling",
-    bullet: [
-      "Create an initial configuration and observe how it evolves.",
-      "Beautiful visulization of classic cellular automaton",
-      "Responsive game board will resize with window!",
-    ],
-  },
+
   {
     id: "8",
     img: Img8,

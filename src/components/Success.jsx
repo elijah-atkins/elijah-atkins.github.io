@@ -11,6 +11,7 @@ const Success = ({ toggle, error }) => {
         <div className="success-text">
           <p>Thank you</p>
           <p>Message successfully sent!</p>
+          <p>Elijah will get back to you soon.</p>
         </div>
       )}
 

@@ -4,11 +4,12 @@ import ProjectCard from "./ProjectCard";
 const ProjectSearch = ({ projects }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
+  //use expand to set hover attribute to force searchbar to stay open when in use
+
 
   useEffect(() => {
-    //split search term up into an array of words
     const searchWords = searchTerm.toLowerCase().split(" ");
-
+    //split search term up into an array of words
     //load newResults with an array of projects to display
     //using filter-expects if boolean condition is met item will be added to new array
     const newResults = projects.filter((project) => {
@@ -42,7 +43,7 @@ const ProjectSearch = ({ projects }) => {
       >
         <input
           id="search"
-          className="searchInput"
+          className={`searchInput ${(searchTerm.length > 0) ? "expand" : null}`}
           type="text"
           name="search"
           placeholder="Search"
@@ -68,6 +69,7 @@ const ProjectSearch = ({ projects }) => {
               d="M58.857 57.461c3.566-3.076 5.182 2.038 13.667 8.749 22.551 17.835 32.83 19.804 24.016 29.771-8.836 9.99-15.182-2.686-30.849-23.603-6.558-8.755-10.581-11.685-6.834-14.917z"
             />
           </svg>
+
         </button>
       </div>
       <div className="project-grid">
