@@ -19,11 +19,12 @@
 
 .App-header {
   display: flex;
-  font-family: $fancy-sans;
+  font-family: $nav-sans;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(23px + 2vmin);
+  font-weight: bold;
   color: $white;
 }
 

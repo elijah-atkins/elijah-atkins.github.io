@@ -12,6 +12,7 @@
   margin: 1rem;
   border: 1rem solid transparent;
   border-image: url(../svg/project-border-bg.svg) 5% stretch;
+  
 }
 
 .p-header {
@@ -20,7 +21,7 @@
   flex-direction: row;
   margin-left: 12rem;
   justify-content: flex-start;
-  font-size: calc(10px + 4vw);
+  font-size: calc(18px + 4vw);
   color: $white;
   padding: 1rem 0 2rem 0rem;
 
@@ -32,7 +33,8 @@
 
 .project-list {
   font-family: $sans;
-  font-size: calc(12px + 0.5vw);
+
+  font-size: calc(10px + 1.5vw);
   background-color: $blue;
   display: flex;
   align-items: stretch;
@@ -48,7 +50,8 @@
   }
 }
     .project-description {
-      font-size: calc(1rem + 0.5vw);
+      font-size: calc(10px + 1.5vw);
+      font-weight: bold;
     }
 
 .project-item {
@@ -82,19 +85,20 @@
 .project-img {
   padding: 2rem;
   margin: auto;
-  width: calc(10rem + 4vw);
-  height: calc(6rem + 4vw);
-  background-size: 100%;
+  width: calc(8rem + 4vw);
+  height: calc(5rem + 4vw);
+  background-size: 120%;
   transition: 300ms;
   border-radius: 12px;
-  box-shadow: inset -4px -3px 10px $background;
-  background-position-x: 0px;
-  background-position-y: 0px;
+  background-position-x: -10px;
+  background-position-y: -12px;
+  border: 1rem solid transparent;
+  border-image: url(../svg/border-inner.svg) 5% stretch;
   @include phone-view() {
     transition: 600ms;
 
-    width: calc(10rem + 8vw);
-    height:calc(10rem + 8vw);;
+    width: calc(9rem + 8vw);
+    height:calc(9rem + 8vw);;
     background-size: 500px;
     background-position-x: -150px;
 
@@ -140,7 +144,7 @@
   p {
     padding-top: 1rem;
     max-width: 60rem;
-    line-height: 1.5rem;
+    line-height: 1.8rem;
 
     @include phone-view() {
       width: 100%;

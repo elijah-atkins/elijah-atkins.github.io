@@ -133,7 +133,7 @@ const projects = [
     bullet: [
       "Sprint challenges are completed under 3 hours",
       "Custom Styled cards",
-      "Moving the mouse over the character image will reveal if they’re dead",
+      "Moving the mouse over the character image will reveal if they are dead",
     ],
   },
   {

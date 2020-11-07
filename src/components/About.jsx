@@ -24,7 +24,7 @@ const About = (props) => {
             With knowledge of the foundations of modern web design including
             HTML5 CSS3 and JavaScript, and a working relationship with modern
             development tools like React and Bootstrap. Elijah has mastery of
-            front end development. With plenty of examples in the projects page.
+            front end development. With plenty of examples in the gallery page.
           </p>
         </div>
         <div className="about-recent">
