@@ -52,36 +52,96 @@ const About = (props) => {
         <div className="about-about">
           <p>
             elijahatkins.com is a single page{" "}
-            <a href="https://reactjs.org/">React App </a>
-           <br></br> Designed and coded by Elijah Atkins.<br></br> Using the following resources:
+            <a
+              href="https://reactjs.org/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              React App{" "}
+            </a>
+            <br></br> Designed and coded by Elijah Atkins.<br></br> Using the
+            following resources:
           </p>
           <ul>
             <li>
-              <a href="https://sass-lang.com/">Sass</a> CSS extension language
+              <a
+                href="https://sass-lang.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Sass
+              </a>{" "}
+              CSS extension language
             </li>
             <li>
-              <a href="https://fontawesome.com/">Font Awesome</a> For Social
-              Media Icons
+              <a
+                href="https://fontawesome.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Font Awesome
+              </a>{" "}
+              For Social Media Icons
+            </li>
+
+            <li>
+              <a
+                href="https://fonts.google.com/specimen/Open+Sans"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Google Fonts
+              </a>{" "}
+              For Open Sans font
             </li>
             <li>
-              <a href="https://fonts.google.com/">Google Fonts</a> For all fonts
+              <a
+                href="https://fontforge.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                FontForge
+              </a> {" "}
+              For Custom font creation
             </li>
             <li>
-              <a href="https://github.com/jquense/yup">Yup,</a> a JavaScript
-              schema builder for validation
+              <a
+                href="https://github.com/jquense/yup"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Yup,
+              </a>{" "}
+              a JavaScript schema builder for validation
             </li>
             <li>
-              <a href="https://www.npmjs.com/package/emailjs-com">EmailJS </a>{" "}
+              <a
+                href="https://www.npmjs.com/package/emailjs-com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                EmailJS{" "}
+              </a>{" "}
               For sending emails using client side technologies
             </li>
           </ul>
-          <a href="https://github.com/elijah-atkins/elijah-atkins.github.io">
+          <a
+            href="https://github.com/elijah-atkins/elijah-atkins.github.io"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Website source available on github
           </a>
           <p>
             Special thanks to{" "}
-            <a href="https://lambdaschool.com/">Lambda School</a> for web
-            development training
+            <a
+              href="https://lambdaschool.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lambda School
+            </a>{" "}
+            for web development training
           </p>
         </div>
       </div>
