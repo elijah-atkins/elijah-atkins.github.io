@@ -106,7 +106,6 @@
 }
 
 .project-icons {
-  height: 5rem;
 
   display: flex;
   align-items: center;
@@ -119,7 +118,7 @@
   }
   .project-icon {
     max-width: 5rem;
-    width: calc(10px + 7vw);
+    width: calc(10px + 4vw);
     fill: $background;
     &:hover {
       fill: $contrast;
