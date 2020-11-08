@@ -4,11 +4,11 @@ import ProjectCard from "./ProjectCard";
 const ProjectSearch = ({ projects }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
-  //use expand to set hover attribute to force searchbar to stay open when in use
+  //use expand to set hover attribute to force search bar to stay open when in use
 
 
   useEffect(() => {
-    const searchWords = searchTerm.toLowerCase().split(" ");
+    const searchWords = searchTerm.toLowerCase().split(" ").filter(function(el) {return el.length != 0});
     //split search term up into an array of words
     //load newResults with an array of projects to display
     //using filter-expects if boolean condition is met item will be added to new array

@@ -22,7 +22,7 @@ class Nav extends React.Component {
                 {" "}
                 <About />
               </div>{" "}
-              <div className="icon">about</div>{" "}
+              <div className="icon">About</div>{" "}
             </div>
           </li>
 
@@ -34,7 +34,7 @@ class Nav extends React.Component {
                 {" "}
                 <Gallery />
               </div>{" "}
-              <div className="icon">gallery</div>{" "}
+              <div className="icon">Gallery</div>{" "}
             </div>
           </li>
 
@@ -46,7 +46,7 @@ class Nav extends React.Component {
                 {" "}
                 <Contact />
               </div>{" "}
-              <div className="icon">contact</div>{" "}
+              <div className="icon">Contact</div>{" "}
             </div>
           </li>
 
