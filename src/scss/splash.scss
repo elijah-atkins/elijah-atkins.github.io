@@ -67,7 +67,7 @@
             "img  bullet"
             "desciption desciption";
         }
-        overflow-y: scroll;
+        overflow-y: auto;
         overflow-x: hidden;
         /* width */
         &::-webkit-scrollbar {
@@ -99,7 +99,7 @@
           font-family: $sans;
           margin: 0.5rem;
           svg {
-            width: calc(14px + 2vmin);
+            width: calc(14px + 4vmin);
             padding-right: 1vw;
             fill: $white;
           }
