@@ -72,6 +72,7 @@
         border-radius: 10px;
         &:disabled {
           background-color: $blue;
+          color: $bg-light;
         }
       }
     }
@@ -82,7 +83,7 @@
       font-size: calc(18px + 1vw);
     }
     .form-control {
-      font-family: $sans;
+      font-family: $fancy-sans;
       display: block;
       min-width: 16rem;
       width: 55vw;
@@ -108,7 +109,7 @@
       min-width: 16rem;
       width: 55vw;
       margin: 1rem 0 0 1rem;
-      font-family: $sans;
+      font-family: $fancy-sans;
 
       font-size: 1.5rem;
       font-weight: bold;

@@ -75,7 +75,7 @@ const About = (props) => {
               For sending emails using client side technologies
             </li>
           </ul>
-          <a href="https://github.com/elijah-atkins/elijah-atkins.github.io/tree/website">
+          <a href="https://github.com/elijah-atkins/elijah-atkins.github.io">
             Website source available on github
           </a>
           <p>
