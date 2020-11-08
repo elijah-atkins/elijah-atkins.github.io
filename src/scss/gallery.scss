@@ -52,6 +52,7 @@
     height: calc(90vh - 2rem);
     overflow-y: auto;
     overflow-x: hidden;
+    overscroll-behavior: none;
     @include nav-break {
       margin-right: 7.8rem;
     

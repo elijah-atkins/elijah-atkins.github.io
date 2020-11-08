@@ -12,12 +12,14 @@
     position: absolute;
     bottom: 2rem;
     width: 100%;
-    transition: transform 0.3s ease-out;
+    transition: transform 0.3s ease-out; 
     transform: translate(0, calc(40px + 85vh + 0.25rem));
+     
     z-index: 11;
     @include short-view {
-      transform: translate(0, 100vh);
-    }
+      transform: translate(-100vw, 0);
+
+    }  
   }
 
   .social-media {

@@ -57,6 +57,7 @@
 .project-item {
   font-family: $sans;
   background-color: $blue;
+
   display: flex;
   align-items: stretch;
   flex-direction: row;
@@ -77,7 +78,7 @@
   }
 
   p {
-    text-align: left;
+    text-align: justify;
     color: $black;
   }
 }
@@ -96,7 +97,6 @@
   border-image: url(../svg/border-inner.svg) 5% stretch;
   @include phone-view() {
     transition: 600ms;
-
     width: calc(9rem + 8vw);
     height:calc(9rem + 8vw);;
     background-size: 500px;

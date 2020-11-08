@@ -65,7 +65,7 @@
     }
     .about-intro {
       padding: 0.5vw;
-    text-align: left;
+    text-align: justify;
       font-size: calc(8px + 3vw);
       padding-bottom: 1vh;
       line-height: 1;
@@ -120,6 +120,8 @@
     height: calc(90vh - 3rem);
     overflow-y: auto;
     overflow-x: hidden;
+    overscroll-behavior: none;
+
     line-height: 1.25;
     @include nav-break {
       margin-right: 7rem;
