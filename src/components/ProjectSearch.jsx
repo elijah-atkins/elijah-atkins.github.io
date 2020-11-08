@@ -8,7 +8,7 @@ const ProjectSearch = ({ projects }) => {
 
 
   useEffect(() => {
-    const searchWords = searchTerm.toLowerCase().split(" ").filter(function(el) {return el.length != 0});
+    const searchWords = searchTerm.toLowerCase().split(" ").filter((el) => el.length !== 0);
     //split search term up into an array of words
     //load newResults with an array of projects to display
     //using filter-expects if boolean condition is met item will be added to new array
