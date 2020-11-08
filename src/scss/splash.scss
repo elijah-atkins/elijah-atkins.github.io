@@ -135,11 +135,13 @@
           @include phone-view {
             width: 30vw;
           }
+          ul {
+            list-style: circle outside;
 
           li {
-            margin-left: 0.5rem;
-            list-style-type: square;
-          }
+            margin-left: 0rem;
+
+          }}
         }
       }
     }
