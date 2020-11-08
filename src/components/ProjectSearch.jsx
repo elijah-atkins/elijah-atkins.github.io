@@ -55,7 +55,6 @@ const ProjectSearch = ({ projects }) => {
         />
 
         <button className="searchButton">
-          /*inline svg for magnifying glass allows css to adjust fill color*/
           <svg
             className="search-svg"
             xmlns="http://www.w3.org/2000/svg"
