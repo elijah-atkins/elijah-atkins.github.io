@@ -13,26 +13,28 @@ const ProjectCard = ({ project }) => {
           ></div>
           <ul className="project">
             <li>
-              <a
-                className="p-link"
-                href={project.url}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <h1>{project.title}</h1>
-              </a>
+              <h1>{project.title}</h1>
             </li>
 
             <li>
               <div className="project-icons">
-                <a href={project.url} target="_blank" rel="noopener noreferrer" alt="Deployed Site">
+                <a
+                  href={project.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  alt="Deployed Site"
+                >
                   <div className="project-icon">
                     <Web />
                   </div>
-                  
                 </a>
 
-                <a href={project.git} target="_blank" rel="noopener noreferrer" alt="Github Source">
+                <a
+                  href={project.git}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  alt="Github Source"
+                >
                   <div className="project-icon">
                     <Git />
                   </div>
@@ -41,9 +43,9 @@ const ProjectCard = ({ project }) => {
             </li>
 
             <li>
-            <div className="project-description">
-        <p>{project.description}</p></div>
-        
+              <div className="project-description">
+                <p>{project.description}</p>
+              </div>
             </li>
           </ul>
         </div>
