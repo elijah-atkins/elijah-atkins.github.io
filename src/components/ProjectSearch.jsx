@@ -20,7 +20,7 @@ const ProjectSearch = ({ projects }) => {
       //return will be true if every word in searchWords is in the project valuesString
       return searchWords.every((word)=>valuesString.includes(word))
     });
-    //load array of projects to dispaly
+    //load array of projects to display
     setSearchResults(newResults);
   }, [searchTerm, projects]);
 
