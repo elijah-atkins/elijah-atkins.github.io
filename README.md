@@ -123,6 +123,9 @@ Using React, HTML, SCSS, and JavaScript
 -[x] make projects searchable
 -[x] improved search results
 -[x] Split up scss file by component
+-[x] Create custom font for website
 -[ ] Create more custom svg files for card elements and borders
+-[ ] add database to handle project entries 
+-[ ] add backend to manage database
 
 
