@@ -5,7 +5,7 @@
   border: .8rem solid transparent;
   border-image: url(../svg/border-dark.svg) 8% stretch;
   width: calc(100vw - 16rem);
-  min-width: 80vw;
+  min-width: 70vw;
   min-height: 30vh;
   max-height: calc(100vh - 15rem);
   z-index: 1;
@@ -18,7 +18,7 @@
   .splash-bg {
 
     width: calc(100vw - 16rem);
-    min-width: 80vw;
+    min-width: 70vw;
     background-color: $background;
     .splash-header {
       color: $white;
@@ -39,14 +39,13 @@
       width: calc(100vw - 21.5rem);
       min-width: 64.5vw;
       margin: 1rem auto;
-      border: 1rem solid transparent;
-      border-image: url(../svg/border-light.svg) 5% stretch;
+
       .splash-body {
-        color: $black;
+        color: $white;
         display: grid;
         font-family: $sans;
         font-weight: bold;
-        background-color: $bg-light;
+        background-color: $background;
         font-size: calc(1rem + 4vw);
         max-height: calc(100vh - 22rem);
 
@@ -102,6 +101,7 @@
           svg {
             width: calc(14px + 2vmin);
             padding-right: 1vw;
+            fill: $white;
           }
 
         }
