@@ -20,14 +20,12 @@
   .social-media {
     margin-right: 10vw;
     width: 80vw;
-
     background-color: rgba(12, 12, 29, 0.582);
     box-shadow: -5px 5px 30px $black;
     border-radius: 0 7px 0 0;
 
     @include nav-break {
-    width: calc(100vw - 15rem);
-
+      width: calc(100vw - 15rem);
     }
     @include short-view {
       border-radius: 0;
@@ -50,8 +48,6 @@
       &:hover {
         background-color: $white;
         color: $link;
-      }
-      @include short-view {
       }
     }
     h1 {

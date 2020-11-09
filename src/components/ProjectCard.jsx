@@ -2,14 +2,22 @@ import React from "react";
 import Web from "../svg-react/Web";
 import Git from "../svg-react/Git";
 
+
+
 const ProjectCard = ({ project }) => {
+  const getRand = (n) => {
+    return Math.floor(Math.random() * n)-(n*0.5)
+  }
   return (
-    <div className="project-card">
+    <div className="project-card" style={{
+      transform: `rotate(${getRand(2)}deg)`
+    }}>
       <div className="project-border">
         <div className="project-item">
           <div
             className="project-img"
-            style={{ backgroundImage: `url(${project.img})` }}
+            style={{ backgroundImage: `url(${project.img})`
+          }}
           ></div>
           <ul className="project">
             <li>
