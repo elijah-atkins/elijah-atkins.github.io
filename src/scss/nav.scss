@@ -12,7 +12,7 @@
   }
   &.off {
 
-    transform: translate(calc(-200vw - 6px), 0);
+    transform: translate(calc(-100vw - 6px), 0);
     transition:  transform 0.2s ease-in;
   }
 }
@@ -21,7 +21,7 @@
   position: absolute;
   background-color: $contrast;
   height: clamp(600px, calc(90vh + 3rem), 1500px);
-  width: 25vw;
+  width: 20vw;
   max-width: 15rem;
   z-index: 10;
   top: 0;
@@ -34,6 +34,7 @@
   box-shadow: -5px 5px 10px $black;
   font-family: $nav-sans;
   font-weight: bolder;
+  overscroll-behavior: none;
 
   @include short-view {
     height: 100%;
@@ -72,7 +73,7 @@
     }
     .icon {
       color: $dark-contrast;
-      font-size: calc(20px + 3vmin);
+      font-size: calc(18px + 2vmin);
       user-select: none;
       position: relative;
       z-index: 3;

@@ -3,6 +3,11 @@ Making personal professional website to showcase skills
 in programing and design with a highlight on recent 
 Lambda School work
 
+-TODO work on mobile view issues
+-[ ] work on overscroll issue
+-[ ] make nav bar skinnier
+-[ ] move content pages left and up
+
 Using React, HTML, SCSS, and JavaScript
 
 [x] Install a blank React app by running npx create-react-app <app-name> --use-npm.
