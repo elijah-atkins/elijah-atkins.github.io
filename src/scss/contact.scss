@@ -37,7 +37,7 @@
   .contact-form {
     position: relative;
     z-index: 8;
-    width: calc(60vw + 5rem);
+    width: calc(58vw + 5rem);
     font-family: $sans;
 
     @include nav-break {
@@ -49,7 +49,7 @@
   .contact-item {
     font-family: $sans;
     font-weight: bold;
-    width: calc(56vw + 1rem);
+    width: calc(58vw + 1rem);
     text-align: left;
     color: $black;
     @include nav-break {
@@ -91,7 +91,7 @@
       font-family: $fancy-sans;
       display: block;
       min-width: 16rem;
-      width: 55vw;
+      width: 50vw;
 
       margin: 1rem 0 0 1rem;
       font-size: 1.5rem;
@@ -112,7 +112,7 @@
     .form-control-tall {
       display: block;
       min-width: 16rem;
-      width: 55vw;
+      width: 50vw;
       margin: 1rem 0 0 1rem;
       font-family: $fancy-sans;
 

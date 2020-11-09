@@ -36,7 +36,7 @@
   @include short-view {
     top: 1vh;
     left: 1vw;
-    bottom: 6vh;
+    bottom: 1vh;
 
   }
   a{
@@ -99,8 +99,11 @@
         text-align: left;
         font-family: $sans;
         text-decoration: underline dotted;
-        font-size: calc(10px + 4vw);
+        font-size: calc(16px + 2vw);
         padding-bottom: 1vh;
+        @include phone-view {
+          font-size: calc(10px + 4vw);
+        }
       }
     }
     .about-motion {
@@ -122,7 +125,7 @@
 
       font-family: $fancy-sans;
     }
-    margin-right: 9vw;
+    margin-right: 10vw;
     padding-right: 2vw;
     height: calc(89vh - 1.1rem);
     overflow-y: auto;
@@ -131,10 +134,10 @@
 
     line-height: 1.25;
     @include short-view {
-      height: calc(100vh - 8.1rem);
+      height: calc(100vh - 5.7rem);
     }
     @include nav-break {
-      margin-right: 7rem;
+      margin-right: 8rem;
     
     }
     /* width */
