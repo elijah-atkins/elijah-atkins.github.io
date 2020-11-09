@@ -9,12 +9,17 @@
   min-height: 30vh;
   max-height: calc(100vh - 15rem);
   z-index: 1;
-  top: calc(10vh + 100px);
+
+  top: calc(10vh + 5rem);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-end;
   border-radius: 25px;
+  @include phone-view {
+    top: calc(15vh + 5rem);
+
+  }
   .splash-bg {
 
     width: calc(100vw - 16rem);
