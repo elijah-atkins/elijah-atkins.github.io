@@ -10,7 +10,7 @@ const ProjectCard = ({ project }) => {
   }
   return (
     <div className="project-card" style={{
-      transform: `rotate(${getRand(2)}deg)`
+      transform: `rotate(${getRand(1)}deg)`
     }}>
       <div className="project-border">
         <div className="project-item">
