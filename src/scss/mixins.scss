@@ -1,6 +1,6 @@
 // Mixins
 @mixin short-view {
-    @media (max-height: 750px) {
+    @media (max-height: 850px) {
         @content; 
     }
 }
@@ -11,7 +11,7 @@
 }
 
 @mixin nav-break {
-    @media (min-width: 970px) {
+    @media (min-width: 1170px) {
         @content; 
     }
 }

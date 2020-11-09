@@ -26,7 +26,7 @@
       font-size: calc(20px + 4vmin);
       font-family: $sans;
       font-weight: bold;
-      padding-right: 15vw;
+      padding-right: 3vw;
       text-decoration: underline;
       text-align: right;
       user-select: none;
@@ -35,9 +35,9 @@
       }
     }
     .splash-border {
-      min-height: 20vh;
+      min-height: 10vh;
       width: calc(100vw - 21.5rem);
-      min-width: 64.5vw;
+      min-width: 70vw;
       margin: 1rem auto;
 
       .splash-body {
@@ -52,7 +52,7 @@
         align-self: start;
 
         width: calc(100vw - 21.5rem);
-        min-width: 64.5vw;
+        min-width: 70vw;
 
         column-gap: normal;
         grid-template-areas:
@@ -70,6 +70,7 @@
         overflow-y: auto;
         overflow-x: hidden;
         overscroll-behavior: none;
+        right: 5vw;
         /* width */
         &::-webkit-scrollbar {
           width: 10px;

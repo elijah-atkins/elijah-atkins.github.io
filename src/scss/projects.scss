@@ -10,8 +10,9 @@
 
 .project-border {
   margin: 1rem;
-  border: 1rem solid transparent;
-  border-image: url(../svg/project-border-bg.svg) 5% stretch;
+  padding: 1rem;
+  background-size: 100% 100%;
+  background-image: url(../svg/project-border-bg.svg);
   
 }
 
@@ -35,18 +36,15 @@
   font-family: $sans;
 
   font-size: calc(10px + 1.5vw);
-  background-color: $blue;
   display: flex;
   align-items: stretch;
   color: $black;
   text-align: left;
 
   ul.bullet-item {
-    margin: 0 0 2rem 1.5rem;
-    list-style-type: disc;
+    margin: 0 0 2rem 2.5rem;
+    list-style-type: circle;
     color: $black;
-    @include phone-view() {
-    }
   }
 }
     .project-description {
@@ -56,7 +54,6 @@
 
 .project-item {
   font-family: $sans;
-  background-color: $blue;
 
   display: flex;
   align-items: stretch;
@@ -90,15 +87,14 @@
   height: calc(5rem + 4vw);
   background-size: 120%;
   transition: 300ms;
-  border-radius: 12px;
+  border-radius: 12%;
   background-position-x: -10px;
   background-position-y: -12px;
-  border: 1rem solid transparent;
-  border-image: url(../svg/border-inner.svg) 5% stretch;
+
   @include phone-view() {
     transition: 600ms;
     width: calc(9rem + 8vw);
-    height:calc(9rem + 8vw);;
+    height:calc(9rem + 6vw);;
     background-size: 500px;
     background-position-x: -150px;
 

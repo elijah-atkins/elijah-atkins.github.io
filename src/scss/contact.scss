@@ -29,11 +29,15 @@
       user-select: none;
     }
   }
-
+  @include short-view {
+    top: 1vh;
+    left: 1vw;
+    bottom: 1vh;
+  }
   .contact-form {
     position: relative;
     z-index: 8;
-    width: calc(56vw + 5rem);
+    width: calc(60vw + 5rem);
     font-family: $sans;
 
     @include nav-break {
@@ -45,7 +49,6 @@
   .contact-item {
     font-family: $sans;
     font-weight: bold;
-    background-color: $blue;
     width: calc(56vw + 1rem);
     text-align: left;
     color: $black;
@@ -166,7 +169,7 @@
     transition: transform 0.3s ease-out;
   }
   &.off {
-    transform: translate(calc(200vw - 25px), 0);
+    transform: translate(calc(-100vw - 25px), 0);
     transition: transform 0.3s ease-in;
     z-index: 8;
   }

@@ -25,13 +25,18 @@
   background-color: $background;
   top: 5vh;
   bottom: 5vh;
-  right: 10vw;
+  right: 5vw;
   left: 5vw;
   z-index: 9;
   color: $white;
   font-family: $sans;
   border-radius: 25px;
   border: solid $bg-dark 10px;
+  @include short-view {
+    top: 1vh;
+    left: 1vw;
+    bottom: 1vh;
+  }
   @include nav-break {
     right: 7rem;
   
@@ -41,7 +46,7 @@
     transition: transform 0.3s ease-out;
   }
   &.off {
-    transform: translate(calc(200vw - 25px), 0);
+    transform: translate(calc(-100vw - 25px), 0);
     transition: transform 0.3s ease-in;
     z-index: 8;
   }
@@ -49,10 +54,14 @@
 
   .gallery-content {
     margin-right: 14vw;
-    height: calc(90vh - 2rem);
+    height: calc(90vh - 1.3rem);
+
     overflow-y: auto;
     overflow-x: hidden;
     overscroll-behavior: none;
+    @include short-view {
+      height: calc(100vh - 4rem);
+    }
     @include nav-break {
       margin-right: 7.8rem;
     
