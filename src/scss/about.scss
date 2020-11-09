@@ -99,7 +99,7 @@
         text-align: left;
         font-family: $sans;
         text-decoration: underline dotted;
-        font-size: calc(16px + 2vw);
+        font-size: calc(11px + 3vw);
         padding-bottom: 1vh;
         @include phone-view {
           font-size: calc(10px + 4vw);
