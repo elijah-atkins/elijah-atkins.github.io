@@ -139,10 +139,15 @@
   p {
     padding-top: 1rem;
     max-width: 60rem;
-    line-height: 2.4rem;
+    line-height: 1.2rem;
 
     @include phone-view() {
       width: 100%;
+      line-height: 1.2;
+
+    }
+    @include big-width {
+      line-height: 1.2;
     }
   }
 }

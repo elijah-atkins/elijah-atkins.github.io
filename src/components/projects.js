@@ -12,10 +12,13 @@ import Img11 from "../img/react-tv.png";
 import Img12 from "../img/game-of-life.png";
 import Img13 from "../img/star-wars.png";
 import Img14 from "../img/med-cabinet.png";
-
+const getRand = (n) => {
+  return Math.floor(Math.random() * n)-(n*0.5)
+}
 const projects = [
   {
     id: "6",
+    rot: getRand(2),
     img: Img6,
     title: "NASA Astronomy Picture of the Day",
     url: "https://nasa-photo-of-the-day.elijah-atkins.now.sh/",
@@ -30,6 +33,7 @@ const projects = [
   },
   {
     id: "14",
+    rot: getRand(2),
     img: Img14,
     title: "Med Cabinet",
     url: "https://med-cabinet8.netlify.app/",
@@ -44,6 +48,7 @@ const projects = [
   },
   {
     id: "13",
+    rot: getRand(2),
     img: Img13,
     title: "Star Wars API frontend",
     url: "https://starwars-info.vercel.app/",
@@ -58,6 +63,7 @@ const projects = [
   },
   {
     id: "12",
+    rot: getRand(2),
     img: Img12,
     title: "Conway's Game of Life",
     url: "https://game-of-life-ea.netlify.app/",
@@ -72,6 +78,7 @@ const projects = [
   },
   {
     id: "11",
+    rot: getRand(2),
     img: Img11,
     title: "React Television Favorites",
     url: "https://react-tv-show.now.sh/",
@@ -86,6 +93,7 @@ const projects = [
   },
   {
     id: "10",
+    rot: getRand(2),
     img: Img10,
     title: "React Redux Weather App",
     url: "https://react-redux-app.elijah-atkins.now.sh/",
@@ -101,6 +109,7 @@ const projects = [
 
   {
     id: "8",
+    rot: getRand(2),
     img: Img8,
     title: "Dark Mode",
     url: "https://dark-mode.elijah-atkins.now.sh/",
@@ -114,6 +123,7 @@ const projects = [
   },
   {
     id: "7",
+    rot: getRand(2),
     img: Img7,
     title: "Github Usercard",
     url: "https://react-github-user-card.elijah-atkins.now.sh/",
@@ -124,6 +134,7 @@ const projects = [
   },
   {
     id: "5",
+    rot: getRand(2),
     img: Img5,
     title: "React and Morty",
     url: "https://sprint-challenge-react-rick-and-morty.now.sh/",
@@ -138,6 +149,7 @@ const projects = [
   },
   {
     id: "9",
+    rot: getRand(2),
     img: Img9,
     title: "Team Builder",
     url: "https://team-builder.elijah-atkins.now.sh",
@@ -151,6 +163,7 @@ const projects = [
   },
   {
     id: "1",
+    rot: getRand(2),
     img: Img1,
     title: "React ToDo",
     url: "https://react-todo.elijah-atkins.now.sh/",
@@ -165,6 +178,7 @@ const projects = [
   },
   {
     id: "4",
+    rot: getRand(2),
     img: Img4,
     title: "Paddle Ball",
     url: "https://elijah-atkins.github.io/Paddle-Ball-Game/paddle-ball.html",
@@ -178,6 +192,7 @@ const projects = [
   },
   {
     id: "3",
+    rot: getRand(2),
     img: Img3,
     title: "Racing Game Demo",
     url: "https://elijah-atkins.github.io/Paddle-Ball-Game/racing-game.html",
@@ -193,6 +208,7 @@ const projects = [
   },
   {
     id: "2",
+    rot: getRand(2),
     img: Img2,
     title: "Advanced CSS Lambda Sprint Challenge",
     url: "https://sprint-challenge-advanced-css-flax.now.sh/",
