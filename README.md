@@ -1,4 +1,4 @@
-## Elijah Atkins Portfolio website
+# Elijah Atkins Portfolio website
 Making personal professional website to showcase skills
 in programing and design with a highlight on recent 
 Lambda School work
@@ -24,42 +24,20 @@ Using React, HTML, SCSS, and JavaScript
  
 ## To DO
 
---[x] make navbar
---[x] make main Splash page 
---[x] Skills page
---[x] Contact page
---[x] projects page -use card navigation
---[x] SCSS style page
---[x] add profile picture
---[ ] add resume 
---[ ] Attend to linkdin account.
---[x] integrate linkdin, added link
---[x] integrate github
---[x] footer -year updates automatically
+- [ ] add profile picture
+- [ ] add resume 
+- [x] Attend to linkdin account.
+- [x] integrate linkdin, added link
+- [x] integrate github
 
-### Navbar
+
+## Navbar
 
 - [x] Make reactive
 - [x] Add animation to interactions with navbar
 - [x] Animate page transitions
 
-### Gallery page
--- Project cards highlighting recent projects
--- showcase language learned outside Lambda
-
-
-    -arduino projects
-       - [ ] skullexia
-    -React 
-        - [x] Star Wars app  
-        - [x] Game of life 
-
-
-
-
-
-
-### About page
+## About page
 
 - [x] Short Bio
 - [x] Recent experience
@@ -67,22 +45,22 @@ Using React, HTML, SCSS, and JavaScript
 - [x] Motion Graphics
 
 
-### Splash/Main page
+## Splash/Main page
 
 - [x] spotlight project
 --Conway's Game of Life
 
 
-### Gallery
+## Gallery
 - [x] create projects.js to hold array with project info
 - [x] populate page with cards that contain links to github and the deployed projects
 - [x] populate with content
-## Gallery page UI goals
+### Gallery page UI goals
 - [x] searchable gallery of recent projects
 - [x] dynamically displays cards highlighting projects
 - [x] search bar minimizes if not in use and stays open to show search words
 ## Gallery Content
-# Showcase Lambda Projects
+### Showcase Lambda Projects
 * Lambda sprints
         - [x] React and Morty
         - [x] Advanced CSS
@@ -97,22 +75,22 @@ Using React, HTML, SCSS, and JavaScript
         - [x] Github Usercard
         - [x] Team Builder
         - [x] React ToDo
-## Showcase skills learned outside Lambda
-# React 
+### Showcase skills learned outside Lambda
+#### React 
     - [x] Star Wars API
-# Javascript
+#### Javascript
     - [x] breakout
     - [x] racing-game
-# Godot games
+#### Godot games
     - [ ] 2d doge ball demo
     - [ ] 3d demolition derby
     - [ ] 3d lazy river
-# Blender 
+#### Blender 
     - [ ] Add 3D projects(try to display in browser)
-# Video Production
+#### Video Production
     - [ ] Add video projects
 
-### Contact Page
+## Contact Page
 
 - [x] Social media links component
 - [x] Connect personal social media to website
