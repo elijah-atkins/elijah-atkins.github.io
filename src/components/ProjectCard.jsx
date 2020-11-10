@@ -15,36 +15,36 @@ const ProjectCard = ({ project }) => {
             className="project-img"
             style={{ backgroundImage: `url(${project.img})`
           }}
-          ></div>
+          > <div className="project-icons">
+          <a
+            href={project.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Deployed Site"
+          >
+            <div className="project-icon">
+              <Web />
+            </div>
+          </a>
+
+          <a
+            href={project.git}
+            target="_blank"
+            rel="noopener noreferrer"
+            alt="Github Source"
+          >
+            <div className="project-icon">
+              <Git />
+            </div>
+          </a>
+        </div></div>
           <ul className="project">
             <li>
               <h1>{project.title}</h1>
             </li>
 
             <li>
-              <div className="project-icons">
-                <a
-                  href={project.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="Deployed Site"
-                >
-                  <div className="project-icon">
-                    <Web />
-                  </div>
-                </a>
-
-                <a
-                  href={project.git}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  alt="Github Source"
-                >
-                  <div className="project-icon">
-                    <Git />
-                  </div>
-                </a>
-              </div>
+             
             </li>
 
             <li>

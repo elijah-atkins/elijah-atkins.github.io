@@ -28,7 +28,7 @@ const About = (props) => {
           </p>
         </div>
         <div className="about-recent">
-          <h2>Recent practical experience in...</h2>
+          <h2>Practical experience in...</h2>
           <ul>
             <li>JavaScript</li>
 
