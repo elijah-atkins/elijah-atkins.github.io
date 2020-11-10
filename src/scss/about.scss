@@ -36,7 +36,7 @@
   @include short-view {
     top: 1vh;
     left: 1vw;
-    bottom: 1vh;
+    bottom: 6vh;
 
   }
   a{
@@ -127,14 +127,14 @@
     }
     margin-right: 10vw;
     padding-right: 2vw;
-    height: calc(89vh - 1.1rem);
+    height: calc(89vh - 1.2rem);
     overflow-y: auto;
     overflow-x: hidden;
     overscroll-behavior: none;
 
     line-height: 1.25;
     @include short-view {
-      height: calc(100vh - 5.7rem);
+      height: calc(100vh - 8.1rem);
     }
     @include nav-break {
       margin-right: 8rem;

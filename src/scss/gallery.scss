@@ -35,7 +35,7 @@
   @include short-view {
     top: 1vh;
     left: 1vw;
-    bottom: 1vh;
+    bottom: 6vh;
   }
   @include nav-break {
     right: 7rem;
@@ -60,7 +60,7 @@
     overflow-x: hidden;
     overscroll-behavior: none;
     @include short-view {
-      height: calc(100vh - 5.8rem);
+      height: calc(100vh - 8.1rem);
     }
     @include nav-break {
       margin-right: 7.8rem;
