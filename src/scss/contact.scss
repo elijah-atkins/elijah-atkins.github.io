@@ -1,5 +1,6 @@
 .contact-wrap {
-  overscroll-behavior: none;
+
+overflow: hidden;
   .contact-intro {
     position: fixed;
     font-weight: bold;
@@ -46,6 +47,7 @@
     z-index: 10;
     width: calc(60vw + 5rem);
     font-family: $sans;
+    max-height: 17vh;
 
     @include nav-break {
       width: calc(100vw - 23rem);
@@ -166,7 +168,7 @@
   background-color: $background;
   top: 5vh;
   bottom: 5vh;
-  right: 10vw;
+  right: 5vw;
   left: 5vw;
   z-index: 9;
   border-radius: 25px;
@@ -221,3 +223,4 @@
     margin-right: 20rem;
   }
 }
+
