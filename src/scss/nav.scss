@@ -1,7 +1,7 @@
 .nav-tint {
   position: absolute;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   z-index: 8;
   background-image: radial-gradient(circle at 0%, $bg-dark, transparent 75%), linear-gradient($background, transparent);
   opacity: 0.8;
