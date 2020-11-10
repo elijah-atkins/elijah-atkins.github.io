@@ -115,7 +115,13 @@
     .about-about {
       text-align: left;
       p {
-        font-size: calc(8px + 1vw);
+        font-size: calc(8px + 0.5vh);
+      }
+      li {
+        font-size: calc(8px + 0.5vh);
+      }
+      a {
+        font-size: calc(8px + 0.5vh);
       }
       font-family: $fancy-sans;
     }

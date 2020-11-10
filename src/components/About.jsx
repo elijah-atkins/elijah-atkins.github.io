@@ -58,10 +58,11 @@ const About = (props) => {
               rel="noopener noreferrer"
             >
               React App{" "}
-            </a>
-            <br></br> Designed and coded by Elijah Atkins.<br></br> Using the
-            following resources:
-          </p>
+            </a>          </p>
+            <p>Designed and coded by Elijah Atkins.</p>
+             <p>Using the
+            following resources:</p>
+
           <ul>
             <li>
               <a
