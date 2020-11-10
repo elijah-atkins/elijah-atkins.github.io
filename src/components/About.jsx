@@ -19,7 +19,7 @@ const About = (props) => {
           </p>
         </div>
         <div className="about-web">
-          <h3>Web Development</h3>
+          <h2>Web Development</h2>
           <p>
             With knowledge of the foundations of modern web design including
             HTML5 CSS3 and JavaScript, and a working relationship with modern

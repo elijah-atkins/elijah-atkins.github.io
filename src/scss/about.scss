@@ -30,23 +30,19 @@
   color: $white;
   font-family: $sans;
   padding-left: 1rem;
-  font-size: calc(8px + 2vh);
   border-radius: 25px;
   border: solid $bg-dark 10px;
   @include short-view {
     top: 1vh;
     left: 1vw;
     bottom: 6vh;
-
   }
-  a{
+  a {
     color: $link;
     text-decoration: none;
     &:hover {
-
       color: $contrast;
     }
-
   }
   &.on {
     transform: translate(0, 0);
@@ -60,69 +56,67 @@
 
   @include nav-break {
     right: 7rem;
-  
+  }
+  h2 {
+    font-size: calc(20px + 1vw);
+  }
+  p {
+    font-size: calc(15px + 1vw);
   }
   .about-content {
-
     .about-header {
       text-align: left;
       font-family: $sans;
       text-decoration: underline dotted;
-      font-size: calc(10px + 4vw);
+
       padding-bottom: 1vh;
     }
     .about-intro {
-    text-align: justify;
-      font-size: calc(8px + 3vw);
+      text-align: justify;
+
       padding-bottom: 1vh;
       line-height: 1;
     }
     .about-web {
       text-align: justify;
-      font-size: calc(8px + 3vw);
       padding-bottom: 1vh;
       line-height: 1;
-      h3 {
+      h2 {
         text-align: left;
         font-family: $sans;
         text-decoration: underline dotted;
-        font-size: calc(10px + 4vw);
         padding-bottom: 1vh;
       }
     }
     .about-recent {
       text-align: left;
-      font-size: calc(8px + 3vw);
+      font-size: calc(15px + 1vw);
       padding-bottom: 1vh;
       line-height: 1;
       h2 {
         text-align: left;
         font-family: $sans;
         text-decoration: underline dotted;
-        font-size: calc(11px + 3vw);
+        font-size: calc(20px + 1vw);
         padding-bottom: 1vh;
-        @include phone-view {
-          font-size: calc(10px + 4vw);
-        }
       }
     }
     .about-motion {
       text-align: justify;
-      font-size: calc(8px + 3vw);
       padding-bottom: 1vh;
       line-height: 1;
       h2 {
         text-align: left;
         font-family: $sans;
         text-decoration: underline dotted;
-        font-size: calc(10px + 4vw);
         padding-bottom: 1vh;
       }
     }
     .about-about {
       text-align: left;
-      font-size: calc(8px + 1vw);
-
+      p {
+        font-size: calc(8px + 1vw);
+      }
       font-family: $fancy-sans;
     }
     margin-right: 15vw;
@@ -138,7 +132,6 @@
     }
     @include nav-break {
       margin-right: 8rem;
-    
     }
     /* width */
     &::-webkit-scrollbar {
