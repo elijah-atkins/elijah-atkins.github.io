@@ -129,6 +129,10 @@ const ContactForm = ({success, toggle}) => {
               <p className="error">{errors.message}</p>
             ) : null}
           </div>
+          <div className="form-footer">
+            <p>Want to collaborate or talk?</p>
+          <p>Use this form to send Elijah a message</p>
+          </div>
           <div className="contact-button">
             <button
               type="submit"
