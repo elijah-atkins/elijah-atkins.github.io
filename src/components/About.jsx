@@ -19,7 +19,7 @@ const About = (props) => {
           </p>
         </div>
         <div className="about-web">
-          <h3>Web Development</h3>
+          <h2>Web Development</h2>
           <p>
             With knowledge of the foundations of modern web design including
             HTML5 CSS3 and JavaScript, and a working relationship with modern
@@ -28,7 +28,7 @@ const About = (props) => {
           </p>
         </div>
         <div className="about-recent">
-          <h2>Recent practical experience in...</h2>
+          <h2>Practical experience in...</h2>
           <ul>
             <li>JavaScript</li>
 
@@ -58,10 +58,11 @@ const About = (props) => {
               rel="noopener noreferrer"
             >
               React App{" "}
-            </a>
-            <br></br> Designed and coded by Elijah Atkins.<br></br> Using the
-            following resources:
-          </p>
+            </a>          </p>
+            <p>Designed and coded by Elijah Atkins.</p>
+             <p>Using the
+            following resources:</p>
+
           <ul>
             <li>
               <a
