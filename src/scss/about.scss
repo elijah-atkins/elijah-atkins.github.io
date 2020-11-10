@@ -134,7 +134,7 @@
 
     line-height: 1.25;
     @include short-view {
-      height: calc(100vh - 8.1rem);
+      height: 100%;
     }
     @include nav-break {
       margin-right: 8rem;
