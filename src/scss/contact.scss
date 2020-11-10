@@ -1,12 +1,19 @@
 .contact-wrap {
   overscroll-behavior: none;
-
   .contact-intro {
-    margin: 1.5rem;
-    margin-right: 5rem;
+    position: fixed;
+    font-weight: bold;
+    z-index: 11;
+    top: -1rem;
+    left: 20vw;
+    padding: 1rem;
     text-align: left;
     line-height: 1.5;
-    font-size: calc(12px + 2vw);
+    font-size: calc(6px + 3vh);
+    background-color: $bg-dark;
+    transform: rotate(6deg);
+    border-radius: 40%;
+
   }
   .close-panel {
     background-color: $bg-dark;
@@ -32,12 +39,12 @@
   @include short-view {
     top: 1vh;
     left: 1vw;
-    bottom: 1vh;
+    bottom: 6vh;
   }
   .contact-form {
     position: relative;
-    z-index: 8;
-    width: calc(60vw + 5rem);
+    z-index: 10;
+    width: calc(58vw + 5rem);
     font-family: $sans;
 
     @include nav-break {
@@ -49,13 +56,14 @@
   .contact-item {
     font-family: $sans;
     font-weight: bold;
-    width: calc(56vw + 1rem);
+    width: calc(58vw + 1rem);
     text-align: left;
     color: $black;
     @include nav-break {
       width: calc(100vw - 27rem);
     
     }
+
 
     .form-group {
       margin-left: -1rem;
@@ -65,6 +73,7 @@
         margin-left: 2rem;
         font-size: calc(20px + 1vw);
       }
+
     }
     .contact-button {
       margin: 0.9rem 0 0 0.9rem;
@@ -91,11 +100,9 @@
       font-family: $fancy-sans;
       display: block;
       min-width: 16rem;
-      width: 55vw;
-
+      width: 50vw;
       margin: 1rem 0 0 1rem;
       font-size: 1.5rem;
-
       line-height: 2;
       color: $black;
       background-color: $white;
@@ -112,12 +119,10 @@
     .form-control-tall {
       display: block;
       min-width: 16rem;
-      width: 55vw;
+      width: 50vw;
       margin: 1rem 0 0 1rem;
       font-family: $fancy-sans;
-
       font-size: 1.5rem;
-
       line-height: 1.1;
       color: $black;
       background-color: $white;
@@ -137,10 +142,11 @@
     height: calc(200px + 38vmax);
 
     svg {
+      transform: rotate(20deg);
       cursor: pointer;
       position: absolute;
       z-index: 9;
-      bottom: 2rem;
+      bottom: 0;
       right: calc(20% - #{1rem / 2});
       width: calc(50px + 12vmin);
       fill: $contrast;
@@ -169,7 +175,7 @@
     transition: transform 0.3s ease-out;
   }
   &.off {
-    transform: translate(calc(-100vw - 25px), 0);
+    transform: translate(calc(-200vw - 25px), 0);
     transition: transform 0.3s ease-in;
     z-index: 8;
   }
@@ -185,4 +191,31 @@
   text-align: left;
   padding: 1rem;
   line-height: 1.3;
+}
+.form-footer {
+  text-align: center;
+  font-size: calc(5px + 2vh);
+
+}
+
+.contact-bottom {
+  position: fixed;
+  z-index: 9;
+  font-weight: bold;
+  text-align: center;
+  color: $black;
+  right: 0;
+  margin-right: 40vw;
+  bottom: 0;
+  background-color: $bg-light;
+  padding: 0.5rem;
+  width: 25vw;
+  max-width: 10rem;
+  border-radius: 40%;
+  border: 5px solid $bg-dark;
+  font-size: calc(8px + 2vh);
+  transform: rotate(-3deg);
+  @include nav-break {
+    margin-right: 20rem;
+  }
 }

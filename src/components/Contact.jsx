@@ -7,17 +7,19 @@ const Contact = ({ contact, toggle, success }) => {
   <div className={`contact-wrap ${(contact)?"on":"off"}`}>
         <div className="close-panel" onClick={toggle("contact")}>
       <div className="close-panel-button" >{"<"} </div></div>
-
+      <div className="contact-intro"><h2>Hey Let's Connect</h2></div>
     <div className="contact-form">
     <ContactForm toggle={toggle} success={success}/></div>
     <div className="social-icon" >
       <div onClick={toggle("social")}>
     <Social />
-    <div className="contact-intro">
-      <p>Elijah is available to take on new projects</p>
-      </div></div>
-    </div>
+</div>
+<div className="contact-bottom">
+      <p>Prefer to connect on social media?</p>
 
+
+    </div>
+</div>
   </div>
   )
 };

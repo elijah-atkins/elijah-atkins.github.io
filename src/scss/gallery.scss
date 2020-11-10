@@ -35,7 +35,7 @@
   @include short-view {
     top: 1vh;
     left: 1vw;
-    bottom: 1vh;
+    bottom: 6vh;
   }
   @include nav-break {
     right: 7rem;
@@ -46,7 +46,7 @@
     transition: transform 0.3s ease-out;
   }
   &.off {
-    transform: translate(calc(-100vw - 25px), 0);
+    transform: translate(calc(-200vw - 25px), 0);
     transition: transform 0.3s ease-in;
     z-index: 8;
   }
@@ -60,7 +60,7 @@
     overflow-x: hidden;
     overscroll-behavior: none;
     @include short-view {
-      height: calc(100vh - 7rem);
+      height: calc(100vh - 8.1rem);
     }
     @include nav-break {
       margin-right: 7.8rem;
