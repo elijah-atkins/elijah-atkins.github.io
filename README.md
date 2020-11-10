@@ -16,7 +16,6 @@ Using React, HTML, SCSS, and JavaScript
 - [x] install emailjs to handle posting email
 - [x] Remove un-needed template files
 
---
 
 ## Design Goals
  
@@ -61,34 +60,34 @@ Using React, HTML, SCSS, and JavaScript
 - [x] search bar minimizes if not in use and stays open to show search words
 ## Gallery Content
 ### Showcase Lambda Projects
-* Lambda sprints
-        - [x] React and Morty
-        - [x] Advanced CSS
-* Lambda Build Weeks
-        - [x] Game of Life
-        - [x] Med Cabinet
-* Lambda React Projects
-        - [x] Nasa Astronomy Picture of the day
-        - [x] React Television Favorites
-        - [x] React Redux Weather App
-        - [x] Dark Mode
-        - [x] Github Usercard
-        - [x] Team Builder
-        - [x] React ToDo
+#### Lambda sprints
+- [x] React and Morty
+- [x] Advanced CSS
+#### Lambda Build Weeks
+- [x] Game of Life
+- [x] Med Cabinet
+#### Lambda React Projects
+- [x] Nasa Astronomy Picture of the day
+- [x] React Television Favorites
+- [x] React Redux Weather App
+- [x] Dark Mode
+- [x] Github Usercard
+- [x] Team Builder
+- [x] React ToDo
 ### Showcase skills learned outside Lambda
 #### React 
-    - [x] Star Wars API
+- [x] Star Wars API
 #### Javascript
-    - [x] breakout
-    - [x] racing-game
+- [x] breakout
+- [x] racing-game
 #### Godot games
-    - [ ] 2d doge ball demo
-    - [ ] 3d demolition derby
-    - [ ] 3d lazy river
+- [ ] 2d doge ball demo
+- [ ] 3d demolition derby
+- [ ] 3d lazy river
 #### Blender 
-    - [ ] Add 3D projects(try to display in browser)
+- [ ] Add 3D projects(try to display in browser)
 #### Video Production
-    - [ ] Add video projects
+- [ ] Add video projects
 
 ## Contact Page
 
