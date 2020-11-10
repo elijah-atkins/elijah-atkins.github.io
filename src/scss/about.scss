@@ -53,7 +53,7 @@
     transition: transform 0.3s ease-out;
   }
   &.off {
-    transform: translate(calc(-100vw - 25px), 0);
+    transform: translate(calc(-200vw - 25px), 0);
     transition: transform 0.3s ease-in;
     z-index: 8;
   }
