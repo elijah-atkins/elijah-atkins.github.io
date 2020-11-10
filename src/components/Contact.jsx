@@ -14,7 +14,9 @@ const Contact = ({ contact, toggle, success }) => {
       <div onClick={toggle("social")}>
     <Social />
     <div className="contact-intro">
-      <p>Elijah is available to take on new projects</p>
+      <h2>Hey Let's Connect</h2>
+      <p>Want to collaborate or talk? </p>
+      <p>Use this form to send Elijah a message</p>
       </div></div>
     </div>
 
