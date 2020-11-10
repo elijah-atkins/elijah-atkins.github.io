@@ -24,7 +24,7 @@
   background-color: $background;
   top: 5vh;
   bottom: 6vh;
-  right: 10vw;
+  right: 5vw;
   left: 5vw;
   z-index: 9;
   color: $white;
@@ -125,7 +125,7 @@
 
       font-family: $fancy-sans;
     }
-    margin-right: 10vw;
+    margin-right: 15vw;
     padding-right: 2vw;
     height: calc(89vh - 1.2rem);
     overflow-y: auto;
