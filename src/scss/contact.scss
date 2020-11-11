@@ -1,15 +1,27 @@
 .contact-form {
   position: relative;
   z-index: 10;
-  width: calc(50vw + 5rem);
+  width: calc(57vw + 5rem);
   font-family: $sans;
   max-height: 17vh;
-
+  margin-left: -1.1rem;
   @include nav-break {
     width: calc(100vw - 23rem);
   }
 }
-
+.contact-intro {
+  position: fixed;
+  z-index: 12;
+  padding: 1rem;
+  top: 0;
+  left: 25vw;
+  background-color: $bg-dark;
+  border-radius: 0 0 10px 10px;
+  h2{
+    transform: rotate(3deg);
+    font-weight: bold;
+  }
+}
 .contact-item {
   font-family: $sans;
   font-weight: bold;
