@@ -6,7 +6,7 @@ const Contact = ({ contact, toggle, success }) => {
   return (
     <div className={`content-wrap ${contact ? "on" : "off"}`}>
       <div className="close-panel" onClick={toggle("contact")}>
-        <div className="close-panel-button">{"<"} </div>
+        <div className="close-panel-button">{" "}«{" "} </div>
       </div>
       <div className="contact-content">
       <div className="contact-intro">
