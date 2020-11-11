@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = ({ contact, toggle, success }) => {
   return (
-    <div className={`contact-wrap ${contact ? "on" : "off"}`}>
+    <div className={`content-wrap ${contact ? "on" : "off"}`}>
       <div className="close-panel" onClick={toggle("contact")}>
         <div className="close-panel-button">{"<"} </div>
       </div>
@@ -18,10 +18,11 @@ const Contact = ({ contact, toggle, success }) => {
       <div className="social-icon">
         <div onClick={toggle("social")}>
           <Social />
-        </div>
-        <div className="contact-bottom">
+          <div className="contact-bottom">
           <p>Prefer to connect on social media?</p>
-        </div></div>
+        </div>
+        </div>
+</div>
       </div>
     </div>
   );

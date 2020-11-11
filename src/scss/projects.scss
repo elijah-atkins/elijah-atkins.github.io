@@ -7,7 +7,7 @@
 }
 
 .project-border {
-  margin: 1rem;
+  margin: 0.5rem;
   padding: 1rem;
   background-size: 100% 100%;
   background-image: url(../svg/project-border-bg.svg);
@@ -87,8 +87,7 @@
 
 .project-img {
   margin: auto;
-  min-width: 15rem;
-  width: calc(15rem + 4vw);
+  width: calc(12rem + 4vw);
   height: calc(9rem + 4vw);
   background-size: 120%;
   transition: 300ms;
@@ -97,6 +96,7 @@
   background-position-y: -12px;
 
   @include phone-view() {
+    min-width: 15rem;
     transition: 600ms;
     width: calc(9rem + 8vw);
     height: calc(9rem + 6vw);
@@ -132,7 +132,7 @@
 }
 
 .project {
-  margin: 1rem;
+  margin: 0.25rem;
 
   a {
     text-decoration: none;

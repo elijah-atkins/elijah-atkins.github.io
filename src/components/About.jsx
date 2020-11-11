@@ -2,11 +2,11 @@ import React from "react";
 
 const About = (props) => {
   return (
-    <div className={`about-wrap ${props.about ? "on" : "off"}`}>
+    <div className={`content-wrap ${props.about ? "on" : "off"}`}>
       <div className="close-panel" onClick={props.toggle("about")}>
         <div className="close-panel-button"> {"<"} </div>
       </div>
-      <div className="about-content">
+      <div className="content-scroll">
         <div className="about-header">
           <h2>About</h2>
         </div>
