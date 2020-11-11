@@ -4,7 +4,7 @@ import ContactForm from "./ContactForm";
 
 const Contact = ({ contact, toggle, success }) => {
   return (
-    <div className={`contact-wrap ${contact ? "on" : "off"}`}>
+    <div className={`content-wrap ${contact ? "on" : "off"}`}>
       <div className="close-panel" onClick={toggle("contact")}>
         <div className="close-panel-button">{"<"} </div>
       </div>

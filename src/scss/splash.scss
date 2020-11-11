@@ -1,14 +1,11 @@
 .splash-wrap {
   margin: 2rem;
-
   position: relative;
-
   width: calc(100vw - 16rem);
   min-width: 70vw;
   min-height: 30vh;
   max-height: calc(100vh - 24rem);
   z-index: 1;
-
   top: calc(10vh + 5rem);
   display: flex;
   flex-direction: column;
@@ -17,10 +14,8 @@
   border-radius: 25px;
   @include phone-view {
     top: calc(15vh + 5rem);
-
   }
   .splash-bg {
-
     width: calc(100vw - 16rem);
     min-width: 70vw;
     background-color: $background;
@@ -55,9 +50,9 @@
         background-color: $background;
         font-size: calc(1rem + 4vw);
         max-height: calc(100vh - 31rem);
-@include short-view {
-  max-height: calc(100vh - 25rem);
-}
+        @include short-view {
+          max-height: calc(100vh - 25rem);
+        }
         align-self: start;
 
         width: calc(100vw - 21.5rem);
@@ -112,18 +107,22 @@
           svg {
             width: calc(14px + 4vmin);
             padding-right: 1vw;
-            fill: $white;
+            fill: $contrast;
+            &:hover {
+              fill: $link;
+            }
           }
-
         }
         .splash-img {
           grid-area: img;
-          text-align: left;
+          text-align: center;
 
           img {
             margin: 1rem;
             min-width: 10rem;
             width: calc(25px + 50vw);
+            border-radius: 10px;
+
             @include phone-view {
               left: 0;
               max-width: calc(75px + 15vw);
@@ -149,10 +148,10 @@
           ul {
             list-style: circle outside;
 
-          li {
-            margin-left: 0rem;
-
-          }}
+            li {
+              margin-left: 0rem;
+            }
+          }
         }
       }
     }
