@@ -17,7 +17,7 @@
   left: 25vw;
   background-color: $bg-dark;
   border-radius: 0 0 10px 10px;
-  h2{
+  h2 {
     transform: rotate(3deg);
     font-weight: bold;
   }
@@ -113,7 +113,7 @@
     position: absolute;
     z-index: 9;
     bottom: 0;
-    right: calc(20% - #{1rem / 2});
+    left: 25vw;
     width: calc(50px + 12vmin);
     fill: $contrast;
     &:hover {
@@ -142,17 +142,17 @@
   font-weight: bold;
   text-align: center;
   color: $black;
-  right: 0;
-  margin-right: 40vw;
-  bottom: 0;
+  left: 3px;
+  cursor: pointer;
+  bottom: 3px;
   background-color: $bg-light;
   padding: 0.5rem;
   width: 5rem;
   height: 5rem;
   border-radius: 40%;
   border: 5px solid $bg-dark;
-  p{
-  font-size: 1.3rem;
+  p {
+    font-size: 1.3rem;
   }
   transform: rotate(-3deg);
   @include nav-break {

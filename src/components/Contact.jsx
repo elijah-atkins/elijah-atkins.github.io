@@ -18,10 +18,11 @@ const Contact = ({ contact, toggle, success }) => {
       <div className="social-icon">
         <div onClick={toggle("social")}>
           <Social />
-        </div>
-        <div className="contact-bottom">
+          <div className="contact-bottom">
           <p>Prefer to connect on social media?</p>
-        </div></div>
+        </div>
+        </div>
+</div>
       </div>
     </div>
   );
