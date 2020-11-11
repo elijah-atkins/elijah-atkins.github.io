@@ -7,7 +7,7 @@ const Gallery = (props) => {
 
   <div className={`content-wrap ${(props.gallery)?"on":"off"}`}>
        <div className="close-panel" onClick={props.toggle("gallery")}>
-    <div className="close-panel-button" >{"<"} </div>
+    <div className="close-panel-button" >{" "}«{" "}</div>
       </div> 
 <div className="content-scroll">
     <ProjectSearch projects={props.projects} /></div>
