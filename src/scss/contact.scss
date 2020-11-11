@@ -113,8 +113,8 @@
     position: absolute;
     z-index: 9;
     bottom: 0;
-    left: 25vw;
-    width: calc(50px + 12vmin);
+    left: 8rem;
+    width: 8rem;
     fill: $contrast;
     &:hover {
       fill: $link;
@@ -138,18 +138,19 @@
 
 .contact-bottom {
   position: fixed;
-  z-index: 9;
+  z-index: 8;
   font-weight: bold;
   text-align: center;
   color: $black;
   left: 3px;
+  margin: 0.5rem;
   cursor: pointer;
   bottom: 3px;
   background-color: $bg-light;
-  padding: 0.5rem;
+  padding: 1.5rem;
   width: 5rem;
   height: 5rem;
-  border-radius: 40%;
+  border-radius: 45%;
   border: 5px solid $bg-dark;
   p {
     font-size: 1.3rem;

@@ -120,9 +120,11 @@
     height: calc(12px + 4vh);
     fill: $contrast;
     background-color: $background;
+    border: solid 3px transparent;
     border-radius: 50%;
     &:hover {
       fill: $link;
+      background-color: $contrast;
     }
   }
   img {
