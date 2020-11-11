@@ -1,5 +1,5 @@
 import React from "react";
-import Git from "../svg-react/Git";
+import GitClean from "../svg-react/GitClean";
 import Instagram from "../svg-react/Instagram";
 import Twitter from "../svg-react/Twitter";
 import Linkdin from "../svg-react/Linkdin";
@@ -22,7 +22,7 @@ const Social = (props) => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Git alt="Github" />
+              <GitClean alt="Github" />
             </a>
           </li>
           <li>
