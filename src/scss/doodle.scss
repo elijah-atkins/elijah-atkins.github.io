@@ -1,0 +1,33 @@
+.doodle {
+    position: fixed;
+    width: 4rem;
+    z-index: -1;
+    right: 1rem;
+    bottom: 2rem;
+    opacity: 0.8;
+    fill: $black;
+    transform: rotate(-6deg);
+}
+.doodle2 {
+    position: fixed;
+    width: 6rem;
+    z-index: -1;
+    right: 25vw;
+    top: 2rem;
+    opacity: 0.8;
+    fill: $black;
+}
+.doodle3 {
+    padding-top: 0.5rem;
+    width: calc(6rem + 1vw);
+
+    opacity: 1;
+    fill: $black;
+}
+.recent-content-wrap {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-around;
+
+}
