@@ -1,4 +1,6 @@
 import React from "react";
+import Raven from "../svg-react/Raven"
+import RavenFly from "../svg-react/RavenFly"
 
 const Header = () => {
   return (
@@ -9,7 +11,8 @@ const Header = () => {
         <p>Designer</p>
         <p>Animator</p>
       </div>
-
+      <div className="doodle"><Raven /></div>
+      <div className="doodle2"><RavenFly /></div>
     </header>
   );
 };

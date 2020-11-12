@@ -1,11 +1,14 @@
 import React from "react";
+import Caw from "../svg-react/Caw";
 
 const About = (props) => {
   return (
     <div className={`content-wrap ${props.about ? "on" : "off"}`}>
       <div className="close-panel" onClick={props.toggle("about")}>
         <div className="close-panel-button"> {" "}«{" "} </div>
+
       </div>
+
       <div className="content-scroll">
         <div className="about-header">
           <h2>About</h2>
@@ -29,6 +32,8 @@ const About = (props) => {
         </div>
         <div className="about-recent">
           <h2>Practical experience in...</h2>
+          <div className="recent-content-wrap">
+            <div className="doodle3"><Caw /></div>
           <ul>
             <li>JavaScript</li>
 
@@ -36,7 +41,7 @@ const About = (props) => {
             <li>CSS</li>
             <li>React</li>
             <li>Python</li>
-          </ul>
+          </ul></div>
         </div>
         <div className="about-motion">
           <h2>Motion Graphics</h2>

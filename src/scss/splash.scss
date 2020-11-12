@@ -12,9 +12,7 @@
   justify-content: flex-start;
   align-items: flex-end;
   border-radius: 25px;
-  @include phone-view {
-    top: calc(15vh + 5rem);
-  }
+
   .splash-bg {
     width: calc(100vw - 16rem);
     min-width: 70vw;
