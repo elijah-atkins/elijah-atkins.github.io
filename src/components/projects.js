@@ -21,7 +21,7 @@ const projects = [
     rot: getRand(2),
     img: Img6,
     title: "NASA Astronomy Picture of the Day",
-    url: "https://nasa-photo-of-the-day.elijah-atkins.now.sh/",
+    url: "https://nasa.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
     description:
       "Explore the NASA apod api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calendar.",
@@ -51,7 +51,7 @@ const projects = [
     rot: getRand(2),
     img: Img13,
     title: "Star Wars API frontend",
-    url: "https://starwars-info.vercel.app/",
+    url: "https://starwars.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/starwars-api",
     description:
       "Front end visualization of The Star Wars API at http://swapi.dev Built from React Boilerplate. Utilizing React Query to cache data in browsers and ease up bandwidth use",
