@@ -23,7 +23,7 @@ const Splash = () => {
             </div>
             <div className="splash-img">
               <a
-                href="https://game-of-life-ea.netlify.app/"
+                href="https://game-of-life.elijahatkins.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
