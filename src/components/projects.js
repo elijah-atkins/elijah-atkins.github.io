@@ -96,7 +96,7 @@ const projects = [
     rot: getRand(2),
     img: Img10,
     title: "React Redux Weather App",
-    url: "https://react-redux-app.elijah-atkins.now.sh/",
+    url: "https://weather.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/React-Redux-App",
     description:
       "Custom built weather app with custom weather icons and weather animations. Built using React, axios, redux, thunk, and SCSS.",
