@@ -18,7 +18,25 @@ const getRand = (n) => {
   return (Math.random() * n)-(n*0.5)
 }
 const projects = [
+<<<<<<< HEAD
 
+=======
+  {
+    id: "15",
+    rot: getRand(3),
+    img: Img15,
+    title: "Tic Tac Toe in Angular",
+    url: "https://tic-tac-toe.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/tic-tac-toe",
+    description:
+    "Play Tic Tac Toe in this Web App. This is Elijah's first app built in Angular, with Angular Materials, Bootstrap and some custom SCSS",
+    bullet: [
+      "Play the classic game",
+      "X's and O's drawn in CSS",
+      "Play with a friend",
+    ],
+  },
+>>>>>>> 5ded0c066ff7460c4e3b5b5f1669d8aa3f58db79
   {
     id: "6",
     rot: getRand(3),
