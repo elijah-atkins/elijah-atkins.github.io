@@ -18,25 +18,6 @@ const getRand = (n) => {
   return (Math.random() * n)-(n*0.5)
 }
 const projects = [
-<<<<<<< HEAD
-
-=======
-  {
-    id: "15",
-    rot: getRand(3),
-    img: Img15,
-    title: "Tic Tac Toe in Angular",
-    url: "https://tic-tac-toe.elijahatkins.com/",
-    git: "https://github.com/elijah-atkins/tic-tac-toe",
-    description:
-    "Play Tic Tac Toe in this Web App. This is Elijah's first app built in Angular, with Angular Materials, Bootstrap and some custom SCSS",
-    bullet: [
-      "Play the classic game",
-      "X's and O's drawn in CSS",
-      "Play with a friend",
-    ],
-  },
->>>>>>> 5ded0c066ff7460c4e3b5b5f1669d8aa3f58db79
   {
     id: "6",
     rot: getRand(3),
@@ -45,7 +26,7 @@ const projects = [
     url: "https://nasa.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
     description:
-      "Explore the NASA apod api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calendar.",
+      "Explore NASA Astronomy Photo of the Day api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calendar.",
     bullet: [
       "Single Page Web Application",
       "Calendar driven navigation",
