@@ -28,7 +28,7 @@ const projects = [
     description:
     "Play Tic Tac Toe in this Web App. This is Elijah's first app built in Angular, with Angular Materials, Bootstrap and some custom SCSS",
     bullet: [
-      "Single Page Web Application",
+      "Play the classic game",
       "X's and O's drawn in CSS",
       "Play with a friend",
     ],
