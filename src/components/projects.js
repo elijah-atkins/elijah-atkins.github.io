@@ -12,10 +12,27 @@ import Img11 from "../img/react-tv.png";
 import Img12 from "../img/game-of-life.png";
 import Img13 from "../img/star-wars.png";
 import Img14 from "../img/med-cabinet.png";
+import Img15 from "../img/tic-tac-toe.png";
 const getRand = (n) => {
-  return Math.floor(Math.random() * n)-(n*0.5)
+  
+  return (Math.random() * n)-(n*0.5)
 }
 const projects = [
+  {
+    id: "15",
+    rot: getRand(3),
+    img: Img15,
+    title: "Tic Tac Toe in Angular",
+    url: "https://tic-tac-toe.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/tic-tac-toe",
+    description:
+    "Play Tic Tac Toe in this Web App. This is Elijah's first app built in Angular, with Angular Materials, Bootstrap and some custom SCSS",
+    bullet: [
+      "Single Page Web Application",
+      "X's and O's drawn in CSS",
+      "Play with a friend",
+    ],
+  },
   {
     id: "6",
     rot: getRand(3),
