@@ -19,21 +19,6 @@ const getRand = (n) => {
 }
 const projects = [
   {
-    id: "15",
-    rot: getRand(3),
-    img: Img15,
-    title: "Tic Tac Toe in Angular",
-    url: "https://tic-tac-toe.elijahatkins.com/",
-    git: "https://github.com/elijah-atkins/tic-tac-toe",
-    description:
-    "Play Tic Tac Toe in this Web App. This is Elijah's first app built in Angular, with Angular Materials, Bootstrap and some custom SCSS",
-    bullet: [
-      "Play the classic game",
-      "X's and O's drawn in CSS",
-      "Play with a friend",
-    ],
-  },
-  {
     id: "6",
     rot: getRand(3),
     img: Img6,
@@ -41,7 +26,7 @@ const projects = [
     url: "https://nasa.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
     description:
-      "Explore the NASA apod api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calendar.",
+      "Explore NASA Astronomy Photo of the Day api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calendar.",
     bullet: [
       "Single Page Web Application",
       "Calendar driven navigation",
@@ -79,6 +64,21 @@ const projects = [
     ],
   },
   {
+    id: "15",
+    rot: getRand(3),
+    img: Img15,
+    title: "Tic Tac Toe in Angular",
+    url: "https://tic-tac-toe.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/tic-tac-toe",
+    description:
+    "Play Tic Tac Toe in this Web App. This is Elijah's first app built in Angular, with Angular Materials, Bootstrap and some custom SCSS",
+    bullet: [
+      "Single Page Web Application",
+      "X's and O's drawn in CSS",
+      "Play with a friend",
+    ],
+  },
+  {
     id: "13",
     rot: getRand(3),
     img: Img13,
@@ -109,21 +109,7 @@ const projects = [
       "Custom built weather icons with animations",
     ],
   },
-  {
-    id: "11",
-    rot: getRand(3),
-    img: Img11,
-    title: "React Television Favorites",
-    url: "https://tv.elijahatkins.com/",
-    git: "https://github.com/elijah-atkins/React-Testing-TV-Show",
-    description:
-      "Built off of existing code to expanded app functionality, added show selection function and styles. Built using React, axios, react-dropdown",
-    bullet: [
-      "Page tested with react testing library",
-      "Click show title to expose show selection dropdown",
-      "Explore tv favorites with episode synopsis for every season",
-    ],
-  },
+
 
 
   // {
@@ -195,6 +181,21 @@ const projects = [
   //     "Select and tag multiple items for removal",
   //   ],
   // },
+  {
+    id: "11",
+    rot: getRand(3),
+    img: Img11,
+    title: "React Television Favorites",
+    url: "https://tv.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/React-Testing-TV-Show",
+    description:
+      "Built off of existing code to expanded app functionality, added show selection function and styles. Built using React, axios, react-dropdown",
+    bullet: [
+      "Page tested with react testing library",
+      "Click show title to expose show selection dropdown",
+      "Explore tv favorites with episode synopsis for every season",
+    ],
+  },
   {
     id: "4",
     rot: getRand(3),
