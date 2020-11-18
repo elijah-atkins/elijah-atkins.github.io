@@ -34,21 +34,6 @@ const projects = [
     ],
   },
   {
-    id: "14",
-    rot: getRand(3),
-    img: Img14,
-    title: "Med Cabinet",
-    url: "https://med-cabinet8.netlify.app/",
-    git: "https://github.com/buildweek-medcabinet-8/front/tree/elijah-atkins",
-    description:
-      "Lambda School Build Week created with a team of peers working together to created a fully functional app utilizing Front End, Back End and Data Science specialist. Med Cabinet uses Natural Language Processing to take user entered preferences and connects users with a list of strains they might enjoy. Elijah contributed code to handle user login and registration and connecting the backend with the frontend",
-    bullet: [
-      "User Registration and Login to remember recommendations",
-      "Recommendations from Natural language Processing algorithms",
-      "Lambda School Build Week",
-    ],
-  },
-  {
     id: "12",
     rot: getRand(3),
     img: Img12,
@@ -64,6 +49,22 @@ const projects = [
     ],
   },
   {
+    id: "14",
+    rot: getRand(3),
+    img: Img14,
+    title: "Med Cabinet",
+    url: "https://med-cabinet8.netlify.app/",
+    git: "https://github.com/buildweek-medcabinet-8/front/tree/elijah-atkins",
+    description:
+      "Lambda School Build Week created with a team of peers working together to created a fully functional app utilizing Front End, Back End and Data Science specialist. Med Cabinet uses Natural Language Processing to take user entered preferences and connects users with a list of strains they might enjoy. Elijah contributed code to handle user login and registration and connecting the backend with the frontend",
+    bullet: [
+      "User Registration and Login to remember recommendations",
+      "Recommendations from Natural language Processing algorithms",
+      "Lambda School Build Week",
+    ],
+  },
+
+  {
     id: "15",
     rot: getRand(3),
     img: Img15,
@@ -71,11 +72,11 @@ const projects = [
     url: "https://tic-tac-toe.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/tic-tac-toe",
     description:
-    "Play Tic Tac Toe in this Web App. This is Elijah's first app built in Angular, with Angular Materials, Bootstrap and some custom SCSS",
+    "Play Tic Tac Toe in this Web App. This is Elijah's first app built in Angular, with Typescript, Angular Materials, Bootstrap. Written in Typescript, HTML, and SCSS",
     bullet: [
-      "Single Page Web Application",
+      "Two player game, play with a friend",
+      "Game declares winner",
       "X's and O's drawn in CSS",
-      "Play with a friend",
     ],
   },
   {
@@ -86,7 +87,7 @@ const projects = [
     url: "https://starwars.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/starwars-api",
     description:
-      "Front end visualization of The Star Wars API at http://swapi.dev Built from React Boilerplate. Utilizing React Query to cache data in browsers and ease up bandwidth use",
+      "Front end visualization of The Star Wars API at http://swapi.dev Built from React Boilerplate. Utilizing React Query to cache data in browsers and ease up bandwidth use. Written in Javascript, HTML5 and CSS",
     bullet: [
       "Made using React Query",
       "Modern responsive design",
@@ -102,7 +103,7 @@ const projects = [
     url: "https://weather.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/React-Redux-App",
     description:
-      "Custom built weather app with custom weather icons and weather animations. Built using React, axios, redux, thunk, and SCSS.",
+      "Custom built weather app with custom weather icons and weather animations. Built using React, axios, redux, thunk, and SCSS. Written in Javascript, SCSS and HTML",
     bullet: [
       "Single Page Web React Application made with react-redux",
       "Fetching weather data from MetaWeather api",
@@ -134,7 +135,7 @@ const projects = [
     url: "https://github.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/React-Github-User-Card",
     description:
-      "Shows a profile card for Github users with a list of followers/following. Built using React, SCSS, and axios.",
+      "Shows a profile card for Github users with a list of followers/following. Built using React, SCSS, and axios. Written in Javascript, SCSS, and HTML",
     bullet: ["Pulling data from Github api", "Search bar to search for users"],
   },
   {
@@ -145,7 +146,7 @@ const projects = [
     url: "https://rick-and-morty.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/Sprint-Challenge-React-Wars",
     description:
-      "Lambda School Sprint Challenge pulling data from the  Rick and Morty API  to show  a List of Rick and Morty characters. Built using React, SCSS, and axios.",
+      "Lambda School Sprint Challenge pulling data from the  Rick and Morty API  to show  a List of Rick and Morty characters. Built using React, SCSS, and axios. Written in Javascript CSS and HTML",
     bullet: [
       "Sprint challenges are completed under 3 hours",
       "Custom Styled cards",
@@ -189,7 +190,7 @@ const projects = [
     url: "https://tv.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/React-Testing-TV-Show",
     description:
-      "Built off of existing code to expanded app functionality, added show selection function and styles. Built using React, axios, react-dropdown",
+      "Built off of existing code to expanded app functionality, added show selection function and styles. Built using React, axios, react-dropdown. Written in Javascript, CSS and HTML",
     bullet: [
       "Page tested with react testing library",
       "Click show title to expose show selection dropdown",
