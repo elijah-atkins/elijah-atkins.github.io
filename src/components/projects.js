@@ -20,7 +20,7 @@ const getRand = (n) => {
 const projects = [
   {
     id: "6",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img6,
     title: "NASA Astronomy Picture of the Day",
     url: "https://nasa.elijahatkins.com/",
@@ -28,45 +28,44 @@ const projects = [
     description:
       "Explore NASA Astronomy Photo of the Day api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calendar.",
     bullet: [
-      "Single Page Web Application",
+      "App can handle pictures and video",
       "Calendar driven navigation",
       "Implements useHistory and useParams from react-router-dom",
     ],
   },
   {
     id: "12",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img12,
     title: "Conway's Game of Life",
     url: "https://game-of-life.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/game-of-life",
-    description:
-      "Lambda School Build Week all work done by Elijah over the course of a week. This app was made with mobile users in mind. Featuring a scalable cell size which allows users to zoom in to place live cells. Built using React and JavaScript. Game board and Cells are generated with CSS styling",
+    description: "Welcome to John Conway's Game of Life! This is a computer science classic from 1970, a program that simulates a cellular automaton (plural automata). It has connections to all kinds of different aspects of computer science and nature.",
     bullet: [
-      "Create an initial configuration and observe how it evolves.",
-      "Beautiful visualization of classic cellular automaton",
+      " Created from a React Boilerplate to a fully functional web application in 1 week.",
+      "Dynamic board size, Application will create a board based on browser window size",
       "Responsive game board will resize with window!",
     ],
   },
   {
     id: "14",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img14,
     title: "Med Cabinet",
     url: "https://med-cabinet8.netlify.app/",
     git: "https://github.com/buildweek-medcabinet-8/front/tree/elijah-atkins",
     description:
-      "Lambda School Build Week created with a team of peers working together to created a fully functional app utilizing Front End, Back End and Data Science specialist. Med Cabinet uses Natural Language Processing to take user entered preferences and connects users with a list of strains they might enjoy. Elijah contributed code to handle user login and registration and connecting the backend with the frontend",
+      "Med-Cabinet is a React web application that allows Medicinal Marijuana users find strain recommendations based on Natural language processing.",
     bullet: [
-      "User Registration and Login to remember recommendations",
-      "Recommendations from Natural language Processing algorithms",
-      "Lambda School Build Week",
+      "Collaborated remotely with a team of 4 Web Developers, and 2 Data Scientists to build a fully functional web application in 1 week.",
+      "Solely responsible for creating login page",
+      " Utilized a custom API developed by our web back end",
     ],
   },
 
   {
     id: "15",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img15,
     title: "Tic Tac Toe in Angular",
     url: "https://tic-tac-toe.elijahatkins.com/",
@@ -81,7 +80,7 @@ const projects = [
   },
   {
     id: "13",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img13,
     title: "Star Wars API frontend",
     url: "https://starwars.elijahatkins.com/",
@@ -97,7 +96,7 @@ const projects = [
 
   {
     id: "10",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img10,
     title: "React Redux Weather App",
     url: "https://weather.elijahatkins.com/",
@@ -129,7 +128,7 @@ const projects = [
   // },
   {
     id: "7",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img7,
     title: "Github Usercard",
     url: "https://github.elijahatkins.com/",
@@ -140,7 +139,7 @@ const projects = [
   },
   {
     id: "5",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img5,
     title: "React and Morty",
     url: "https://rick-and-morty.elijahatkins.com/",
@@ -184,7 +183,7 @@ const projects = [
   // },
   {
     id: "11",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img11,
     title: "React Television Favorites",
     url: "https://tv.elijahatkins.com/",
@@ -199,7 +198,7 @@ const projects = [
   },
   {
     id: "4",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img4,
     title: "Paddle Ball",
     url: "https://elijah-atkins.github.io/Paddle-Ball-Game/paddle-ball.html",
@@ -213,7 +212,7 @@ const projects = [
   },
   {
     id: "3",
-    rot: getRand(3),
+    rot: getRand(1),
     img: Img3,
     title: "Racing Game Demo",
     url: "https://elijah-atkins.github.io/Paddle-Ball-Game/racing-game.html",
