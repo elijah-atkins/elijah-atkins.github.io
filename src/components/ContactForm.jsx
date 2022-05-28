@@ -23,7 +23,8 @@ const ContactForm = ({success, toggle}) => {
       .required("email is a required field"),
     message: yup.string().required("please enter a message"),
   });
-
+  // https://dashboard.emailjs.com/admin/account
+  emailjs.init('user_9uGgyjy7pkRZkqKCGG2wK');
   // inline validation, validating one key/value pair
   const validateChange = (e) => {
     yup
@@ -51,7 +52,7 @@ const ContactForm = ({success, toggle}) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_ycx9lgh","template_ilu9njj", e.target, "user_c9uxDicllYWHWOLF8AXuP")
+    emailjs.sendForm("gmail","template_jn20mob", e.target, "user_9uGgyjy7pkRZkqKCGG2wK")
       .then((result) => {
           console.log(result.text);
           setMessage(blankForm);

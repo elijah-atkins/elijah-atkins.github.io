@@ -1,25 +1,38 @@
-// import Img1 from "../img/react-todo.png";
-// import Img2 from "../img/space-walkers.png";
+
 import Img3 from "../img/racing-game.png";
 import Img4 from "../img/paddle-ball.png";
 import Img5 from "../img/rick-and-morty.png";
 import Img6 from "../img/nasa.png";
 import Img7 from "../img/github.png";
-// import Img8 from "../img/dark-mode.png";
-// import Img9 from "../img/team-builder.png";
 import Img10 from "../img/weather.png";
 import Img11 from "../img/react-tv.png";
 import Img12 from "../img/game-of-life.png";
 import Img13 from "../img/star-wars.png";
 import Img14 from "../img/med-cabinet.png";
 import Img15 from "../img/tic-tac-toe.png";
+import boid from "../img/flappy-bird.png"
 const getRand = (n) => {
   
   return (Math.random() * n)-(n*0.5)
 }
 const projects = [
+    {
+    id: "12",
+    rot: getRand(3),
+    img: boid,
+    title: "Flappy Bird 3D",
+    url: "https://flappy-bird.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/FlappityBird3D",
+    description:
+      "Flappy Bird clone made in Three.js. This game is built using Node, and Three.js and uses external assets for the skybox, 3D models and audio.",
+    bullet: [
+      "Made from default Node boilerplate",
+      "Custom charactor model",
+    ],
+  },
+  
   {
-    id: "6",
+    id: "1",
     rot: getRand(1),
     img: Img6,
     title: "NASA Astronomy Picture of the Day",
@@ -34,7 +47,7 @@ const projects = [
     ],
   },
   {
-    id: "12",
+    id: "2",
     rot: getRand(1),
     img: Img12,
     title: "Conway's Game of Life",
@@ -48,7 +61,7 @@ const projects = [
     ],
   },
   {
-    id: "14",
+    id: "3",
     rot: getRand(1),
     img: Img14,
     title: "Med Cabinet",
@@ -64,7 +77,7 @@ const projects = [
   },
 
   {
-    id: "15",
+    id: "4",
     rot: getRand(1),
     img: Img15,
     title: "Tic Tac Toe in Angular",
@@ -79,7 +92,7 @@ const projects = [
     ],
   },
   {
-    id: "13",
+    id: "5",
     rot: getRand(1),
     img: Img13,
     title: "Star Wars API frontend",
@@ -95,7 +108,7 @@ const projects = [
   },
 
   {
-    id: "10",
+    id: "6",
     rot: getRand(1),
     img: Img10,
     title: "React Redux Weather App",
@@ -110,22 +123,6 @@ const projects = [
     ],
   },
 
-
-
-  // {
-  //   id: "8",
-  //   rot: getRand(3),
-  //   img: Img8,
-  //   title: "Crypto Tracker",
-  //   url: "https://crypto-tracker.elijahatkins.com/",
-  //   git: "https://github.com/elijah-atkins/dark-mode",
-  //   description:
-  //     "Implemented a dark mode feature to existing code. Built using React, with a custom hook to use browsers local storage to remember state.",
-  //   bullet: [
-  //     "Built onto existing Crypto App",
-  //     "Browser remembers dark mode setting",
-  //   ],
-  // },
   {
     id: "7",
     rot: getRand(1),
@@ -138,7 +135,7 @@ const projects = [
     bullet: ["Pulling data from Github api", "Search bar to search for users"],
   },
   {
-    id: "5",
+    id: "8",
     rot: getRand(1),
     img: Img5,
     title: "React and Morty",
@@ -152,37 +149,9 @@ const projects = [
       "Moving the mouse over the character image will reveal if they are dead",
     ],
   },
-  // {
-  //   id: "9",
-  //   rot: getRand(3),
-  //   img: Img9,
-  //   title: "Team Builder",
-  //   url: "https://team-builder.elijahatkins.com",
-  //   git: "https://github.com/elijah-atkins/team-builder",
-  //   description:
-  //     "Team Builder app uses forms to input data that will generate cards with data onto page. Built using Create React App and SCSS.",
-  //   bullet: [
-  //     "Made from default react boilerplate",
-  //     "App will accept and display data",
-  //   ],
-  // },
-  // {
-  //   id: "1",
-  //   rot: getRand(3),
-  //   img: Img1,
-  //   title: "React ToDo",
-  //   url: "react-todo.elijahatkins.com",
-  //   git: "https://github.com/elijah-atkins/React-Todo",
-  //   description:
-  //     "ToDo lists a simple app made to explore CRUD (create, read, update, delete). Built using React, SCSS and javaScript.",
-  //   bullet: [
-  //     "Allows user to make custom list",
-  //     "Long click to edit",
-  //     "Select and tag multiple items for removal",
-  //   ],
-  // },
+
   {
-    id: "11",
+    id: "9",
     rot: getRand(1),
     img: Img11,
     title: "React Television Favorites",
@@ -197,7 +166,7 @@ const projects = [
     ],
   },
   {
-    id: "4",
+    id: "10",
     rot: getRand(1),
     img: Img4,
     title: "Paddle Ball",
@@ -211,7 +180,7 @@ const projects = [
     ],
   },
   {
-    id: "3",
+    id: "11",
     rot: getRand(1),
     img: Img3,
     title: "Racing Game Demo",
@@ -226,19 +195,6 @@ const projects = [
       "Built all sprites in game",
     ],
   },
-  // {
-  //   id: "2",
-  //   rot: getRand(3),
-  //   img: Img2,
-  //   title: "Advanced CSS Lambda Sprint Challenge",
-  //   url: "https://sprint-challenge-advanced-css.elijahatkins.com",
-  //   git: "https://github.com/elijah-atkins/Sprint-Challenge--Advanced-CSS",
-  //   description:
-  //     " Starting from non styled html add CSS to style document to expected output. Built using HTML5 and LESS compiler.",
-  //   bullet: [
-  //     "Sprint challenges are completed under 3 hours",
-  //     "CSS driven animations",
-  //   ],
-  // },
+
 ];
 export default projects;
