@@ -11,11 +11,43 @@ import Img13 from "../img/star-wars.png";
 import Img14 from "../img/med-cabinet.png";
 import Img15 from "../img/tic-tac-toe.png";
 import boid from "../img/flappy-bird.png"
+import earth from "../img/earth.png";
+import earth1 from "../img/earth-ar.png";
+
 const getRand = (n) => {
   
   return (Math.random() * n)-(n*0.5)
 }
 const projects = [
+  {
+    id: "14",
+    rot: getRand(3),
+    img: earth,
+    title: "Earth",
+    url: "https://earth.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/earth",
+    description:
+      "3D Model of the earth, with a rotating camera. Made in Three.js. With Models and Textures from NASA.",
+    bullet: [
+      "Custom atmosphere shader",
+      "Milky Way Skybox",
+    ],
+  },
+  {
+    id: "13",
+    rot: getRand(3),
+    img: earth1,
+    title: "Earth-AR",
+    url: "https://earth-ar.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/earth-ar",
+    description:
+      "AR Web app that uses your devices camera to show the earth in 3D. Made in Three.js.",
+    bullet: [
+      "Cross platform AR App",
+      "WebXR",
+      "Three.js",
+    ],
+  },
     {
     id: "12",
     rot: getRand(3),
