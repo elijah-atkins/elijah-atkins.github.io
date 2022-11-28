@@ -13,12 +13,27 @@ import Img15 from "../img/tic-tac-toe.png";
 import boid from "../img/flappy-bird.png"
 import earth from "../img/earth.png";
 import earth1 from "../img/earth-ar.png";
+import balloon from "../img/balloon.png";
 
 const getRand = (n) => {
   
   return (Math.random() * n)-(n*0.5)
 }
 const projects = [
+  {
+    id: "15",
+    rot: getRand(3),
+    img: balloon,
+    title: "Balloon Popper",
+    url: "https://balloon-popper.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/balloon-popper",
+    description:
+      "3D Balloon Popping Game built with Three.js",
+    bullet: [
+      "Custom balloon model",
+      "AI generated background",
+    ],
+  },
   {
     id: "14",
     rot: getRand(3),
