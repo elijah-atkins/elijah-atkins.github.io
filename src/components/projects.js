@@ -28,10 +28,11 @@ const projects = [
     url: "https://balloon-popper.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/balloon-popper",
     description:
-      "3D Balloon Popping Game built with Three.js",
+      "3D Balloon Popping Game built with Three.js and HTML5 Canvas. This project is a blend of 3D and 2D graphics. The 3D graphics are rendered with Three.js and the 2D graphics are standard HTML5/CSS elements.",
     bullet: [
       "Custom balloon model",
       "AI generated background",
+      "THREE.js",
     ],
   },
   {
