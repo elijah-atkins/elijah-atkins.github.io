@@ -14,12 +14,28 @@ import boid from "../img/flappy-bird.png"
 import earth from "../img/earth.png";
 import earth1 from "../img/earth-ar.png";
 import balloon from "../img/balloon.png";
+import pool from "../img/pool.png";
 
 const getRand = (n) => {
   
   return (Math.random() * n)-(n*0.5)
 }
 const projects = [
+  {
+    id: "16",
+    rot: getRand(3),
+    img: pool,
+    title: "Billiards 8 Ball",
+    url: "https://billiards.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/billiards",
+    description:
+      "A billiard game built with React and cannon.es. The game is 2 player and played on the same computer. The first player to sink all of their balls wins.",
+    bullet: [
+      "Three.js for rendering tables and balls",
+      "Realistic Physics with Cannon.es",
+      "Assets optimized for size and performance",
+    ],
+  },
   {
     id: "15",
     rot: getRand(3),

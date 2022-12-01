@@ -1,7 +1,7 @@
 # Elijah Atkins Portfolio website
 Making personal professional website to showcase skills
 in programing and design with a highlight on recent 
-Lambda School work
+projects and work experience.
 
 
 Using React, HTML, SCSS, and JavaScript
@@ -23,8 +23,8 @@ Using React, HTML, SCSS, and JavaScript
  
 ## To DO
 
-- [ ] add profile picture
-- [ ] add resume 
+- [x] add profile picture
+- [x] add resume 
 - [x] Attend to linkdin account.
 - [x] integrate linkdin, added link
 - [x] integrate github
