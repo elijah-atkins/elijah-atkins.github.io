@@ -15,12 +15,28 @@ import earth from "../img/earth.png";
 import earth1 from "../img/earth-ar.png";
 import balloon from "../img/balloon.png";
 import pool from "../img/pool.png";
+import d4 from "../img/d4.png";
 
 const getRand = (n) => {
   
   return (Math.random() * n)-(n*0.5)
 }
 const projects = [
+  {
+    id: "17",
+    rot: getRand(3),
+    img: d4,
+    title: "Drop Match",
+    url: "https://drop-match.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/drop-match",
+    description:
+      "A 2 player connect 4 style game built with javascript and three.js. The game is 2 player and played on the same computer. The first player to connect 4 of their pieces wins.",
+    bullet: [
+      "Three.js for rendering tables and pieces",
+      "Adjustable board size and match length",
+      "Assets optimized for size and performance",
+    ],
+  },
   {
     id: "16",
     rot: getRand(3),
