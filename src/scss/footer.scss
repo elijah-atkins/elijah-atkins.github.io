@@ -1,0 +1,21 @@
+.footer {
+  cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 0.5rem;
+    color: $white;
+    font-family: $nav-sans;
+    background-color: $footer;
+    height: 1.8rem;
+    font-size: 1.5rem;
+    z-index: 12;
+    text-align: right;
+    padding-right: 1rem;
+
+    user-select: none;
+    @include short-view {
+      text-align: left;
+    }
+  }

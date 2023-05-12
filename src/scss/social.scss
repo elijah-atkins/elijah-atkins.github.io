@@ -1,0 +1,90 @@
+.social-media-container {
+  .social-open {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+
+    transition: transform 0.3s ease-out;
+    transform: translate(0, 0rem);
+    z-index: 11;
+  }
+  .social-close {
+    position: absolute;
+    bottom: 2rem;
+    width: 100%;
+    transition: transform 0.3s ease-out;
+    transform: translate(-100vw, 0);
+    z-index: 11;
+  }
+
+  .social-media {
+    margin-right: 10vw;
+    width: 80vw;
+    background-color: rgba(12, 12, 29, 0.582);
+    box-shadow: -5px 5px 30px $black;
+    border-radius: 0 7px 0 0;
+
+    @include nav-break {
+      width: calc(100vw - 15rem);
+    }
+    @include short-view {
+      border-radius: 0;
+    }
+
+    .close-social {
+      background-color: $link;
+      color: $background;
+      font-weight: 900;
+      z-index: 0;
+      position: absolute;
+      top: calc(-20px - 3vmin - 0.25rem);
+      left: 0px;
+      height: calc(20px + 3vmin);
+      width: calc(20px + 3vmin);
+      padding-top: 0.25rem;
+      border-radius: 50% 50% 0 0;
+      font-size: calc(20px + 3vmin);
+      cursor: pointer;
+      &:hover {
+        background-color: $white;
+        color: $link;
+      }
+    }
+    h1 {
+      user-select: none;
+      position: absolute;
+      top: calc(-23px - 3vmin);
+
+      padding: 0.5rem;
+      margin-left: 3rem;
+      color: $white;
+      font-size: calc(8px + 3vmin);
+      font-family: $sans;
+      background-color: rgba(12, 12, 29, 0.815);
+      border-radius: 10px 10px 0 0;
+      @include short-view {
+        top: calc(-23px - 3vmin);
+        font-size: calc(8px + 3vmin);
+      }
+    }
+    ul {
+      width: 100%;
+
+      display: flex;
+      float: row;
+      justify-content: space-around;
+      align-items: stretch;
+    }
+    li {
+      svg {
+        width: 100%;
+        fill: $contrast;
+        filter: url(#f2);
+        &:hover {
+          fill: $link;
+        }
+      }
+      padding: 0.3rem;
+    }
+  }
+}

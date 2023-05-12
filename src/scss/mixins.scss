@@ -1,0 +1,23 @@
+// Mixins
+@mixin short-view {
+    @media (max-height: 850px) {
+        @content; 
+    }
+}
+@mixin phone-view {
+    @media (min-width: 850px) {
+        @content; 
+    }
+}
+
+@mixin nav-break {
+    @media (min-width: 1170px) {
+        @content; 
+    }
+}
+
+@mixin big-width {
+    @media (min-width: 1700px){
+        @content;
+    }
+}

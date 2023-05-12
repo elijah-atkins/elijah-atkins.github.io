@@ -1,0 +1,30 @@
+
+.success-wrap {
+    position: absolute;
+    text-align: center;
+    top: 10vh;
+    left: 3vw;
+    background-color: $bg-dark;
+    font-family: $sans;
+    font-size: calc(10px + 4vw);
+    padding-bottom: 1vh;
+    color: $white;
+    border-radius: 18px;
+    padding: 2rem;
+    box-shadow: 3px 5px 30px $background;
+    .success-text {
+        margin-bottom: 2rem;
+    }
+    button {
+        background-color: $bg-dark;
+        color: $white;
+        height: 3rem;
+        font-size: 2rem;
+        font-weight: bold;
+        border-radius: 10px;
+        &:hover {
+            color: $contrast;
+            background-color: $background;
+        }
+    }
+}

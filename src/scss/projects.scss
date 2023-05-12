@@ -1,0 +1,160 @@
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  @include big-width() {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.project-border {
+  margin: 0.5rem;
+  padding: 1rem;
+  background-size: 100% 100%;
+  background-image: url(../svg/project-border-bg.svg);
+}
+
+.p-header {
+  font-family: $fancy-sans;
+  display: flex;
+  flex-direction: row;
+  margin-left: 12rem;
+  justify-content: flex-start;
+  font-size: calc(18px + 4vw);
+  color: $white;
+  padding: 1rem 0 2rem 0rem;
+
+  @include phone-view() {
+    padding: 1rem 0 2rem 1rem;
+    margin-left: 2rem;
+  }
+}
+
+.project-list {
+  font-family: $sans;
+
+  font-size: calc(15px + 1vw);
+  display: flex;
+  align-items: stretch;
+  color: $black;
+  text-align: left;
+
+  ul.bullet-item {
+    margin: 0 0 2rem 2.5rem;
+    list-style-type: circle;
+    color: $black;
+  }
+}
+.project-description {
+  font-size: calc(15px + 1vw);
+  font-weight: bold;
+}
+@include big-width() {
+  .project-list {
+    font-size: calc(8px + 1vw);
+  }
+
+  .project-description {
+    font-size: calc(5px + 1vw);}
+}
+
+.project-item {
+  font-family: $sans;
+
+  display: flex;
+  align-items: stretch;
+  flex-direction: row;
+  padding: 0.5rem;
+  flex-direction: column;
+  @include phone-view() {
+    flex-direction: row;
+  }
+
+  h1 {
+    text-align: center;
+
+    font-size: calc(20px + 1vw);
+    padding: 0 0 1rem;
+    color: $black;
+    font-weight: bolder;
+    font-style: $fancy-sans;
+  }
+
+  p {
+    text-align: justify;
+    color: $black;
+  }
+}
+
+.project-img {
+  margin: auto;
+  width: calc(12rem + 4vw);
+  height: calc(9rem + 4vw);
+  background-size: 120%;
+  transition: 300ms;
+  border-radius: 12%;
+  background-position-x: -10px;
+  background-position-y: -12px;
+
+  @include phone-view() {
+    min-width: 15rem;
+    transition: 600ms;
+    width: calc(9rem + 8vw);
+    height: calc(9rem + 6vw);
+    background-size: 500px;
+    background-position-x: -150px;
+  }
+}
+
+.project-icons {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  height: 100%;
+  @include phone-view() {
+    justify-content: space-between;
+  }
+  .project-icon {
+    max-width: 5rem;
+    margin: 0.25rem;
+    width: calc(12px + 4vh);
+    height: calc(12px + 4vh);
+    fill: $contrast;
+    background-color: $background;
+    border: solid 3px transparent;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px $background;
+    &:hover {
+      fill: $link;
+      background-color: $contrast;
+      box-shadow: none;
+      transform: scale(0.9);
+    }
+  }
+  img {
+    width: 4rem;
+    padding-right: 0rem;
+  }
+}
+
+.project {
+  margin: 0.25rem;
+
+  a {
+    text-decoration: none;
+    color: $black, 20%;
+  }
+
+  p {
+    padding-top: 1rem;
+    max-width: 60rem;
+    line-height: 1.2rem;
+
+    @include phone-view() {
+      width: 100%;
+      line-height: 1.2;
+    }
+    @include big-width {
+      line-height: 1.2;
+    }
+  }
+}

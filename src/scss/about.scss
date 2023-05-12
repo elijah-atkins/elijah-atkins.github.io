@@ -1,0 +1,63 @@
+.content-scroll {
+  .about-header {
+    text-align: left;
+    font-family: $sans;
+    text-decoration: underline dotted;
+
+    padding-bottom: 1vh;
+  }
+  .about-intro {
+    text-align: left;
+
+    padding-bottom: 1vh;
+    line-height: 1;
+  }
+  .about-web {
+    text-align: justify;
+    padding-bottom: 1vh;
+    line-height: 1;
+    h2 {
+      text-align: left;
+      font-family: $sans;
+      text-decoration: underline dotted;
+      padding-bottom: 1vh;
+    }
+  }
+  .about-recent {
+    text-align: left;
+    font-size: calc(15px + 1vw);
+    padding-bottom: 1vh;
+    line-height: 1;
+    h2 {
+      text-align: left;
+      font-family: $sans;
+      text-decoration: underline dotted;
+      font-size: calc(20px + 1vw);
+      padding-bottom: 1vh;
+    }
+  }
+  .about-motion {
+    text-align: justify;
+    padding-bottom: 1vh;
+    line-height: 1;
+    h2 {
+      text-align: left;
+      font-family: $sans;
+      text-decoration: underline dotted;
+      padding-bottom: 1vh;
+    }
+  }
+  .about-about {
+    text-align: left;
+    p {
+      font-size: calc(8px + 0.5vh);
+    }
+    li {
+      font-size: calc(8px + 0.5vh);
+    }
+    a {
+      font-size: calc(8px + 0.5vh);
+    }
+    font-family: $fancy-sans;
+  }
+}
