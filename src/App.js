@@ -5,10 +5,9 @@ import Nav from "./components/Nav";
 import Splash from "./components/Splash";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
-import Contact from "./components/Contact";
 import About from "./components/About";
 import Gallery from "./components/Gallery";
-import projects from "./components/projects";
+import games from "./components/games"
 
 class App extends React.Component {
   state = {
@@ -16,7 +15,6 @@ class App extends React.Component {
     social: false,
     gallery: false,
     about: false,
-    contact: false,
     success: false,
   };
   //function to toggle nav menu
@@ -24,7 +22,7 @@ class App extends React.Component {
     this.setState({
       gallery: false,
       about: false,
-      contact: false,
+      social: false,
     });
   };
   toggle = (name) => (e) => {
@@ -36,7 +34,7 @@ class App extends React.Component {
     this.setState((prev) => ({
       gallery: false,
       about: false,
-      contact: false,
+      social: false,
       [name]: !prev[name],
     }));
   };
@@ -53,11 +51,9 @@ class App extends React.Component {
           social={this.state.social}
           gallery={this.state.gallery}
           about={this.state.about}
-          contact={this.state.contact}
         />
         <About toggle={this.toggle} about={this.state.about} />
-        <Gallery projects={projects} toggle={this.toggle} gallery={this.state.gallery} />
-        <Contact toggle={this.toggle} contact={this.state.contact} success={this.state.success}/>
+        <Gallery projects={games} toggle={this.toggle} gallery={this.state.gallery} />
         <Social toggle={this.toggle} social={this.state.social} />
         <Splash />
         <Footer toggle={this.toggle} social={this.state.social} />
