@@ -110,26 +110,7 @@ const About = (props) => {
               </a> {" "}
               For Custom font creation
             </li>
-            <li>
-              <a
-                href="https://github.com/jquense/yup"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Yup,
-              </a>{" "}
-              a JavaScript schema builder for validation
-            </li>
-            <li>
-              <a
-                href="https://www.npmjs.com/package/emailjs-com"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                EmailJS{" "}
-              </a>{" "}
-              For sending emails using client side technologies
-            </li>
+
           </ul>
           <a
             href="https://github.com/elijah-atkins/elijah-atkins.github.io"

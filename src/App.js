@@ -6,22 +6,30 @@ import Splash from "./components/Splash";
 import Social from "./components/Social";
 import Footer from "./components/Footer";
 import About from "./components/About";
-import Gallery from "./components/Gallery";
-import games from "./components/games"
+import Games from "./components/Games";
+import Rigs from "./components/Rigs";
+import Tools from "./components/Tools";
+import gamesList from "./components/gamesList";
+import toolsList from "./components/toolsList";
+import characters from "./components/characters";
 
 class App extends React.Component {
   state = {
     open: false,
     social: false,
-    gallery: false,
+    tools: false,
+    games: false,
     about: false,
+    rigs: false,
     success: false,
   };
   //function to toggle nav menu
   clear = (async) => {
     this.setState({
-      gallery: false,
+      tools: false,
+      games: false,
       about: false,
+      rigs: false,
       social: false,
     });
   };
@@ -32,8 +40,10 @@ class App extends React.Component {
   };
   toggleNav = (name) => (e) => {
     this.setState((prev) => ({
-      gallery: false,
+      tools: false,
+      games: false,
       about: false,
+      rigs: false,
       social: false,
       [name]: !prev[name],
     }));
@@ -49,11 +59,15 @@ class App extends React.Component {
           clear={this.clear}
           open={this.state.open}
           social={this.state.social}
-          gallery={this.state.gallery}
+          tools={this.state.tools}
+          games={this.state.games}
           about={this.state.about}
+          rigs={this.state.rigs}
         />
         <About toggle={this.toggle} about={this.state.about} />
-        <Gallery projects={games} toggle={this.toggle} gallery={this.state.gallery} />
+        <Tools projects={toolsList} toggle={this.toggle} tools={this.state.tools} />
+        <Games projects={gamesList} toggle={this.toggle} games={this.state.games} />
+        <Rigs projects={characters} toggle={this.toggle} rigs={this.state.rigs} />
         <Social toggle={this.toggle} social={this.state.social} />
         <Splash />
         <Footer toggle={this.toggle} social={this.state.social} />

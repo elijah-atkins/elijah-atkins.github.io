@@ -1,13 +1,9 @@
 import React from "react";
 import SettingsIcon from "../svg-react/SettingsIcon";
 import About from "../svg-react/About";
-//import Gallery from "../svg-react/Gallery"; //remove later
-
-import Tools from "..//svg-react/Tools"
-import Rigging from "../svg-react/Rigging"
-import Games from "../svg-react/Games"
-
-
+import Tools from "..//svg-react/Tools";
+import Rigging from "../svg-react/Rigging";
+import Games from "../svg-react/Games";
 import Social from "../svg-react/Social";
 
 class Nav extends React.Component {
@@ -16,7 +12,7 @@ class Nav extends React.Component {
   render() {
     return (
       <>
-      <div className={`nav-tint ${( this.props.gallery || this.props.contact || this.props.about ) ? "on" : "off"}`}>{" "}</div>
+      <div className={`nav-tint ${( this.props.about || this.props.games ||  this.props.tools ||  this.props.rigs || this.props.contact ) ? "on" : "off"}`}>{" "}</div>
       <nav className={`nav ${this.props.open ? "open" : "close"}`}>
 
         <ul>
@@ -33,19 +29,7 @@ class Nav extends React.Component {
           </li>
 
           <li>
-            <div className={`nav-wrap gallery ${(this.props.gallery) ? "active" : null}`}  alt="gallery" onClick={this.props.toggleNav("gallery")}>
-              {" "}
-              <div className="nav-icon"> </div>{" "}
-              <div className="icon-svg">
-                {" "}
-                <Games />
-              </div>{" "}
-              <div className="icon">Games</div>{" "}
-            </div>
-          </li>
-
-          <li>
-            <div className={`nav-wrap gallery ${(this.props.gallery) ? "active" : null}`}  alt="gallery" onClick={this.props.toggleNav("gallery")}>
+            <div className={`nav-wrap gallery ${(this.props.rigs) ? "active" : null}`}  alt="rigs" onClick={this.props.toggleNav("rigs")}>
               {" "}
               <div className="nav-icon"> </div>{" "}
               <div className="icon-svg">
@@ -57,7 +41,7 @@ class Nav extends React.Component {
           </li>
 
           <li>
-            <div className={`nav-wrap gallery ${(this.props.gallery) ? "active" : null}`}  alt="gallery" onClick={this.props.toggleNav("gallery")}>
+            <div className={`nav-wrap gallery ${(this.props.tools) ? "active" : null}`}  alt="tools" onClick={this.props.toggleNav("tools")}>
               {" "}
               <div className="nav-icon"> </div>{" "}
               <div className="icon-svg">
@@ -65,6 +49,18 @@ class Nav extends React.Component {
                 <Tools />
               </div>{" "}
               <div className="icon">Tools</div>{" "}
+            </div>
+          </li>
+
+                    <li>
+            <div className={`nav-wrap gallery ${(this.props.games) ? "active" : null}`}  alt="games" onClick={this.props.toggleNav("games")}>
+              {" "}
+              <div className="nav-icon"> </div>{" "}
+              <div className="icon-svg">
+                {" "}
+                <Games />
+              </div>{" "}
+              <div className="icon">Games</div>{" "}
             </div>
           </li>
 

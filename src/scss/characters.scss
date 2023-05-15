@@ -94,21 +94,19 @@
   
   .character-img {
     margin: auto;
+    min-width: 10rem;
     width: calc(12rem + 4vw);
-    height: calc(9rem + 4vw);
-    background-size: 120%;
+ 
+
     transition: 300ms;
     border-radius: 12%;
-    background-position-x: -10px;
-    background-position-y: -12px;
+    
   
     @include phone-view() {
-      min-width: 15rem;
+      min-width: 10rem;
       transition: 600ms;
-      width: calc(9rem + 8vw);
-      height: calc(9rem + 6vw);
-      background-size: 500px;
-      background-position-x: -150px;
+      width: calc(6rem + 4vw);
+
     }
   }
   

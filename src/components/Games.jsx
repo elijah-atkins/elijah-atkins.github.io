@@ -1,10 +1,10 @@
 import React from "react";
 import ProjectSearch from "./ProjectSearch";
 
-const Gallery = (props) => {
+const Games = (props) => {
   return (
-    <div className={`content-wrap ${props.gallery ? "on" : "off"}`}>
-      <div className="close-panel" onClick={props.toggle("gallery")}>
+    <div className={`content-wrap ${props.games ? "on" : "off"}`}>
+      <div className="close-panel" onClick={props.toggle("games")}>
         <div className="close-panel-button"> « </div>
       </div>
       <div className="content-scroll">
@@ -14,4 +14,4 @@ const Gallery = (props) => {
   );
 };
 
-export default Gallery;
+export default Games;

@@ -1,9 +1,8 @@
 
-import Img3 from "../img/racing-game.png"
-import Img4 from "../img/paddle-ball.png";
-import Img6 from "../img/nasa.png";
-import Img12 from "../img/game-of-life.png";
-import Img15 from "../img/tic-tac-toe.png";
+import rg from "../img/racing-game.png"
+import pball from "../img/paddle-ball.png";
+import gol from "../img/game-of-life.png";
+import ttt from "../img/tic-tac-toe.png";
 import boid from "../img/flappy-bird.png"
 import balloon from "../img/balloon.png";
 import pool from "../img/pool.png";
@@ -76,24 +75,9 @@ const games = [
   },
   
   {
-    id: "1",
-    rot: getRand(1),
-    img: Img6,
-    title: "NASA Astronomy Picture of the Day",
-    url: "https://nasa.elijahatkins.com/",
-    git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
-    description:
-      "Explore NASA Astronomy Photo of the Day api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calendar.",
-    bullet: [
-      "App can handle pictures and video",
-      "Calendar driven navigation",
-      "Implements useHistory and useParams from react-router-dom",
-    ],
-  },
-  {
     id: "2",
     rot: getRand(1),
-    img: Img12,
+    img: gol,
     title: "Conway's Game of Life",
     url: "https://game-of-life.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/game-of-life",
@@ -108,7 +92,7 @@ const games = [
   {
     id: "4",
     rot: getRand(1),
-    img: Img15,
+    img: ttt,
     title: "Tic Tac Toe in Angular",
     url: "https://tic-tac-toe.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/tic-tac-toe",
@@ -123,7 +107,7 @@ const games = [
   {
     id: "10",
     rot: getRand(1),
-    img: Img4,
+    img: pball,
     title: "Paddle Ball",
     url: "https://elijah-atkins.github.io/Paddle-Ball-Game/paddle-ball.html",
     git: "https://github.com/elijah-atkins/Paddle-Ball-Game",
@@ -137,7 +121,7 @@ const games = [
   {
     id: "11",
     rot: getRand(1),
-    img: Img3,
+    img: rg,
     title: "Racing Game Demo",
     url: "https://elijah-atkins.github.io/Paddle-Ball-Game/racing-game.html",
     git:

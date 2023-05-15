@@ -2,7 +2,6 @@
 import Img3 from "../img/racing-game.png"
 import Img4 from "../img/paddle-ball.png";
 import Img5 from "../img/rick-and-morty.png";
-import Img6 from "../img/nasa.png";
 import Img7 from "../img/github.png";
 import Img10 from "../img/weather.png";
 import Img11 from "../img/react-tv.png";
@@ -111,21 +110,6 @@ const projects = [
     ],
   },
   
-  {
-    id: "1",
-    rot: getRand(1),
-    img: Img6,
-    title: "NASA Astronomy Picture of the Day",
-    url: "https://nasa.elijahatkins.com/",
-    git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",
-    description:
-      "Explore NASA Astronomy Photo of the Day api with beautiful astronomy images with posts as far back as 1995! Built using React, axios, react-router-dom, SCSS, and react-calendar.",
-    bullet: [
-      "App can handle pictures and video",
-      "Calendar driven navigation",
-      "Implements useHistory and useParams from react-router-dom",
-    ],
-  },
   {
     id: "2",
     rot: getRand(1),
