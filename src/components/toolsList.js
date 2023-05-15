@@ -1,5 +1,6 @@
 import bshelper from "../img/blendshape-helper.png";
 import nasa from "../img/nasa.png";
+import mic from "../img/mic-face.png"
 
 const getRand = (n) => {
   
@@ -23,6 +24,21 @@ const tools = [
   },
   {
     id: "2",
+    rot: getRand(1),
+    img: mic,
+    title: "Mic Face",
+    url: "https://mic-face.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/mic-face",
+    description:
+      "Mic Face is a fun and creative tool that lets you animate a puppet with your voice. It uses your microphone to capture the sound and turn it into facial expressions for the puppet. Mic-Face has been used to participate in a puppet jam, where you can improvise and collaborate with other puppeteers online.",
+    bullet: [
+      "Load Mic-Face site and allow microphone access",
+      "Puppet’s mouth will move according to microphone input",
+      "Use on mobile devices, with screen rotation off and microphone on",
+    ],
+  },
+  {
+    id: "3",
     rot: getRand(1),
     img: nasa,
     title: "NASA Astronomy Picture of the Day",

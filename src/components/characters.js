@@ -1,5 +1,6 @@
 import apollo from "../img/characters/apollo-fuzzmoon.png"
 import dolly from "../img/characters/dolly-dreadful.png"
+import mushy from "../img/characters/mushylp.png"
 
 const getRand = (n) => {
   
@@ -12,7 +13,7 @@ const characters = [
     img: apollo,
     title: "Apollo Fuzzmoon",
     description:
-      "Apollo Fuzzmoon is a 3D character model that is used for creating TikTok videos. He was scanned using photogrammetry and then rigged in blender with blendshapes. He is a multimedia project by Elijah Atkins combining puppetry with 3D animation. He is rigged in Unity to include ragdoll physics, and a rigid body tail, and can be animated in vSeeFace and VRChat, and in custom Unity App. He has experience in black box and with green screen for live or video performances. He is ready for real time animation and has PBR materials created in Substance Painter",
+      "Apollo Fuzzmoon is a 3D character model rigged in Blender and Unity for TikTok, video games, VR and AR. He has PBR materials and blend shapes for facial expressions and ragdoll physics.",
     bullet: [
       "3D character model scanned with photogrammetry",
       "Rigged in Blender and Unity with blendshapes and ragdoll physics",
@@ -30,6 +31,19 @@ const characters = [
       "3D character model for real time animation",
       "ARKit compatible",
       "Modeled and rigged in Blender, Unreal engine ready",
+    ],
+  },
+  {
+    id: "3",
+    rot: getRand(3),
+    img: mushy,
+    title: "Mushy",
+    description:
+      "Mushy is a 3D character model designed for real time animation. She can be used as a presenter for educational videos on various topics. She is compatible with VSeeFace and VRChat, two popular applications for virtual reality. She was created and rigged using Blender, a free and open source software for 3D creation.",
+    bullet: [
+      "3D character model for YouTube animations",
+      "VRChat compatible",
+      "Modeled and rigged in Blender, Unity engine ready",
     ],
   },
 ]
