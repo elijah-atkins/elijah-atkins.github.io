@@ -1,8 +1,14 @@
 import React from "react";
 import SettingsIcon from "../svg-react/SettingsIcon";
 import About from "../svg-react/About";
-import Gallery from "../svg-react/Gallery";
-import Contact from "../svg-react/Contact";
+//import Gallery from "../svg-react/Gallery"; //remove later
+
+import Tools from "..//svg-react/Tools"
+import Rigging from "../svg-react/Rigging"
+import Games from "../svg-react/Games"
+
+
+import Social from "../svg-react/Social";
 
 class Nav extends React.Component {
 
@@ -32,21 +38,45 @@ class Nav extends React.Component {
               <div className="nav-icon"> </div>{" "}
               <div className="icon-svg">
                 {" "}
-                <Gallery />
+                <Games />
               </div>{" "}
-              <div className="icon">Gallery</div>{" "}
+              <div className="icon">Games</div>{" "}
             </div>
           </li>
 
           <li>
-            <div className={`nav-wrap ${(this.props.contact) ? "active" : null}`}  alt="contact" onClick={this.props.toggleNav("contact")} >
+            <div className={`nav-wrap gallery ${(this.props.gallery) ? "active" : null}`}  alt="gallery" onClick={this.props.toggleNav("gallery")}>
               {" "}
               <div className="nav-icon"> </div>{" "}
               <div className="icon-svg">
                 {" "}
-                <Contact />
+                <Rigging />
               </div>{" "}
-              <div className="icon">Contact</div>{" "}
+              <div className="icon">Animation Rigs</div>{" "}
+            </div>
+          </li>
+
+          <li>
+            <div className={`nav-wrap gallery ${(this.props.gallery) ? "active" : null}`}  alt="gallery" onClick={this.props.toggleNav("gallery")}>
+              {" "}
+              <div className="nav-icon"> </div>{" "}
+              <div className="icon-svg">
+                {" "}
+                <Tools />
+              </div>{" "}
+              <div className="icon">Tools</div>{" "}
+            </div>
+          </li>
+
+          <li>
+            <div className={`nav-wrap ${(this.props.contact) ? "active" : null}`}  alt="contact" onClick={this.props.toggleNav("social")} >
+              {" "}
+              <div className="nav-icon"> </div>{" "}
+              <div className="icon-svg">
+                {" "}
+                <Social />
+              </div>{" "}
+              <div className="icon">Social Media</div>{" "}
             </div>
           </li>
 

@@ -78,7 +78,7 @@ const ProjectSearch = ({ projects }) => {
         {searchResults.length === 0 ? (
           <div className="project-card">
             <div className="project-404">
-              <h1>No Content found</h1>
+              <h1>No Content Found :(</h1>
             </div>
           </div>
         ) : (

@@ -2,6 +2,7 @@
   position: absolute;
   height: 100%;
   width: 100%;
+
   z-index: 8;
   background-image: radial-gradient(circle at 0%, $bg-dark, transparent 75%), linear-gradient($background, transparent);
   opacity: 0.8;
@@ -50,22 +51,23 @@
 
     .nav-icon {
       position: relative;
-      padding: 1.2rem;
-      top: 3.7rem;
-      right: 0;
-      left: 0;
-      z-index: 5;
-      opacity: 0;
+      padding: 0rem;
       height: 3rem;
 
+      bottom: 0;
+      z-index: 5;
+      opacity: 0;
+      height: 1.5rem;
+
       transition: opacity 3s ease-in-out;
+      @include short-view {
       background-image: radial-gradient(
         adjust-color($contrast, $lightness: -25%, $saturation: 10%) 10%,
         transparent 65%
       );
-      @include short-view {
+        padding: 0;
         top: 2.5rem;
-        height: 2rem;
+        height: 1rem;
       }
     }
     .icon-svg {
@@ -73,7 +75,7 @@
     }
     .icon {
       color: $dark-contrast;
-      font-size: calc(18px + 2vmin);
+      font-size: calc(18px + 1vmin);
       user-select: none;
       position: relative;
       z-index: 3;

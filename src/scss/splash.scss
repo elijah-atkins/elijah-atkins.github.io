@@ -93,10 +93,8 @@
             "img  bullet"
             "description description";
         }
-        overflow-y: auto;
-        overflow-x: hidden;
-        overscroll-behavior: none;
-        right: 5vw;
+
+
         /* width */
         &::-webkit-scrollbar {
           width: 10px;

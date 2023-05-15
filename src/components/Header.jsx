@@ -9,8 +9,9 @@ const Header = () => {
       <div className="intro">
         <img src={logo} className="App-logo" alt="logo"/>
         <div className="intro-text">
-          <h1>Elijah Atkins</h1>
-          <p>Full Stack Developer</p>
+
+          <p>Technical Artist</p>
+          <p>Developer</p>
           <p>Designer</p>
           <p>Animator</p>
         </div>

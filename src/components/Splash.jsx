@@ -1,15 +1,22 @@
 import React from "react";
-import ProjectCard from "./ProjectCard";
-import project from "./projects.js";
-
 
 const Splash = () => {
   return (
     <div className="splash-wrap">
       <div className="splash-bg">
-        <div className="splash-header">Recent Project</div>
+        <div className="splash-header">Elijah Atkins</div>
         <div className="splash-body">
-        <ProjectCard project={project[0]}></ProjectCard>
+          <div className="project-card">
+            <div className="project-border">
+              <div
+                className="project-item"
+                style={{ fontSize: "2rem", padding: "2rem" }}
+              >
+                Hi there! I'm passionate about animation rigging and creating
+                dynamic and interactive characters for real time production.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div></div>
