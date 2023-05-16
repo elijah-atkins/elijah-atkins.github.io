@@ -58,6 +58,7 @@ const CharacterCard = ({ project }) => {
           </ul>
         </div>
         <div className="project-list">
+        {project.bullet ? (
           <ul className="bullet-item">
             {project.bullet.map((bulletPoint, key) => {
               return (
@@ -67,6 +68,7 @@ const CharacterCard = ({ project }) => {
               );
             })}
           </ul>
+         ) : null}
         </div>
       </div>
     </div>

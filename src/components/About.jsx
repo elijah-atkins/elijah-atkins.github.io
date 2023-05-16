@@ -5,8 +5,7 @@ const About = (props) => {
   return (
     <div className={`content-wrap ${props.about ? "on" : "off"}`}>
       <div className="close-panel" onClick={props.toggle("about")}>
-        <div className="close-panel-button"> {" "}«{" "} </div>
-
+        <div className="close-panel-button"> « </div>
       </div>
 
       <div className="content-scroll">
@@ -15,43 +14,68 @@ const About = (props) => {
         </div>
         <div className="about-intro">
           <p>
-            Elijah Atkins is currently studying full stack web development with
-            Lambda School. He has been a production enhancement specialist at
-            Microchip/Atmel from 2008 to December of 2019. He was laid off and
-            started on a new career path in web development.{" "}
+            &ensp;Elijah Atkins is a real-time animator and digital artist who
+            creates stunning and immersive experiences using cutting-edge
+            technology. He has experience with various animation software and
+            game engines, and he loves learning new things and experimenting
+            with new software and hardware. Elijah enjoys collaborating with
+            other artists and designers, and he always strives to incorporate
+            feedback and revisions into his work. If you are looking for a
+            real-time animator who can create amazing digital experiences for
+            your audience, Elijah is the perfect person for the job.
           </p>
         </div>
         <div className="about-web">
-          <h2>Web Development</h2>
+          <h2>Background and Education</h2>
           <p>
-            With knowledge of the foundations of modern web design including
-            HTML5 CSS3 and JavaScript, and a working relationship with modern
-            development tools like React and Bootstrap. Elijah has mastery of
-            front end development. With plenty of examples in the gallery page.
+            &ensp;Elijah has always been fascinated by the magic of animation
+            and how it can transform any idea into reality. He started his
+            journey as a self-taught animator using Flash and Blender and then
+            pursued a degree in animation from Collins College in Mesa AZ. Since
+            then, he has worked with various theater groups, production
+            companies, and online platforms to create digital sets, puppets,
+            avatars, and effects.
           </p>
         </div>
         <div className="about-recent">
-          <h2>Practical experience in...</h2>
+          <h2>Skills and Tools</h2>
           <div className="recent-content-wrap">
-            <div className="doodle3"><Caw /></div>
-          <ul>
-            <li>JavaScript</li>
-
-            <li> HTML</li>
-            <li>CSS</li>
-            <li>React</li>
-            <li>Python</li>
-          </ul></div>
+            <div className="doodle3">
+              <Caw />
+            </div>
+            <ul>
+              <li>*Unity</li>
+              <li>*Unreal</li>
+              <li>*Moho</li>
+              <li>*Adobe Animate</li>
+              <li>*Maya</li>
+              <li>*Blender</li>
+              <li>*JavaScript</li>
+              <li>*HTML/CSS</li>
+              <li>*C#</li>
+              <li>*React</li>
+              <li>*Python</li>
+              <li>*Leap motion hand tracking</li>
+              <li>*Nvidia AI assisted animation tools</li>
+              <li>*ARKit real time face tracking</li>
+              <li>*Metahuman </li>
+            </ul>
+          </div>
         </div>
         <div className="about-motion">
-          <h2>Motion Graphics</h2>
+          <h2>Collaboration and Contact</h2>
           <p>
-            Over a decade of experience making computer aided motion graphics.
-            From modern HTML5 animations done in code and with style sheets to
-            high end 3D Animation software. Experience with a wide variety of
-            software from IDE like VSCode, The Adobe Creative Suite, Moho Pro,
-            Blender, and much more. Elijah is always willing to learn any new
-            software if it will do cool things.
+            <p>&ensp;Elijah is a real time animator who enjoys collaborating with
+            other animators, programmers, designers, and artists. He always
+            listens to what is needed from him and from the project, and he
+            aligns his work with the goals and standards of the team. He also
+            values feedback and revisions, and he strives to incorporate them
+            into his work.</p> 
+            <p>&ensp;If you are looking for a real time animator who
+            can create amazing digital experiences for your audience, Elijah is
+            the perfect person for you. Check out his portfolio to see some of
+            his previous work, or contact him to discuss your project ideas. He
+            looks forward to hearing from you!</p>
           </p>
         </div>
         <div className="about-about">
@@ -63,10 +87,10 @@ const About = (props) => {
               rel="noopener noreferrer"
             >
               React App{" "}
-            </a>          </p>
-            <p>Designed and coded by Elijah Atkins.</p>
-             <p>Using the
-            following resources:</p>
+            </a>{" "}
+          </p>
+          <p>Designed and coded by Elijah Atkins.</p>
+          <p>Using the following resources:</p>
 
           <ul>
             <li>
@@ -107,10 +131,9 @@ const About = (props) => {
                 rel="noopener noreferrer"
               >
                 FontForge
-              </a> {" "}
+              </a>{" "}
               For Custom font creation
             </li>
-
           </ul>
           <a
             href="https://github.com/elijah-atkins/elijah-atkins.github.io"

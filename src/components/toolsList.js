@@ -18,7 +18,7 @@ const tools = [
       "ARKit Blendshape Helper is a Blender addon that allows you to use facial motion capture to animate the face of any 3D model. It converts the poses of a rigged model into ARKit facial expressions, which are compatible with blendshapes. This makes it easy to create realistic facial animations with ARKit.",
     bullet: [
       "Animate 3D faces with ARKit blendshapes and facial mocap.",
-      "Create and apply ARKit shape keys to your model automatically.",
+      "Create and apply 52 ARKit shape keys to your model automatically.",
       "Convert facial rig to ARKit blendshapes easily with interface and guide.",
     ],
   },

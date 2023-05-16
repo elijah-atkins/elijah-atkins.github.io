@@ -28,6 +28,14 @@
     font-size: calc(15px + 1vw);
     padding-bottom: 1vh;
     line-height: 1;
+    columns: 2;
+    -webkit-columns: 2;
+    -moz-columns: 2;
+    @include short-view {
+      columns: 1;
+      -webkit-columns: 1;
+      -moz-columns: 1;
+    }
     h2 {
       text-align: left;
       font-family: $sans;

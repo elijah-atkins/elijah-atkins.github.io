@@ -3,7 +3,6 @@ import rg from "../img/racing-game.png"
 import pball from "../img/paddle-ball.png";
 import gol from "../img/game-of-life.png";
 import ttt from "../img/tic-tac-toe.png";
-import boid from "../img/flappy-bird.png"
 import balloon from "../img/balloon.png";
 import pool from "../img/pool.png";
 import d4 from "../img/d4.png";
@@ -14,7 +13,7 @@ const getRand = (n) => {
 }
 const games = [
   {
-    id: "17",
+    id: "8",
     rot: getRand(3),
     img: d4,
     title: "Drop Match",
@@ -29,7 +28,7 @@ const games = [
     ],
   },
   {
-    id: "16",
+    id: "7",
     rot: getRand(3),
     img: pool,
     title: "Billiards 8 Ball",
@@ -44,7 +43,21 @@ const games = [
     ],
   },
   {
-    id: "15",
+    id: "5",
+    rot: getRand(1),
+    img: gol,
+    title: "Conway's Game of Life",
+    url: "https://game-of-life.elijahatkins.com/",
+    git: "https://github.com/elijah-atkins/game-of-life",
+    description: "Welcome to John Conway's Game of Life! This is a computer science classic from 1970, a program that simulates a cellular automaton (plural automata). It has connections to all kinds of different aspects of computer science and nature.",
+    bullet: [
+      " Created from a React Boilerplate to a fully functional web application in 1 week.",
+      "Dynamic board size, Application will create a board based on browser window size",
+      "Responsive game board will resize with window!",
+    ],
+  },
+  {
+    id: "6",
     rot: getRand(3),
     img: balloon,
     title: "Balloon Popper",
@@ -58,37 +71,6 @@ const games = [
       "THREE.js",
     ],
   },
-
-    {
-    id: "12",
-    rot: getRand(3),
-    img: boid,
-    title: "Flappy Bird 3D",
-    url: "https://flappy-bird.elijahatkins.com/",
-    git: "https://github.com/elijah-atkins/FlappityBird3D",
-    description:
-      "Flappy Bird clone made in Three.js. This game is built using Node, and Three.js and uses external assets for the skybox, 3D models and audio.",
-    bullet: [
-      "Made from default Node boilerplate",
-      "Custom charactor model",
-    ],
-  },
-  
-  {
-    id: "2",
-    rot: getRand(1),
-    img: gol,
-    title: "Conway's Game of Life",
-    url: "https://game-of-life.elijahatkins.com/",
-    git: "https://github.com/elijah-atkins/game-of-life",
-    description: "Welcome to John Conway's Game of Life! This is a computer science classic from 1970, a program that simulates a cellular automaton (plural automata). It has connections to all kinds of different aspects of computer science and nature.",
-    bullet: [
-      " Created from a React Boilerplate to a fully functional web application in 1 week.",
-      "Dynamic board size, Application will create a board based on browser window size",
-      "Responsive game board will resize with window!",
-    ],
-  },
-
   {
     id: "4",
     rot: getRand(1),
@@ -105,7 +87,7 @@ const games = [
     ],
   },
   {
-    id: "10",
+    id: "3",
     rot: getRand(1),
     img: pball,
     title: "Paddle Ball",
@@ -119,7 +101,7 @@ const games = [
     ],
   },
   {
-    id: "11",
+    id: "2",
     rot: getRand(1),
     img: rg,
     title: "Racing Game Demo",

@@ -4,7 +4,7 @@ const Splash = () => {
   return (
     <div className="splash-wrap">
       <div className="splash-bg">
-        <div className="splash-header">Elijah Atkins</div>
+        {/* <div className="splash-header">Elijah Atkins</div>
         <div className="splash-body">
           <div className="project-card">
             <div className="project-border">
@@ -17,9 +17,9 @@ const Splash = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div></div>
+
     </div>
   );
 };
