@@ -1,0 +1,36 @@
+.games-content {
+    margin-right: 15vw;
+    height: calc(90vh - 1.9rem);
+  
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: none;
+    @include short-view {
+      height: 100%;
+    }
+    @include nav-break {
+      margin-right: 7.8rem;
+    }
+    /* width */
+    &::-webkit-scrollbar {
+      width: 10px;
+    }
+  
+    /* Track */
+    &::-webkit-scrollbar-track {
+      background: $background;
+    }
+  
+    /* Handle */
+    &::-webkit-scrollbar-thumb {
+      background: $contrast;
+      border-radius: 10px;
+    }
+  
+    /* Handle on hover */
+    &::-webkit-scrollbar-thumb:hover {
+      background: $link;
+      border-radius: 10px;
+    }
+  }
+  

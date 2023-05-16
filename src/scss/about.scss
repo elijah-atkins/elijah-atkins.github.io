@@ -31,7 +31,7 @@
     columns: 2;
     -webkit-columns: 2;
     -moz-columns: 2;
-    @include short-view {
+    @include phone-view() {
       columns: 1;
       -webkit-columns: 1;
       -moz-columns: 1;
