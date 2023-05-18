@@ -18,7 +18,9 @@ const About = (props) => {
             creates stunning and immersive experiences using cutting-edge
             technology. He has experience with various animation software and
             game engines, and he loves learning new things and experimenting
-            with new software and hardware. Elijah enjoys collaborating with
+            with new software and hardware. 
+            </p>
+            <p>&ensp;Elijah enjoys collaborating with
             other artists and designers, and he always strives to incorporate
             feedback and revisions into his work. If you are looking for a
             real-time animator who can create amazing digital experiences for
@@ -64,7 +66,7 @@ const About = (props) => {
         </div>
         <div className="about-motion">
           <h2>Collaboration and Contact</h2>
-          <p>
+
             <p>&ensp;Elijah is a real time animator who enjoys collaborating with
             other animators, programmers, designers, and artists. He always
             listens to what is needed from him and from the project, and he
@@ -76,7 +78,7 @@ const About = (props) => {
             the perfect person for you. Check out his portfolio to see some of
             his previous work, or contact him to discuss your project ideas. He
             looks forward to hearing from you!</p>
-          </p>
+ 
         </div>
         <div className="about-about">
           <p>

@@ -20,7 +20,10 @@
     height: 0;
     overflow: hidden;
   }
-
+  .ThreeModel {
+    width: 80%;
+    height: 400px; /* Adjust the height as needed */
+  }
   .video-container iframe,
   .video-container object,
   .video-container embed {
@@ -45,7 +48,7 @@
       color: $white;
       padding-top: 1rem;
       padding-bottom: 0.5rem;
-      font-size: calc(20px + 4vmin);
+      font-size: calc(20px + 2vmin);
       font-family: $sans;
       font-weight: bold;
       padding-right: 3vw;

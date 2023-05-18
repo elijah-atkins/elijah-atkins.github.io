@@ -3,7 +3,6 @@ import dolly from "../img/characters/dolly-dreadful.png"
 import mushy from "../img/characters/mushylp.png"
 import geebee from "../img/characters/geebee.png"
 import zed from "../img/characters/zed.png"
-import frox from "../img/characters/frox.png"
 
 const getRand = (n) => {
   
@@ -50,14 +49,7 @@ const characters = [
     description:
       "Zed is a full body character that is drawn and animated using Moho Animation Software, a powerful 2D animation program. Zed is made of vector shapes that can be scaled and transformed without losing quality. Zed has a bone structure that allows him to move and deform realistically. Zed also has smart bone actions and smart warp mesh that enable him to change his facial expressions and head orientation.",
   },
-  {
-    id: "6",
-    rot: getRand(3),
-    img: frox,
-    title: "Frox",
-    description:
-      "Frox is a vector-based character created and animated in Moho, a 2D animation software. She can resize and reshape her vector parts without losing quality. She can also move and bend her body parts with bones. She can make different faces and head turns with smart bones and smart warp.",
-  },
+
 ]
 export default characters
 
