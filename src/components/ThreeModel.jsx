@@ -1,10 +1,12 @@
 import React, { useEffect, useRef } from "react";
 import * as THREE from "three";
-//import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
+import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls";
+import raccoon from "../glb/raccoon.glb";
 
 const ThreeModel = () => {
   const sceneRef = useRef(null);
+  const mixerRef = useRef(null);
 
   useEffect(() => {
     // Set up scene
@@ -26,37 +28,62 @@ const ThreeModel = () => {
         1000
       );
       const renderer = new THREE.WebGLRenderer({ antialias: true });
-      // Add directional light
-      const light = new THREE.DirectionalLight(0xffffff, 1);
-      light.position.set(1, 1, 1); // Adjust the position as needed
-      scene.add(light);
+// Position and configure lights
+// const keyLight = new THREE.DirectionalLight(0xff0000, 1.0);
+// keyLight.position.set(0, 5, 2);
+
+// const fillLight = new THREE.DirectionalLight(0x00ff00, 0.75);
+// fillLight.position.set(2, 0, 2);
+
+// const backLight = new THREE.DirectionalLight(0x0000ff, 0.5);
+// backLight.position.set(-1, -2, -2);
+
+// Add lights to the scene
+// scene.add(keyLight);
+// scene.add(fillLight);
+// scene.add(backLight);
       scene.background = new THREE.Color(0xaabbcc);
       renderer.setSize(window.innerWidth, window.innerHeight / 2);
       sceneRef.current.appendChild(renderer.domElement);
 
       // // Add your 3D model here
-      // const loader = new GLTFLoader();
-      // loader.load('../glb/lego.glb', (gltf) => {
-      //   const model = gltf.scene;
-      //   scene.add(model);
-      // });
-      // Animate the scene
-      // Create torus knot geometry
-      const geometry = new THREE.TorusKnotGeometry(1, 0.4, 32, 8, 1, 2);
+      const loader = new GLTFLoader();
+      loader.load(
+        raccoon,
+        (gltf) => {
+          // Called when the model is loaded
+          const model = gltf.scene;
+          scene.add(model);
+          model.position.y -= .45;
 
-      // Create material
-      const material = new THREE.MeshBasicMaterial({
-        color: 0xffff00,
-        wireframe: true,
-      }); // Replace with desired color or material
+          // Create animation mixer
+          const mixer = new THREE.AnimationMixer(model);
+          mixerRef.current = mixer;
 
-      // Create mesh
-      const torusKnot = new THREE.Mesh(geometry, material);
-      scene.add(torusKnot);
+          // Get animations from the gltf file
+          const animations = gltf.animations;
+
+          // Play the first animation
+          if (animations.length > 0) {
+            console.log(animations[0]);
+            const action = mixer.clipAction(animations[0]);
+            action.play();
+          }
+        },
+        (xhr) => {
+          // Called while loading is in progress
+          console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+        },
+        (error) => {
+          // Called if an error occurs during loading
+          console.error("An error happened", error);
+        }
+      );
 
       // Set camera position
-      camera.position.z = 5;
+      camera.position.z = .75;
 
+      camera.lookAt(new THREE.Vector3(0, 2, 0));
       // Add OrbitControls
       const controls = new OrbitControls(camera, renderer.domElement);
       controls.enableDamping = true;
@@ -70,9 +97,10 @@ const ThreeModel = () => {
         // Update OrbitControls
         controls.update();
         renderer.render(scene, camera);
-        // torusKnot.rotation.x += 0.01; // Rotate around x-axis
-         torusKnot.rotation.y += 0.002; // Rotate around y-axis
-         torusKnot.rotation.z += 0.003; // Rotate around z-axis
+        // Update animation mixer
+        if (mixerRef.current) {
+          mixerRef.current.update(0.015);
+        }
       };
 
       animate();
