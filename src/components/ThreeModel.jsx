@@ -28,20 +28,20 @@ const ThreeModel = () => {
         1000
       );
       const renderer = new THREE.WebGLRenderer({ antialias: true });
-// Position and configure lights
-// const keyLight = new THREE.DirectionalLight(0xff0000, 1.0);
-// keyLight.position.set(0, 5, 2);
+      // Position and configure lights
+      // const keyLight = new THREE.DirectionalLight(0xffeeee, 1.0);
+      // keyLight.position.set(.35, .1, .5);
 
-// const fillLight = new THREE.DirectionalLight(0x00ff00, 0.75);
-// fillLight.position.set(2, 0, 2);
+      // const fillLight = new THREE.DirectionalLight(0xaaffaa, 0.75);
+      // fillLight.position.set(2, 0, 2);
 
-// const backLight = new THREE.DirectionalLight(0x0000ff, 0.5);
-// backLight.position.set(-1, -2, -2);
+      const backLight = new THREE.DirectionalLight(0xaabbcc, 0.75);
+      backLight.position.set(-1, -2, -2);
 
-// Add lights to the scene
-// scene.add(keyLight);
-// scene.add(fillLight);
-// scene.add(backLight);
+      // Add lights to the scene
+      // scene.add(keyLight);
+      // scene.add(fillLight);
+      scene.add(backLight);
       scene.background = new THREE.Color(0xaabbcc);
       renderer.setSize(window.innerWidth, window.innerHeight / 2);
       sceneRef.current.appendChild(renderer.domElement);
@@ -54,7 +54,7 @@ const ThreeModel = () => {
           // Called when the model is loaded
           const model = gltf.scene;
           scene.add(model);
-          model.position.y -= .45;
+          model.position.y -= 0.45;
 
           // Create animation mixer
           const mixer = new THREE.AnimationMixer(model);
@@ -81,7 +81,7 @@ const ThreeModel = () => {
       );
 
       // Set camera position
-      camera.position.z = .75;
+      camera.position.z = 0.75;
 
       camera.lookAt(new THREE.Vector3(0, 2, 0));
       // Add OrbitControls
