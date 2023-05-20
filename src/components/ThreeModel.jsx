@@ -65,19 +65,19 @@ const ThreeModel = () => {
 
           // Play the first animation
           if (animations.length > 0) {
-            console.log(animations[0]);
-            const action = mixer.clipAction(animations[0]);
+            const rand = Math.floor(Math.random() * animations.length)
+            const action = mixer.clipAction(animations[rand]);
             action.play();
           }
         },
-        (xhr) => {
-          // Called while loading is in progress
-          console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
-        },
-        (error) => {
-          // Called if an error occurs during loading
-          console.error("An error happened", error);
-        }
+        // (xhr) => {
+        //   // Called while loading is in progress
+        //   console.log((xhr.loaded / xhr.total) * 100 + "% loaded");
+        // },
+        // (error) => {
+        //   // Called if an error occurs during loading
+        //   console.error("An error happened", error);
+        // }
       );
 
       // Set camera position
