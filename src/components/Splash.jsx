@@ -1,5 +1,5 @@
 import React from "react";
-import ThreeModel from './ThreeModel';
+import ThreeScene from "./ThreeScene";
 
 const Splash = () => {
   return (
@@ -9,7 +9,7 @@ const Splash = () => {
         <div className="splash-body">
           <div className="project-card">
             <div className="project-border">
-              <ThreeModel />
+              <ThreeScene />
             </div>
           </div>
         </div>

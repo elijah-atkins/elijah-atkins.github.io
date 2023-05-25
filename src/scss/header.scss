@@ -8,17 +8,18 @@
   font-size: calc(23px + 2vmin);
   font-weight: bold;
   color: $white;
-
 }
 
 .App-link {
   color: $link;
 }
 .App-logo {
-  height: 20vmin;
+  height: 15vmax;
+  max-height: 8rem;
   pointer-events: none;
   margin-right: 20px;
 }
+
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
@@ -59,5 +60,3 @@
     font-size: calc(10px + 3vmin);
   }
 }
-
-
