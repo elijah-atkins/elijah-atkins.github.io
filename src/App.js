@@ -65,8 +65,8 @@ class App extends React.Component {
           rigs={this.state.rigs}
         />
         <About toggle={this.toggle} about={this.state.about} />
-        <Tools projects={toolsList} toggle={this.toggle} tools={this.state.tools} />
-        <Games projects={gamesList} toggle={this.toggle} games={this.state.games} />
+        <Tools projects={toolsList} toggle={this.toggle} tools={this.state.tools} id={"toolSearch"}/>
+        <Games projects={gamesList} toggle={this.toggle} games={this.state.games} id={"gameSearch"} />
         <Rigs projects={characters} toggle={this.toggle} rigs={this.state.rigs} />
         <Social toggle={this.toggle} social={this.state.social} />
         <Splash />

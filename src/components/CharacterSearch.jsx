@@ -45,16 +45,16 @@ const CharacterSearch = ({ projects }) => {
         }
       >
         <input
-          id="search"
+          id="characterSearch"
           className={`searchInput ${searchTerm.length > 0 ? "expand" : null}`}
           type="text"
-          name="search"
+          name="character search"
           placeholder="Search"
           value={searchTerm}
           onChange={handleChange}
         />
 
-        <button className="searchButton">
+        <button className="searchButton" aria-label="Character Search">
           <svg
             className="search-svg"
             xmlns="http://www.w3.org/2000/svg"

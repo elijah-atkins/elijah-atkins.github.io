@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ProjectCard from "./ProjectCard";
 
-const ProjectSearch = ({ projects }) => {
+const ProjectSearch = ({ projects, id }) => {
   const [searchTerm, setSearchTerm] = useState("");
   const [searchResults, setSearchResults] = useState([]);
   //use expand to set hover attribute to force search bar to stay open when in use
@@ -45,16 +45,16 @@ const ProjectSearch = ({ projects }) => {
         }
       >
         <input
-          id="search"
+          id={id}
           className={`searchInput ${searchTerm.length > 0 ? "expand" : null}`}
           type="text"
-          name="search"
+          name={id + " search"}
           placeholder="Search"
           value={searchTerm}
           onChange={handleChange}
         />
 
-        <button className="searchButton">
+        <button className="searchButton" aria-label={"search" + id }>
           <svg
             className="search-svg"
             xmlns="http://www.w3.org/2000/svg"

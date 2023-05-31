@@ -1,6 +1,6 @@
-import bshelper from "../img/blendshape-helper.png";
-import nasa from "../img/nasa.png";
-import mic from "../img/mic-face.png"
+import bshelper from "../img/tools/blendshape-helper.png";
+import nasa from "../img/tools/nasa.png";
+import mic from "../img/tools/mic-face.png"
 
 const getRand = (n) => {
   

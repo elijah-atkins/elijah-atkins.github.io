@@ -1,11 +1,11 @@
 
-import rg from "../img/racing-game.png"
-import pball from "../img/paddle-ball.png";
-import gol from "../img/game-of-life.png";
-import ttt from "../img/tic-tac-toe.png";
-import balloon from "../img/balloon.png";
-import pool from "../img/pool.png";
-import d4 from "../img/d4.png";
+import balloon from "../img/games/balloon.png";
+import d4 from "../img/games/d4.png";
+import gol from "../img/games/game-of-life.png";
+import pball from "../img/games/paddle-ball.png";
+import pool from "../img/games/pool.png";
+import rg from "../img/games/racing-game.png"
+import ttt from "../img/games/tic-tac-toe.png";
 
 const getRand = (n) => {
   

@@ -1,6 +1,6 @@
 import apollo from "../img/characters/apollo-fuzzmoon.png"
 import dolly from "../img/characters/dolly-dreadful.png"
-import mushy from "../img/characters/mushylp.png"
+import mushy from "../img/characters/mushy.png"
 import geebee from "../img/characters/geebee.png"
 import zed from "../img/characters/zed.png"
 

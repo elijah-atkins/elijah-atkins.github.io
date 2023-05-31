@@ -24,6 +24,7 @@ const ProjectCard = ({ project }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   alt="Deployed Site"
+                  aria-label={"Deployed Site for " + project.title}
                 >
                   <div className="project-icon">
                     <Web />
@@ -36,6 +37,7 @@ const ProjectCard = ({ project }) => {
                   target="_blank"
                   rel="noopener noreferrer"
                   alt="Github Source"
+                  aria-label={"Github Source for " + project.title}
                 >
                   <div className="project-icon">
                     <Git />

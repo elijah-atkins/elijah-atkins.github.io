@@ -20,6 +20,7 @@ const Social = (props) => {
               href="https://github.com/elijah-atkins/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Elijah Atkins on Github"
             >
               <GitClean alt="Github" />
             </a>
@@ -29,6 +30,7 @@ const Social = (props) => {
               href="https://www.linkedin.com/in/elijah-atkins-8436741a6/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Elijah Atkins on Linkedin"
             >
               <Linkdin alt="linkedin" />
             </a>
@@ -38,6 +40,7 @@ const Social = (props) => {
               href="https://www.instagram.com/elijahatkins/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Elijah Atkins on Instagram"
             >
               <Instagram alt="instagram" />
             </a>
