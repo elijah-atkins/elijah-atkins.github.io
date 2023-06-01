@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
         <div className="project-item">
           <div
             className="project-img"
-            style={{ backgroundImage: `url(${project.img})` }}
+            style={{ backgroundImage: `url(${project.img}); @supports (backgroundImage: url(${project.imgWebp})) url(${project.imgWebp})` }}
           >
             {" "}
             <div className="project-icons">

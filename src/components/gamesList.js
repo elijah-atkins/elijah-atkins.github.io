@@ -1,11 +1,18 @@
 
 import balloon from "../img/games/balloon.png";
+import ballonWP from "../img/games/balloon.webp";
 import d4 from "../img/games/d4.png";
+import d4WP from "../img/games/d4.webp";
 import gol from "../img/games/game-of-life.png";
+import golWP from "../img/games/game-of-life.webp";
 import pball from "../img/games/paddle-ball.png";
+import pballWP from "../img/games/paddle-ball.webp";
 import pool from "../img/games/pool.png";
+import poolWP from "../img/games/pool.webp";
 import rg from "../img/games/racing-game.png"
+import rgWP from "../img/games/racing-game.webp";
 import ttt from "../img/games/tic-tac-toe.png";
+import tttWP from "../img/games/tic-tac-toe.webp";
 
 const getRand = (n) => {
   
@@ -16,6 +23,7 @@ const games = [
     id: "8",
     rot: getRand(3),
     img: d4,
+    imgWebp: d4WP,
     title: "Drop Match",
     url: "https://drop-match.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/drop-match",
@@ -31,6 +39,7 @@ const games = [
     id: "7",
     rot: getRand(3),
     img: pool,
+    imgWebp: poolWP,
     title: "Billiards 8 Ball",
     url: "https://billiards.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/billiards",
@@ -46,6 +55,7 @@ const games = [
     id: "5",
     rot: getRand(1),
     img: gol,
+    imgWebp: golWP,
     title: "Conway's Game of Life",
     url: "https://game-of-life.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/game-of-life",
@@ -60,6 +70,7 @@ const games = [
     id: "6",
     rot: getRand(3),
     img: balloon,
+    imgWebp: ballonWP,
     title: "Balloon Popper",
     url: "https://balloon-popper.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/balloon-popper",
@@ -75,6 +86,7 @@ const games = [
     id: "4",
     rot: getRand(1),
     img: ttt,
+    imgWebp: tttWP,
     title: "Tic Tac Toe in Angular",
     url: "https://tic-tac-toe.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/tic-tac-toe",
@@ -90,6 +102,7 @@ const games = [
     id: "3",
     rot: getRand(1),
     img: pball,
+    imgWebp: pballWP,
     title: "Paddle Ball",
     url: "https://elijah-atkins.github.io/Paddle-Ball-Game/paddle-ball.html",
     git: "https://github.com/elijah-atkins/Paddle-Ball-Game",
@@ -104,6 +117,7 @@ const games = [
     id: "2",
     rot: getRand(1),
     img: rg,
+    imgWebp: rgWP,
     title: "Racing Game Demo",
     url: "https://elijah-atkins.github.io/Paddle-Ball-Game/racing-game.html",
     git:

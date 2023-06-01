@@ -1,6 +1,9 @@
-import bshelper from "../img/tools/blendshape-helper.png";
-import nasa from "../img/tools/nasa.png";
+import bshelper from "../img/tools/blendshape-helper.png"
+import bshelperW from "../img/tools/blendshape-helper.webp"
+import nasa from "../img/tools/nasa.png"
+import nasaW from "../img/tools/nasa.webp"
 import mic from "../img/tools/mic-face.png"
+import micW from "../img/tools/mic-face.webp"
 
 const getRand = (n) => {
   
@@ -11,6 +14,7 @@ const tools = [
     id: "1",
     rot: getRand(3),
     img: bshelper,
+    imgWebp: bshelperW,
     title: "ARKit Blendshape Helper",
 
     git: "https://github.com/elijah-atkins/ARKitBlendshapeHelper",
@@ -26,6 +30,7 @@ const tools = [
     id: "2",
     rot: getRand(1),
     img: mic,
+    imgWebp: micW,
     title: "Mic Face",
     url: "https://mic-face.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/mic-face",
@@ -41,6 +46,7 @@ const tools = [
     id: "3",
     rot: getRand(1),
     img: nasa,
+    imgWebp: nasaW,
     title: "NASA Astronomy Picture of the Day",
     url: "https://nasa.elijahatkins.com/",
     git: "https://github.com/elijah-atkins/nasa-photo-of-the-day",

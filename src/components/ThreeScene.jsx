@@ -5,7 +5,19 @@ import { GLTFLoader } from "three/examples/jsm/loaders/GLTFLoader";
 import nipplejs from "nipplejs";
 import raccoon from "../glb/raccoonAni.glb";
 import bg from "../img/bg.png";
+import bgW from "../img/bg.webp";
 import fg from "../img/fg.png";
+import fgW from "../img/fg.webp";
+
+function isWebPSupported() {
+  const image = new Image();
+  image.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4WAoAAAAQAAAAKwE/EAUAAAABAAEAAAExAAIAAAARAAAAFgAAAABYAAAAWAAAAAAAyYAA6AldAD/2DQACaEBAA7';
+  return image.decode !== undefined;
+}
+
+function getTextureURL(png, webp) {
+  return isWebPSupported() ? webp : png;
+}
 
 const ThreeScene = () => {
   const sceneRef = useRef(null);
@@ -19,6 +31,7 @@ const ThreeScene = () => {
     // Set up scene
     const container = sceneRef.current;
 
+    
     // Check if container has a valid height
     if (container.clientHeight === 0) {
     
@@ -73,7 +86,7 @@ const ThreeScene = () => {
     sceneRef.current.appendChild(renderer.domElement);
     // Load the transparent PNG image
     textureLoader.load(
-      bg,
+      getTextureURL(bg, bgW),
       (texture) => {
         // Create a material using the texture
         const material = new THREE.MeshBasicMaterial({
@@ -99,7 +112,7 @@ const ThreeScene = () => {
       }
     );
     textureLoader.load(
-      fg,
+      getTextureURL(fg, fgW),
       (texture) => {
         // Create a material using the texture
         const material = new THREE.MeshBasicMaterial({
