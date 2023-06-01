@@ -2,6 +2,12 @@ import React from "react";
 import Web from "../svg-react/Web";
 import Git from "../svg-react/Git";
 
+function isWebPSupported() {
+  const image = new Image();
+  image.src = 'data:image/webp;base64,UklGRiQAAABXRUJQVlA4WAoAAAAQAAAAKwE/EAUAAAABAAEAAAExAAIAAAARAAAAFgAAAABYAAAAWAAAAAAAyYAA6AldAD/2DQACaEBAA7';
+  return image.decode !== undefined;
+}
+
 const ProjectCard = ({ project }) => {
   return (
     <div
@@ -14,7 +20,7 @@ const ProjectCard = ({ project }) => {
         <div className="project-item">
           <div
             className="project-img"
-            style={{ backgroundImage: `url(${project.img}); @supports (backgroundImage: url(${project.imgWebp})) url(${project.imgWebp})` }}
+            style={{ backgroundImage: `url(${isWebPSupported() ? project.imgWebp : project.img})` }}
           >
             {" "}
             <div className="project-icons">
